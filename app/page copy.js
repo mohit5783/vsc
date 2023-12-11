@@ -1,7 +1,14 @@
+"use client";
 import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Carousel from "../components/Carousel";
+import customerLogo1 from "../public/images/BrandLogo/customer-logo-1.png";
+import customerLogo2 from "../public/images/BrandLogo/customer-logo-2.png";
+import customerLogo3 from "../public/images/BrandLogo/customer-logo-3.png";
+import customerLogo4 from "../public/images/BrandLogo/customer-logo-4.png";
+import customerLogo5 from "../public/images/BrandLogo/customer-logo-5.png";
+import customerLogo6 from "../public/images/BrandLogo/customer-logo-6.png";
 import mobile1 from "../public/images/mobile.png";
 import team from "../public/images/team.png";
 import flutter from "../public/images/flutter.svg";
@@ -13,19 +20,24 @@ import react from "../public/images/react.svg";
 import swift from "../public/images/swift.svg";
 import pwa from "../public/images/pwa.svg";
 import tab from "../public/images/2.png";
+import { useSelector } from "react-redux";
 
 export default function Home() {
+  const theme = useSelector((state) => state.toggle.value);
+
   return (
     <>
-      <div>
-       
+      <div className={`${theme && "dark"}`}>
+        <div className="sticky top-0 z-20">
+          <Header />
+        </div>
 
-        <div className="md:px-28 px-5 md:pb-20 md:pt-12 flex flex-wrap justify-between items-center bg-slate-950 text-white">
-          <div className="w-full text-center md:px-24">
+        <div className="md:px-28 md:pb-20 md:pt-12 flex flex-wrap justify-between items-center dark:bg-slate-950 dark:text-white">
+          <div className="w-full text-center md:px-24 ">
             <h1 className="md:text-6xl text-4xl font-bold my-10">
               Top Mobile App Development Company in India
             </h1>
-            <p className="md:text-2xl text-md   md:m-0 text-[#00E2C2] font-thin">
+            <p className="md:text-2xl text-md  md:my-9 md:m-0   text-[#00E2C2] font-thin">
               Virtualify solve the world&apos;s biggest problems with Expertise.
             </p>
             <p className="md:text-2xl text-md text-[#00E2C2] font-thin ">
@@ -89,63 +101,57 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full flex justify-center items-center md:-mt-36 -mt-16 ">
-            <Image width={900} height={600} src="/mobile.webp" alt="image"></Image>
+          <div className="flex flex-col justify-center items-center md:-mt-36 -mt-16">
+            <Image className="w-3/4 " src={mobile1} alt="image"></Image>
+            <a
+              className="group inline-block rounded-full bg-gradient-to-r from-[#3EC7E7] to-[#5179F5]  focus:outline-none focus:ring md:ms-10 mt-6"
+              href="/download"
+            >
+              <span className="block rounded-full px-6 py-2 text-sm font-medium group-hover:bg-transparent text-white">
+                Find out more
+              </span>
+            </a>
           </div>
         </div>
         {/* ===========Award winning development=========== */}
-        <div className="bg-slate-950  py-16 px-5">
+        <div className="dark:bg-slate-950  py-16">
           {" "}
-          <div className="w-full text-white">
+          <div className="w-full dark:text-white">
             <div className="w-full md:w-3/4 text-center m-auto ">
-              <h1 className="md:text-5xl text-4xl font-bold">
-                Building Strong Narrative
-              </h1>
+              <h1 className="text-5xl font-bold">Building Strong Narrative</h1>
 
-              <p className="mt-6 md:text-xl text-md">
+              <p className="mt-6 text-xl">
                 Our dedicated team of experts is committed to understanding your
                 unique needs and objectives, working closely with you to develop
                 and execute strategies that propel your brand forward.
               </p>
             </div>
-            <div className="flex justify-center items-center my-5 flex-col relative bg-[rgba(0,0,0,0.5)] bg-blend-darken">
+            <div className="flex justify-center items-center my-5 flex-col relative">
               <Image
-              width={1300}
-              height={800}
-                src="/team.webp"
-                className="rounded-t-3xl"
+                src={team}
+                className="w-[85%] rounded-t-3xl"
                 alt="image"
               ></Image>
-              <div className="md:w-[85%] absolute bottom-0 grid grid-cols-5 divide-x ">
+              <div className="w-[85%] absolute bottom-0 grid grid-cols-5 divide-x px-5">
                 <div className="vc items-center flex-col ">
-                  <p className="md:text-5xl text-md font-bold">84+</p>
-                  <p className="md:text-2xl text-xs text-center">
-                    Expert Members
-                  </p>
+                  <p className="text-5xl font-bold">84+</p>
+                  <p className="text-2xl">Expert Members</p>
                 </div>
                 <div className="vc items-center flex-col">
-                  <p className="md:text-5xl text-md font-bold">30+</p>
-                  <p className="md:text-2xl text-xs text-center">
-                    Marketing Tactics
-                  </p>
+                  <p className="text-5xl font-bold">30+</p>
+                  <p className="text-2xl">Marketing Tactics</p>
                 </div>
                 <div className="vc items-center flex-col">
-                  <p className="md:text-5xl text-md font-bold">15yr+</p>
-                  <p className="md:text-2xl text-xs text-center">
-                    Industry Experience
-                  </p>
+                  <p className="text-5xl font-bold">15yr+</p>
+                  <p className="text-2xl">Industry Experience</p>
                 </div>
                 <div className="vc items-center flex-col">
-                  <p className="md:text-5xl text-md font-bold">99%</p>
-                  <p className="md:text-2xl text-xs text-center">
-                    Client Satisfaction
-                  </p>
+                  <p className="text-5xl font-bold">99%</p>
+                  <p className="text-2xl">Client Satisfaction</p>
                 </div>
                 <div className="vc items-center flex-col">
-                  <p className="md:text-5xl text-md font-bold">145+</p>
-                  <p className="md:text-2xl text-xs text-center">
-                    Global Companies
-                  </p>
+                  <p className="text-5xl font-bold">145+</p>
+                  <p className="text-2xl">Global Companies</p>
                 </div>
               </div>
             </div>
@@ -153,15 +159,15 @@ export default function Home() {
         </div>
         {/* ================what we do====== */}
 
-        <div className="md:p-16 md:px-28 bg-[#230B46] px-5 py-10">
-          <h1 className="md:text-5xl text-4xl text-[#5179F5]">WHAT WE DO</h1>
-          <p className="md:text-xl text-md md:w-1/2 text-justify md:my-10 my-5 text-white">
+        <div className="p-16 md:px-28 dark:bg-[#230B46]">
+          <h1 className="text-5xl text-[#5179F5]">WHAT WE DO</h1>
+          <p className="text-xl w-1/2 text-justify my-10 dark:text-white">
             We imagine and build experiences, products and businesses that
             disrupt the status quo, win hearts and realize the future. Explore
             how we work.
           </p>
           <div className="vc justify-between flex-wrap">
-            <Image width={600} height={350} src="/2.webp" alt="image"/>
+            <Image className="w-[550px]" src={tab}></Image>
             <div>
               <p className="md:text-6xl text-[#735992]">App Development</p>
               <p className="md:text-7xl text-[#9648F6] my-3">Web Development</p>
@@ -171,67 +177,111 @@ export default function Home() {
         </div>
 
         {/* =======Technology we work with======== */}
-        <div className="text-center  md:py-16 p-5 bg-slate-950  text-white">
+        <div className="text-center  py-16 dark:bg-slate-950 dark:text-white">
           <h1 className="text-5xl font-bold mb-7">Skills</h1>
           <p className="text-xl md:px-56">
             Each skill is a brushstroke contributing to the masterpiece of your
             online presence. Let us weave innovation, aesthetics, and leadership
             into the fabric of your digital journey.
           </p>
-          <div className="bg-[#D8F7F2] md:mx-40 md:py-20 py-5 md:rounded-[100px] rounded-3xl my-12">
-            <span className="bg-gradient-to-r from-[#9648F6] via-[#14B4FF] to-[#66D898] md:text-5xl text-3xl ms-2 bg-clip-text text-transparent font-bold">
+          <div className="bg-[#D8F7F2] md:mx-40 py-20 rounded-[100px] my-12">
+            <span className="bg-gradient-to-r from-[#9648F6] via-[#14B4FF] to-[#66D898] md:text-5xl  ms-2 bg-clip-text text-transparent font-bold">
               TECHNOLOGIES WE WORK WITH
             </span>
             <div className="flex justify-center flex-wrap items-center mt-6">
-              <div className="md:w-48 md:h-36 w-full md:mx-2  h-32 my-3  flex justify-center items-center">
+              <div className="md:w-48 md:h-36  md:mx-2 w-40 h-32 my-3  flex justify-center items-center">
                 <Image className="w-20" src={android}></Image>
-                <span className="text-3xl font-bold text-black mx-2">
+                <span className="text-3xl font-bold dark:text-black mx-2">
                   Android
                 </span>
               </div>
-              <div className="md:w-48 md:h-36  md:mx-2 w-full h-32 my-3 flex justify-center items-center ">
+              <div className="md:w-48 md:h-36  md:mx-2 w-40 h-32 my-3 flex justify-center items-center ">
                 <Image className="w-20" src={flutter}></Image>
-                <span className="text-3xl font-bold text-black mx-2">
+                <span className="text-3xl font-bold dark:text-black mx-2">
                   flutter
                 </span>
               </div>
-              <div className="md:w-48 md:h-36  md:mx-2 w-full h-32 flex justify-center items-center ">
+              <div className="md:w-48 md:h-36  md:mx-2 w-40 h-32 flex justify-center items-center ">
                 <Image className="w-20" src={apple}></Image>
-                <span className="text-3xl font-bold text-black mx-2">ios</span>
+                <span className="text-3xl font-bold dark:text-black mx-2">
+                  ios
+                </span>
               </div>
-              <div className="md:w-48 md:h-36  md:mx-2 w-full my-3 h-32 flex justify-center items-center ">
+              <div className="md:w-48 md:h-36  md:mx-2 w-40 my-3 h-32 flex justify-center items-center ">
                 <Image className="w-20" src={java}></Image>
-                <span className="text-3xl font-bold text-black mx-2">JAVA</span>
+                <span className="text-3xl font-bold dark:text-black mx-2">
+                  JAVA
+                </span>
               </div>
-              <div className="md:w-48 md:h-36  md:mx-2 w-full my-3 h-32 flex justify-center items-center ">
+              <div className="md:w-48 md:h-36  md:mx-2 w-40 my-3 h-32 flex justify-center items-center ">
                 <Image className="w-20" src={python}></Image>
-                <span className="text-3xl font-bold text-black mx-2">
+                <span className="text-3xl font-bold dark:text-black mx-2">
                   Python
                 </span>
               </div>
-              <div className="md:w-48 md:h-36  md:mx-2 w-full my-3 h-32 flex justify-center items-center ">
+              <div className="md:w-48 md:h-36  md:mx-2 w-40 my-3 h-32 flex justify-center items-center ">
                 <Image className="w-20" src={react}></Image>
-                <span className="text-3xl font-bold text-black mx-2">
+                <span className="text-3xl font-bold dark:text-black mx-2">
                   React Native
                 </span>
               </div>
-              <div className="md:w-48 md:h-36  md:mx-2 w-full my-3 h-32 flex justify-center items-center ">
+              <div className="md:w-48 md:h-36  md:mx-2 w-40 my-3 h-32 flex justify-center items-center ">
                 <Image className="w-20" src={swift}></Image>
-                <span className="text-3xl font-bold text-black mx-2">
+                <span className="text-3xl font-bold dark:text-black mx-2">
                   Swift
                 </span>
               </div>
-              <div className="md:w-48 md:h-36  md:mx-2 w-full my-3 h-32 flex justify-center items-center ">
+              <div className="md:w-48 md:h-36  md:mx-2 w-40 my-3 h-32 flex justify-center items-center ">
                 <Image className="w-20" src={pwa}></Image>
-                <span className="text-3xl font-bold text-black mx-2">PWA</span>
+                <span className="text-3xl font-bold dark:text-black mx-2">
+                  PWA
+                </span>
               </div>
             </div>
           </div>
         </div>
 
         {/* ==============Our clients praise========== */}
-        <div className="text-center  bg-slate-950 text-white md:py-16 p-5">
-          <h1 className="text-5xl font-bold ">
+        <div className="text-center  dark:bg-slate-950 dark:text-white py-16">
+          <div className="flex justify-between items-center md:px-28 flex-wrap">
+            <Image
+              src={customerLogo1}
+              width={110}
+              // height={200}
+              alt="Picture of the author"
+            />
+            <Image
+              src={customerLogo2}
+              width={110}
+              // height={200}
+              alt="Picture of the author"
+            />
+            <Image
+              src={customerLogo3}
+              width={110}
+              // height={200}
+              alt="Picture of the author"
+            />
+            <Image
+              src={customerLogo4}
+              width={110}
+              // height={200}
+              alt="Picture of the author"
+            />
+            <Image
+              src={customerLogo5}
+              width={110}
+              // height={200}
+              alt="Picture of the author"
+            />
+            <Image
+              src={customerLogo6}
+              width={110}
+              // height={200}
+              alt="Picture of the author"
+            />
+          </div>
+          <h1 className="text-5xl font-bold mt-16">
             Our clients praise us for our great results
           </h1>
           <div className="">
@@ -240,7 +290,7 @@ export default function Home() {
         </div>
         {/* =================contact us============= */}
 
-      
+        <Footer />
       </div>
     </>
   );

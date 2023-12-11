@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
 const Carousel = () => {
@@ -45,12 +46,12 @@ const Carousel = () => {
                   <li key={idx}>
                     <figure>
                       <blockquote>
-                        <p className="text-gray-800 dark:text-white text-xl font-semibold sm:text-2xl">
+                        <p className=" text-white text-xl font-semibold sm:text-2xl">
                           <span className="text-red-500">“</span>{item.quote} <span className="text-red-500">“</span>
                         </p>
-                        <p className="py-10 dark:text-gray-400">{item.words}</p>
+                        <p className="py-10 text-gray-400">{item.words}</p>
                         <div className="mt-3">
-                          <span className="block text-gray-800 font-semibold dark:text-[#5179F5]">
+                          <span className="block  font-semibold text-[#5179F5]">
                             {item.name}
                           </span>
                           <span className="block text-gray-600 text-sm mt-0.5 dark:text-gray-400">
@@ -74,9 +75,14 @@ const Carousel = () => {
                   onClick={() => setCurrentTestimonial(idx)}
                   className={`mt-6 ${currentTestimonial == idx ?  "ring-4  ring-offset-4 ring-[#5179F5] rounded-xl" : null}`}
                 >
-                  <img
+                  <Image
+                  loader={() => item.avatar} 
+                  width={50}
+                  height={50}
                     src={item.avatar}
                     className="w-16 h-16 mx-auto rounded-xl"
+                    alt="image"
+
                   />
                 </div>
               ))}

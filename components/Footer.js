@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Footer = () => {
   return (
     <div>
@@ -5,23 +7,25 @@ const Footer = () => {
         <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div className="">
-              <div className="text-[#66D898] flex items-center">
-                <img className="h-24 w-auto" src="logo.png" alt="" />
-                <span className="text-5xl mt-10 -ms-5">
-                  <span className="text-[#9648F6]">
-                    <span className="text-[#587AF9]">irt</span>
-                  </span>
-                  <span className="text-[#14B4FF]">ual</span>
-                  <span className="text-[#66D898]">ify</span>
+              <div className=" vc justify-center md:justify-start">
+                <Image
+                  width={100}
+                  height={100}
+                  src="/logo.webp"
+                  alt="logo image"
+                />
+
+                <span className="bg-gradient-to-r from-[#9648F6] via-[#14B4FF] to-[#66D898] text-5xl  ms-2 bg-clip-text text-transparent mt-3">
+                  virtualify
                 </span>
               </div>
 
-              <p className="mt-4 max-w-xs text-white">
+              <p className="mt-4 md:max-w-xs text-white text-justify">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
                 non cupiditate quae nam molestias.
               </p>
 
-              <ul className="mt-8 flex gap-6">
+              <ul className="mt-8 flex gap-6 justify-center md:justify-start">
                 <li>
                   <a
                     href="/"
@@ -141,7 +145,7 @@ const Footer = () => {
             </div>
 
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
-              <div>
+              <div className="text-center md:text-start">
                 <p className="font-medium text-[#66D898]">Services</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
@@ -151,7 +155,7 @@ const Footer = () => {
                       className="text-white transition hover:opacity-75"
                     >
                       {" "}
-                      1on1 Coaching{" "}
+                      Hire Dedicated Developers
                     </a>
                   </li>
 
@@ -161,7 +165,7 @@ const Footer = () => {
                       className="text-white transition hover:opacity-75"
                     >
                       {" "}
-                      Company Review{" "}
+                      Web App Development
                     </a>
                   </li>
 
@@ -171,7 +175,7 @@ const Footer = () => {
                       className="text-white transition hover:opacity-75"
                     >
                       {" "}
-                      Accounts Review{" "}
+                      Mobile App Development
                     </a>
                   </li>
 
@@ -181,7 +185,7 @@ const Footer = () => {
                       className="text-white transition hover:opacity-75"
                     >
                       {" "}
-                      HR Consulting{" "}
+                      Search Engine Optimization
                     </a>
                   </li>
 
@@ -191,14 +195,23 @@ const Footer = () => {
                       className="text-white transition hover:opacity-75"
                     >
                       {" "}
-                      SEO Optimisation{" "}
+                      Pay-Per-Click
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-white transition hover:opacity-75"
+                    >
+                      {" "}
+                      Social Media Marketing
                     </a>
                   </li>
                 </ul>
               </div>
 
-              <div>
-                <p className="font-medium text-[#66D898]">Company</p>
+              <div className="text-center md:text-start">
+                <p className="font-medium text-[#66D898] ">Company</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
@@ -233,7 +246,7 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div>
+              <div className="text-center md:text-start">
                 <p className="font-medium text-[#66D898]">Helpful Links</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
@@ -269,8 +282,8 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div>
-                <p className="font-medium text-[#66D898]">Legal</p>
+              <div className="text-center md:text-start">
+                <p className="font-medium text-[#66D898]">Industries</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
@@ -279,7 +292,7 @@ const Footer = () => {
                       className="text-white transition hover:opacity-75"
                     >
                       {" "}
-                      Accessibility{" "}
+                      Healthcare{" "}
                     </a>
                   </li>
 
@@ -289,7 +302,7 @@ const Footer = () => {
                       className="text-white transition hover:opacity-75"
                     >
                       {" "}
-                      Returns Policy{" "}
+                      Education{" "}
                     </a>
                   </li>
 
@@ -299,7 +312,7 @@ const Footer = () => {
                       className="text-white transition hover:opacity-75"
                     >
                       {" "}
-                      Refund Policy{" "}
+                      Retail
                     </a>
                   </li>
 
@@ -309,7 +322,16 @@ const Footer = () => {
                       className="text-white transition hover:opacity-75"
                     >
                       {" "}
-                      Hiring Statistics{" "}
+                      Logistics
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-white transition hover:opacity-75"
+                    >
+                      {" "}
+                      Music & Video
                     </a>
                   </li>
                 </ul>
@@ -317,8 +339,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <p className="text-xs text-gray-400">
-            &copy; 2023. Company Name. All rights reserved.
+          <p className="text-xs text-gray-400 text-center">
+            &copy; 2023. Virtualify. All rights reserved.
           </p>
         </div>
       </footer>
