@@ -36,7 +36,7 @@ const Carousel = () => {
 
   return (
     <div>
-      <section className="py-14">
+      <section className="py-14 ">
         <div className="max-w-screen-xl mx-auto px-4 md:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <ul>
@@ -45,15 +45,15 @@ const Carousel = () => {
                   <li key={idx}>
                     <figure>
                       <blockquote>
-                        <p className="text-gray-800 text-xl font-semibold sm:text-2xl">
-                          “{item.quote}“
+                        <p className="text-gray-800 dark:text-white text-xl font-semibold sm:text-2xl">
+                          <span className="text-red-500">“</span>{item.quote} <span className="text-red-500">“</span>
                         </p>
-                        <p className="py-10">{item.words}</p>
+                        <p className="py-10 dark:text-gray-400">{item.words}</p>
                         <div className="mt-3">
-                          <span className="block text-gray-800 font-semibold">
+                          <span className="block text-gray-800 font-semibold dark:text-[#5179F5]">
                             {item.name}
                           </span>
-                          <span className="block text-gray-600 text-sm mt-0.5">
+                          <span className="block text-gray-600 text-sm mt-0.5 dark:text-gray-400">
                             {item.title}
                           </span>
                         </div>
@@ -72,7 +72,7 @@ const Carousel = () => {
                 <div
                   key={idx}
                   onClick={() => setCurrentTestimonial(idx)}
-                  className={`mt-6 ${currentTestimonial == idx ?  "ring-2  ring-offset-4 ring-indigo-500 rounded-xl" : null}`}
+                  className={`mt-6 ${currentTestimonial == idx ?  "ring-4  ring-offset-4 ring-[#5179F5] rounded-xl" : null}`}
                 >
                   <img
                     src={item.avatar}

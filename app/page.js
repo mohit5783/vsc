@@ -1,58 +1,73 @@
 "use client";
 import Image from "next/image";
-import Header from "./components/header";
+import { useEffect, useState } from "react";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Carousel from "./components/Carousel";
-import customerLogo1 from "../images/BrandLogo/customer-logo-1.png";
-import customerLogo2 from "../images/BrandLogo/customer-logo-2.png";
-import customerLogo3 from "../images/BrandLogo/customer-logo-3.png";
-import customerLogo4 from "../images/BrandLogo/customer-logo-4.png";
-import customerLogo5 from "../images/BrandLogo/customer-logo-5.png";
-import customerLogo6 from "../images/BrandLogo/customer-logo-6.png";
-import app from "../images/BrandLogo/appfutura-logo.png";
-import clutch from "../images/BrandLogo/clutch-logo.png";
-import good from "../images/BrandLogo/goodfirm-logo.png";
-import mobile from "../images/BrandLogo/mobile-app-logo.png";
-import top from "../images/BrandLogo/top.png";
-import office from "../images/others/office-view.jpg";
-import circle from "../images/others/app-development.webp";
-import mockup from "../images/sliders/app-mockup.png";
-import user4 from "../images/users/user4.jpg";
-import underm from "../images/underm.gif";
-// import Inquiry from "./inquiry/page";
+import customerLogo1 from "../public/images/BrandLogo/customer-logo-1.png";
+import customerLogo2 from "../public/images/BrandLogo/customer-logo-2.png";
+import customerLogo3 from "../public/images/BrandLogo/customer-logo-3.png";
+import customerLogo4 from "../public/images/BrandLogo/customer-logo-4.png";
+import customerLogo5 from "../public/images/BrandLogo/customer-logo-5.png";
+import customerLogo6 from "../public/images/BrandLogo/customer-logo-6.png";
+import app from "../public/images//BrandLogo/appfutura-logo.png";
+import clutch from "../public/images/BrandLogo/clutch-logo.png";
+import good from "../public/images/BrandLogo/goodfirm-logo.png";
+import mobile from "../public/images/BrandLogo/mobile-app-logo.png";
+import mobile1 from "../public/images/mobile.png";
+import top from "../public/images/BrandLogo/top.png";
+import office from "../public/images/others/office-view.jpg";
+import team from "../public/images/team.png";
+import circle from "../public/images/others/app-development.webp";
+import mockup from "../public/images/sliders/app-mockup.png";
+import flutter from "../public/images/flutter.svg";
+import android from "../public/images/android.svg";
+import apple from "../public/images/apple.svg";
+import java from "../public/images/java.svg";
+import python from "../public/images/python.svg";
+import react from "../public/images/react.svg";
+import swift from "../public/images/swift.svg";
+import pwa from "../public/images/pwa.svg";
+import tab from "../public/images/2.png";
+import underm from "../public/images/underm.gif";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { rule } from "postcss";
-import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 
 export default function Home() {
   const [isloading, setisloading] = useState(false);
-  useEffect(()=>{
-    setTimeout(()=>{
-      setisloading(true)
-    },2000)
-  },[])
+  useEffect(() => {
+    setTimeout(() => {
+      setisloading(true);
+    }, 2000);
+  }, []);
+
+  const theme = useSelector((state) => state.toggle.value);
+
   return (
     <>
-      {!isloading ? (
-        <>
+      {isloading ? (
+        <div className={`${theme && "dark"}`}>
           <div className="sticky top-0 z-20">
             {" "}
             <Header />
           </div>
-
-          <div className="md:px-28 md:pb-20 md:pt-3 flex flex-wrap justify-between items-center ">
-            <div className="w-full md:w-1/2 text-center md:text-start">
-              <h1 className="md:text-5xl text-4xl font-extrabold m-6">
+        
+          <div className="md:px-28 md:pb-20 md:pt-12 flex flex-wrap justify-between items-center dark:bg-slate-950 dark:text-white">
+            <div className="w-full text-center px-24">
+              <h1 className="md:text-6xl text-4xl font-bold my-10">
                 Top Mobile App Development Company in India
               </h1>
-              <p className="md:text-xl text-md text-zinc-500 my-9 md:m-0  m-5 ">
-                Reevan solve the world's biggest problems with Expertise. Reevan
-                helps global brand with digital products on web, mobile and
-                connected platforms.
+              <p className="md:text-2xl text-md  my-9 md:m-0  m-5 text-[#00E2C2] font-thin">
+                Virtualify solve the world&apos;s biggest problems with
+                Expertise.
               </p>
-              <div className="flex items-center md:justify-between justify-center mb-9 md:flex-nowrap flex-wrap px3">
-                <div className="border p-3 flex items-center justify-evenly rounded-2xl py-8 md:w-[30%] w-[90%] ">
+              <p className="md:text-2xl text-md text-[#00E2C2] font-thin">
+                Virtualify helps global brand with digital products on web,
+                mobile and connected platforms.
+              </p>
+              <div className="flex items-center md:justify-between justify-center mb-9 md:flex-nowrap flex-wrap my-4">
+                <div className="border border-[#00E2C2] p-2 flex items-center justify-evenly rounded-full md:w-[30%] w-[90%] ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -70,7 +85,7 @@ export default function Home() {
 
                   <p>100k User Engagement</p>
                 </div>
-                <div className="border p-3 flex items-center justify-evenly  rounded-2xl py-8 md:w-[30%] w-[90%] my-5">
+                <div className="border border-[#00E2C2] p-2 flex items-center justify-evenly  rounded-full  md:w-[30%] w-[90%] my-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -88,7 +103,7 @@ export default function Home() {
 
                   <p>100+ Featured App</p>
                 </div>
-                <div className="border p-3 flex items-center justify-between rounded-2xl py-8 md:w-[30%] w-[90%]">
+                <div className="border border-[#00E2C2] p-2 flex items-center justify-evenly rounded-full md:w-[30%] w-[90%]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -107,660 +122,152 @@ export default function Home() {
                   <p>600+ App Published</p>
                 </div>
               </div>
-              <div className="flex flex-wrap  items-center md:justify-between justify-center">
-                <div className="">
-                  <Link
-                    className="group flex items-center justify-between gap-4 rounded-full border bg-gradient-to-r from-[#9648F6] via-[#587AF9] via-[#14B4FF] to-[#66D898]  px-5 py-3 transition-colors hover:bg-transparent focus:outline-none focus:ring "
-                    href="/download"
-                  >
-                    <span className="font-medium text-white transition-colors group-hover:text-white group-active:text-indigo-500">
-                      Find out more
-                    </span>
-
-                    <span className="shrink-0 rounded-full  bg-white p-2 text-indigo-600 group-active:text-indigo-500">
-                      <svg
-                        className="h-5 w-5 rtl:rotate-180"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M17 8l4 4m0 0l-4 4m4-4H3"
-                        />
-                      </svg>
-                    </span>
-                  </Link>
-                </div>
-                <div className="flex justify-center items-center ">
-                  <Image
-                    className="rounded-full w-20 me-8 md:mx-8 mt-5 md:mt-0"
-                    src={user4}
-                    alt="image"
-                  ></Image>
-                  <div>
-                    <h3>Lovkesh Deshmukh</h3>
-                    <p>Business Head</p>
-                  </div>
-                </div>
-              </div>
             </div>
-            <Image className="w-full md:w-1/2" src={mockup} alt="image"></Image>
+            <div className="flex flex-col justify-center items-center md:-mt-36">
+              <Image className="w-3/4 " src={mobile1} alt="image"></Image>
+              <a
+                className="group inline-block rounded-full bg-gradient-to-r from-[#3EC7E7] to-[#5179F5] p-[2px] focus:outline-none focus:ring ms-10"
+                href="/download"
+              >
+                <span className="block rounded-full px-6 py-2 text-sm font-medium group-hover:bg-transparent text-white">
+                  Find out more
+                </span>
+              </a>
+            </div>
           </div>
           {/* ===========Award winning development=========== */}
-          <div>
+          <div className="dark:bg-slate-950  py-16">
             {" "}
-            <div className="bg-[#00A6FB] w-full text-white">
-              <div className="w-full md:w-3/4 text-center m-auto py-32 ">
-                <h1 className="text-lg ">WE ARE VIRTUALIFY</h1>
-                <h1 className="text-3xl my-6 font-extrabold">
-                  Award Winning App Development Company
+            <div className="w-full dark:text-white">
+              <div className="w-full md:w-3/4 text-center m-auto ">
+                <h1 className="text-5xl font-bold">
+                  Building Strong Narrative
                 </h1>
-                <h1 className="text-lg font-bold">
-                  #1 Mobile App Company, Awarded for its Top Features/Editor
-                  Apps Delivered.
-                </h1>
-                <p className="mt-6">
-                  Reevan started its operation in the year 1999. We are
-                  Worldwide, based Web, App and Digital Marketing Company. Our
-                  main Domain is Web Design, App Development, Digital Marketing,
-                  Product Design and Cloud Services. Customer Satisfactio and
-                  the Highest rate of Customer Repeatability make us one of the
-                  pioneers in the field. So, what are you waiting for? Let us
-                  discuss your ideas and our innovation in detail because
-                  catering your requirement and converting it into a final
-                  product is our main goal.
+
+                <p className="mt-6 text-xl">
+                  Our dedicated team of experts is committed to understanding
+                  your unique needs and objectives, working closely with you to
+                  develop and execute strategies that propel your brand forward.
                 </p>
               </div>
+              <div className="flex justify-center items-center my-5 flex-col relative">
+                <Image
+                  src={team}
+                  className="w-[85%] rounded-t-3xl"
+                  alt="image"
+                ></Image>
+                <div className="w-[85%] absolute bottom-0 grid grid-cols-5 divide-x px-5">
+                  <div className="vc items-center flex-col ">
+                    <p className="text-5xl font-bold">84+</p>
+                    <p className="text-2xl">Expert Members</p>
+                  </div>
+                  <div className="vc items-center flex-col">
+                    <p className="text-5xl font-bold">30+</p>
+                    <p className="text-2xl">Marketing Tactics</p>
+                  </div>
+                  <div className="vc items-center flex-col">
+                    <p className="text-5xl font-bold">15yr+</p>
+                    <p className="text-2xl">Industry Experience</p>
+                  </div>
+                  <div className="vc items-center flex-col">
+                    <p className="text-5xl font-bold">99%</p>
+                    <p className="text-2xl">Client Satisfaction</p>
+                  </div>
+                  <div className="vc items-center flex-col">
+                    <p className="text-5xl font-bold">145+</p>
+                    <p className="text-2xl">Global Companies</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <Image src={office} width={"100%"} alt="image"></Image>
-            <div className="flex  justify-between items-center md:px-20 bg-[#eaffe6] flex-wrap-reverse">
+          </div>
+          {/* ================what we do====== */}
+
+          <div className="p-16 px-28 dark:bg-[#230B46]">
+            <h1 className="text-5xl text-[#5179F5]">WHAT WE DO</h1>
+            <p className="text-xl w-1/2 text-justify my-10 dark:text-white">
+              We imagine and build experiences, products and businesses that
+              disrupt the status quo, win hearts and realize the future. Explore
+              how we work.
+            </p>
+            <div className="vc justify-between">
+              <Image className="w-[550px]" src={tab}></Image>
               <div>
-                <button className="px-7 py-4 text-white duration-150 bg-[#9648F6] rounded-full hover:bg-indigo-500 active:bg-indigo-700">
-                  Button
-                </button>
-              </div>
-              <div className="md:w-1/2 w-full p-10 flex justify-between items-center rounded-3xl bg-[#9648F6] md:-mt-36 text-white">
-                <div>
-                  <div className="mb-12">
-                    <div className="text-5xl font-extrabold">75+</div>
-                    <div>Project Delivered</div>
-                  </div>
-                  <div>
-                    <div className="text-5xl font-extrabold">20+</div>
-                    <div>Experts Team</div>
-                  </div>
-                </div>
-                <div>
-                  <div className="mb-12">
-                    <div className="text-5xl font-extrabold">70+</div>
-                    <div>Enterprise Clients</div>
-                  </div>
-                  <div>
-                    <div className="text-5xl font-extrabold">20%</div>
-                    <div>Success Years</div>
-                  </div>
-                </div>
-                <motion.div
-                  animate={{ rotateZ: 960 }}
-                  // initial={{ y: 600 }}
-                  transition={{
-                    duration: 50,
-                    repeat: "Infinity",
-                    type: "tween",
-                  }}
-                >
-                  <Image width={150} src={circle} alt="image"></Image>
-                </motion.div>
-              </div>
-            </div>
-            <div className="md:px-32 py-10  bg-[#eaffe6] flex flex-wrap md:justify-between justify-center items-center">
-              <Image
-                className="w-[150px] md:w-[200px]"
-                src={app}
-                alt="image"
-              ></Image>
-              <Image
-                className="w-[150px] md:w-[200px]"
-                src={good}
-                alt="image"
-              ></Image>
-              <Image
-                className="w-[150px] md:w-[200px]"
-                src={top}
-                alt="image"
-              ></Image>
-              <Image
-                className="w-[150px] md:w-[200px]"
-                src={mobile}
-                alt="image"
-              ></Image>
-              <Image
-                className="w-[150px] md:w-[200px]"
-                src={clutch}
-                alt="image"
-              ></Image>
-            </div>
-          </div>
-          {/* ==============Services============== */}
-          <div className="text-center py-20">
-            <h3 className="mb-6">Our Services</h3>
-            <h1 className="text-3xl font-extrabold">
-              We build modern creative mobile experiences.
-            </h1>
-            <div className="md:mx-28 md:mt-16 flex justify-between items-center  flex-wrap">
-              <div className="md:w-[30%] w-full text-left  px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
-                <h3 className="text-2xl font-bold">Android Development</h3>
-                <p className="my-5 text-zinc-500">
-                  Our software house has been recognised by google for
-                  outstanding android application quality.
-                </p>
-                <span className="text-xl">
-                  Read More<span aria-hidden="true">&rarr;</span>
-                </span>
-                <div
-                  style={{ top: "-40px" }}
-                  className="p-4 rounded-xl w-20 shadow-xl absolute bg-white"
-                >
-                  <svg
-                    height="35pt"
-                    viewBox="0 -99 512 511"
-                    width="35pt"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m150.785156 84.703125-56.882812-56.894531c-6.246094-6.246094-6.246094-16.375 0-22.625 6.25-6.246094 16.378906-6.246094 22.625 0l56.878906 56.898437zm0 0"
-                      fill="#0ac1a7"
-                    />
-                    <path
-                      d="m361.214844 84.703125-22.621094-22.621094 56.878906-56.898437c6.246094-6.246094 16.375-6.246094 22.625 0 6.246094 6.25 6.246094 16.378906 0 22.625zm0 0"
-                      fill="#0ac1a7"
-                    />
-                    <path
-                      d="m432 233.394531h-352v-32c0-97.203125 78.796875-176 176-176s176 78.796875 176 176zm0 0"
-                      fill="#6ae5d3"
-                    />
-                    <path d="m176 137.394531h32v32h-32zm0 0" fill="#fff" />
-                    <path d="m304 137.394531h32v32h-32zm0 0" fill="#fff" />
-                    <g fill="#51dbca">
-                      <path d="m480 281.394531h32v32h-32zm0 0" />
-                      <path d="m80 281.394531h352c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-352c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                      <path d="m0 281.394531h32v32h-32zm0 0" />
-                      <path d="m16 201.394531h480c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-480c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                    </g>
-                  </svg>
-                </div>
-              </div>
-              <div className="md:w-[30%] w-full text-left  px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
-                <h3 className="text-2xl font-bold">Android Development</h3>
-                <p className="my-5 text-zinc-500">
-                  Our software house has been recognised by google for
-                  outstanding android application quality.
-                </p>
-                <span className="text-xl">
-                  Read More<span aria-hidden="true">&rarr;</span>
-                </span>
-                <div
-                  style={{ top: "-40px" }}
-                  className="p-4 rounded-xl w-20 shadow-xl absolute bg-white"
-                >
-                  <svg
-                    height="35pt"
-                    viewBox="0 -99 512 511"
-                    width="35pt"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m150.785156 84.703125-56.882812-56.894531c-6.246094-6.246094-6.246094-16.375 0-22.625 6.25-6.246094 16.378906-6.246094 22.625 0l56.878906 56.898437zm0 0"
-                      fill="#0ac1a7"
-                    />
-                    <path
-                      d="m361.214844 84.703125-22.621094-22.621094 56.878906-56.898437c6.246094-6.246094 16.375-6.246094 22.625 0 6.246094 6.25 6.246094 16.378906 0 22.625zm0 0"
-                      fill="#0ac1a7"
-                    />
-                    <path
-                      d="m432 233.394531h-352v-32c0-97.203125 78.796875-176 176-176s176 78.796875 176 176zm0 0"
-                      fill="#6ae5d3"
-                    />
-                    <path d="m176 137.394531h32v32h-32zm0 0" fill="#fff" />
-                    <path d="m304 137.394531h32v32h-32zm0 0" fill="#fff" />
-                    <g fill="#51dbca">
-                      <path d="m480 281.394531h32v32h-32zm0 0" />
-                      <path d="m80 281.394531h352c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-352c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                      <path d="m0 281.394531h32v32h-32zm0 0" />
-                      <path d="m16 201.394531h480c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-480c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                    </g>
-                  </svg>
-                </div>
-              </div>
-              <div className="md:w-[30%] w-full text-left  px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
-                <h3 className="text-2xl font-bold">Android Development</h3>
-                <p className="my-5 text-zinc-500">
-                  Our software house has been recognised by google for
-                  outstanding android application quality.
-                </p>
-                <span className="text-xl">
-                  Read More<span aria-hidden="true">&rarr;</span>
-                </span>
-                <div
-                  style={{ top: "-40px" }}
-                  className="p-4 rounded-xl w-20 shadow-xl absolute bg-white"
-                >
-                  <svg
-                    height="35pt"
-                    viewBox="0 -99 512 511"
-                    width="35pt"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m150.785156 84.703125-56.882812-56.894531c-6.246094-6.246094-6.246094-16.375 0-22.625 6.25-6.246094 16.378906-6.246094 22.625 0l56.878906 56.898437zm0 0"
-                      fill="#0ac1a7"
-                    />
-                    <path
-                      d="m361.214844 84.703125-22.621094-22.621094 56.878906-56.898437c6.246094-6.246094 16.375-6.246094 22.625 0 6.246094 6.25 6.246094 16.378906 0 22.625zm0 0"
-                      fill="#0ac1a7"
-                    />
-                    <path
-                      d="m432 233.394531h-352v-32c0-97.203125 78.796875-176 176-176s176 78.796875 176 176zm0 0"
-                      fill="#6ae5d3"
-                    />
-                    <path d="m176 137.394531h32v32h-32zm0 0" fill="#fff" />
-                    <path d="m304 137.394531h32v32h-32zm0 0" fill="#fff" />
-                    <g fill="#51dbca">
-                      <path d="m480 281.394531h32v32h-32zm0 0" />
-                      <path d="m80 281.394531h352c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-352c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                      <path d="m0 281.394531h32v32h-32zm0 0" />
-                      <path d="m16 201.394531h480c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-480c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                    </g>
-                  </svg>
-                </div>
-              </div>
-              <div className="md:w-[30%] w-full text-left  px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
-                <h3 className="text-2xl font-bold">Android Development</h3>
-                <p className="my-5 text-zinc-500">
-                  Our software house has been recognised by google for
-                  outstanding android application quality.
-                </p>
-                <span className="text-xl">
-                  Read More<span aria-hidden="true">&rarr;</span>
-                </span>
-                <div
-                  style={{ top: "-40px" }}
-                  className="p-4 rounded-xl w-20 shadow-xl absolute bg-white"
-                >
-                  <svg
-                    height="35pt"
-                    viewBox="0 -99 512 511"
-                    width="35pt"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m150.785156 84.703125-56.882812-56.894531c-6.246094-6.246094-6.246094-16.375 0-22.625 6.25-6.246094 16.378906-6.246094 22.625 0l56.878906 56.898437zm0 0"
-                      fill="#0ac1a7"
-                    />
-                    <path
-                      d="m361.214844 84.703125-22.621094-22.621094 56.878906-56.898437c6.246094-6.246094 16.375-6.246094 22.625 0 6.246094 6.25 6.246094 16.378906 0 22.625zm0 0"
-                      fill="#0ac1a7"
-                    />
-                    <path
-                      d="m432 233.394531h-352v-32c0-97.203125 78.796875-176 176-176s176 78.796875 176 176zm0 0"
-                      fill="#6ae5d3"
-                    />
-                    <path d="m176 137.394531h32v32h-32zm0 0" fill="#fff" />
-                    <path d="m304 137.394531h32v32h-32zm0 0" fill="#fff" />
-                    <g fill="#51dbca">
-                      <path d="m480 281.394531h32v32h-32zm0 0" />
-                      <path d="m80 281.394531h352c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-352c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                      <path d="m0 281.394531h32v32h-32zm0 0" />
-                      <path d="m16 201.394531h480c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-480c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                    </g>
-                  </svg>
-                </div>
-              </div>
-              <div className="md:w-[30%] w-full text-left  px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
-                <h3 className="text-2xl font-bold">Android Development</h3>
-                <p className="my-5 text-zinc-500">
-                  Our software house has been recognised by google for
-                  outstanding android application quality.
-                </p>
-                <span className="text-xl">
-                  Read More<span aria-hidden="true">&rarr;</span>
-                </span>
-                <div
-                  style={{ top: "-40px" }}
-                  className="p-4 rounded-xl w-20 shadow-xl absolute bg-white"
-                >
-                  <svg
-                    height="35pt"
-                    viewBox="0 -99 512 511"
-                    width="35pt"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m150.785156 84.703125-56.882812-56.894531c-6.246094-6.246094-6.246094-16.375 0-22.625 6.25-6.246094 16.378906-6.246094 22.625 0l56.878906 56.898437zm0 0"
-                      fill="#0ac1a7"
-                    />
-                    <path
-                      d="m361.214844 84.703125-22.621094-22.621094 56.878906-56.898437c6.246094-6.246094 16.375-6.246094 22.625 0 6.246094 6.25 6.246094 16.378906 0 22.625zm0 0"
-                      fill="#0ac1a7"
-                    />
-                    <path
-                      d="m432 233.394531h-352v-32c0-97.203125 78.796875-176 176-176s176 78.796875 176 176zm0 0"
-                      fill="#6ae5d3"
-                    />
-                    <path d="m176 137.394531h32v32h-32zm0 0" fill="#fff" />
-                    <path d="m304 137.394531h32v32h-32zm0 0" fill="#fff" />
-                    <g fill="#51dbca">
-                      <path d="m480 281.394531h32v32h-32zm0 0" />
-                      <path d="m80 281.394531h352c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-352c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                      <path d="m0 281.394531h32v32h-32zm0 0" />
-                      <path d="m16 201.394531h480c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-480c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                    </g>
-                  </svg>
-                </div>
-              </div>
-              <div className="md:w-[30%] w-full text-left  px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
-                <h3 className="text-2xl font-bold">Android Development</h3>
-                <p className="my-5 text-zinc-500">
-                  Our software house has been recognised by google for
-                  outstanding android application quality.
-                </p>
-                <span className="text-xl">
-                  Read More<span aria-hidden="true">&rarr;</span>
-                </span>
-                <div
-                  style={{ top: "-40px" }}
-                  className="p-4 rounded-xl w-20 shadow-xl absolute bg-white"
-                >
-                  <svg
-                    height="35pt"
-                    viewBox="0 -99 512 511"
-                    width="35pt"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="m150.785156 84.703125-56.882812-56.894531c-6.246094-6.246094-6.246094-16.375 0-22.625 6.25-6.246094 16.378906-6.246094 22.625 0l56.878906 56.898437zm0 0"
-                      fill="#0ac1a7"
-                    />
-                    <path
-                      d="m361.214844 84.703125-22.621094-22.621094 56.878906-56.898437c6.246094-6.246094 16.375-6.246094 22.625 0 6.246094 6.25 6.246094 16.378906 0 22.625zm0 0"
-                      fill="#0ac1a7"
-                    />
-                    <path
-                      d="m432 233.394531h-352v-32c0-97.203125 78.796875-176 176-176s176 78.796875 176 176zm0 0"
-                      fill="#6ae5d3"
-                    />
-                    <path d="m176 137.394531h32v32h-32zm0 0" fill="#fff" />
-                    <path d="m304 137.394531h32v32h-32zm0 0" fill="#fff" />
-                    <g fill="#51dbca">
-                      <path d="m480 281.394531h32v32h-32zm0 0" />
-                      <path d="m80 281.394531h352c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-352c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                      <path d="m0 281.394531h32v32h-32zm0 0" />
-                      <path d="m16 201.394531h480c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-480c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                    </g>
-                  </svg>
-                </div>
+                <p className="text-6xl text-[#735992]">App Development</p>
+                <p className="text-7xl text-[#9648F6] my-3">Web Development</p>
+                <p className="text-6xl text-[#735992]">Cloud Services</p>
               </div>
             </div>
           </div>
+
           {/* =======Technology we work with======== */}
-          <div className="text-center md:p-20 py-5 ">
-            <h1 className="text-4xl font-bold mb-7">
-              Technologies we work with
-            </h1>
-            <div className="flex justify-center flex-wrap items-center ">
-              <div className="md:w-48 md:h-36 md:m-3 m-auto w-40 h-32 my-3  rounded-2xl bg-zinc-100 flex flex-col justify-center items-center ">
-                <svg
-                  height="40pt"
-                  viewBox="0 -99 512 511"
-                  width="40pt"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m150.785156 84.703125-56.882812-56.894531c-6.246094-6.246094-6.246094-16.375 0-22.625 6.25-6.246094 16.378906-6.246094 22.625 0l56.878906 56.898437zm0 0"
-                    fill="#0ac1a7"
-                  />
-                  <path
-                    d="m361.214844 84.703125-22.621094-22.621094 56.878906-56.898437c6.246094-6.246094 16.375-6.246094 22.625 0 6.246094 6.25 6.246094 16.378906 0 22.625zm0 0"
-                    fill="#0ac1a7"
-                  />
-                  <path
-                    d="m432 233.394531h-352v-32c0-97.203125 78.796875-176 176-176s176 78.796875 176 176zm0 0"
-                    fill="#6ae5d3"
-                  />
-                  <path d="m176 137.394531h32v32h-32zm0 0" fill="#fff" />
-                  <path d="m304 137.394531h32v32h-32zm0 0" fill="#fff" />
-                  <g fill="#51dbca">
-                    <path d="m480 281.394531h32v32h-32zm0 0" />
-                    <path d="m80 281.394531h352c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-352c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                    <path d="m0 281.394531h32v32h-32zm0 0" />
-                    <path d="m16 201.394531h480c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-480c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                  </g>
-                </svg>
-                <span>iOS</span>
-              </div>
-              <div className="md:w-48 md:h-36 md:m-3 m-auto w-40 h-32 my-3 rounded-2xl bg-zinc-100 flex flex-col justify-center items-center ">
-                <svg
-                  height="40pt"
-                  viewBox="0 -99 512 511"
-                  width="40pt"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m150.785156 84.703125-56.882812-56.894531c-6.246094-6.246094-6.246094-16.375 0-22.625 6.25-6.246094 16.378906-6.246094 22.625 0l56.878906 56.898437zm0 0"
-                    fill="#0ac1a7"
-                  />
-                  <path
-                    d="m361.214844 84.703125-22.621094-22.621094 56.878906-56.898437c6.246094-6.246094 16.375-6.246094 22.625 0 6.246094 6.25 6.246094 16.378906 0 22.625zm0 0"
-                    fill="#0ac1a7"
-                  />
-                  <path
-                    d="m432 233.394531h-352v-32c0-97.203125 78.796875-176 176-176s176 78.796875 176 176zm0 0"
-                    fill="#6ae5d3"
-                  />
-                  <path d="m176 137.394531h32v32h-32zm0 0" fill="#fff" />
-                  <path d="m304 137.394531h32v32h-32zm0 0" fill="#fff" />
-                  <g fill="#51dbca">
-                    <path d="m480 281.394531h32v32h-32zm0 0" />
-                    <path d="m80 281.394531h352c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-352c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                    <path d="m0 281.394531h32v32h-32zm0 0" />
-                    <path d="m16 201.394531h480c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-480c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                  </g>
-                </svg>
-                <span>Android</span>
-              </div>
-              <div className="md:w-48 md:h-36 md:m-3 mx-auto my-3 w-40 h-32 rounded-2xl bg-zinc-100 flex flex-col justify-center items-center ">
-                <span>PWA</span>
-              </div>
-              <div className="md:w-48 md:h-36 md:m-3 m-auto w-40 my-3 h-32 rounded-2xl bg-zinc-100 flex flex-col justify-center items-center ">
-                <svg
-                  height="40pt"
-                  viewBox="0 -99 512 511"
-                  width="40pt"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m150.785156 84.703125-56.882812-56.894531c-6.246094-6.246094-6.246094-16.375 0-22.625 6.25-6.246094 16.378906-6.246094 22.625 0l56.878906 56.898437zm0 0"
-                    fill="#0ac1a7"
-                  />
-                  <path
-                    d="m361.214844 84.703125-22.621094-22.621094 56.878906-56.898437c6.246094-6.246094 16.375-6.246094 22.625 0 6.246094 6.25 6.246094 16.378906 0 22.625zm0 0"
-                    fill="#0ac1a7"
-                  />
-                  <path
-                    d="m432 233.394531h-352v-32c0-97.203125 78.796875-176 176-176s176 78.796875 176 176zm0 0"
-                    fill="#6ae5d3"
-                  />
-                  <path d="m176 137.394531h32v32h-32zm0 0" fill="#fff" />
-                  <path d="m304 137.394531h32v32h-32zm0 0" fill="#fff" />
-                  <g fill="#51dbca">
-                    <path d="m480 281.394531h32v32h-32zm0 0" />
-                    <path d="m80 281.394531h352c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-352c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                    <path d="m0 281.394531h32v32h-32zm0 0" />
-                    <path d="m16 201.394531h480c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-480c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                  </g>
-                </svg>
-                <span>Flutter</span>
-              </div>
-              <div className="md:w-48 md:h-36 md:m-3 m-auto w-40 my-3 h-32 rounded-2xl bg-zinc-100 flex flex-col justify-center items-center ">
-                <svg
-                  height="40pt"
-                  viewBox="0 -99 512 511"
-                  width="40pt"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m150.785156 84.703125-56.882812-56.894531c-6.246094-6.246094-6.246094-16.375 0-22.625 6.25-6.246094 16.378906-6.246094 22.625 0l56.878906 56.898437zm0 0"
-                    fill="#0ac1a7"
-                  />
-                  <path
-                    d="m361.214844 84.703125-22.621094-22.621094 56.878906-56.898437c6.246094-6.246094 16.375-6.246094 22.625 0 6.246094 6.25 6.246094 16.378906 0 22.625zm0 0"
-                    fill="#0ac1a7"
-                  />
-                  <path
-                    d="m432 233.394531h-352v-32c0-97.203125 78.796875-176 176-176s176 78.796875 176 176zm0 0"
-                    fill="#6ae5d3"
-                  />
-                  <path d="m176 137.394531h32v32h-32zm0 0" fill="#fff" />
-                  <path d="m304 137.394531h32v32h-32zm0 0" fill="#fff" />
-                  <g fill="#51dbca">
-                    <path d="m480 281.394531h32v32h-32zm0 0" />
-                    <path d="m80 281.394531h352c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-352c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                    <path d="m0 281.394531h32v32h-32zm0 0" />
-                    <path d="m16 201.394531h480c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-480c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                  </g>
-                </svg>
-                <span>Java</span>
-              </div>
-              <div className="md:w-48 md:h-36 md:m-3 m-auto w-40 my-3 h-32 rounded-2xl bg-zinc-100 flex flex-col justify-center items-center ">
-                <svg
-                  height="40pt"
-                  viewBox="0 -99 512 511"
-                  width="40pt"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m150.785156 84.703125-56.882812-56.894531c-6.246094-6.246094-6.246094-16.375 0-22.625 6.25-6.246094 16.378906-6.246094 22.625 0l56.878906 56.898437zm0 0"
-                    fill="#0ac1a7"
-                  />
-                  <path
-                    d="m361.214844 84.703125-22.621094-22.621094 56.878906-56.898437c6.246094-6.246094 16.375-6.246094 22.625 0 6.246094 6.25 6.246094 16.378906 0 22.625zm0 0"
-                    fill="#0ac1a7"
-                  />
-                  <path
-                    d="m432 233.394531h-352v-32c0-97.203125 78.796875-176 176-176s176 78.796875 176 176zm0 0"
-                    fill="#6ae5d3"
-                  />
-                  <path d="m176 137.394531h32v32h-32zm0 0" fill="#fff" />
-                  <path d="m304 137.394531h32v32h-32zm0 0" fill="#fff" />
-                  <g fill="#51dbca">
-                    <path d="m480 281.394531h32v32h-32zm0 0" />
-                    <path d="m80 281.394531h352c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-352c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                    <path d="m0 281.394531h32v32h-32zm0 0" />
-                    <path d="m16 201.394531h480c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-480c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                  </g>
-                </svg>
-                <span>React Native</span>
-              </div>
-              <div className="md:w-48 md:h-36 md:m-3 m-auto w-40 my-3 h-32 rounded-2xl bg-zinc-100 flex flex-col justify-center items-center ">
-                <svg
-                  height="40pt"
-                  viewBox="0 -99 512 511"
-                  width="40pt"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m150.785156 84.703125-56.882812-56.894531c-6.246094-6.246094-6.246094-16.375 0-22.625 6.25-6.246094 16.378906-6.246094 22.625 0l56.878906 56.898437zm0 0"
-                    fill="#0ac1a7"
-                  />
-                  <path
-                    d="m361.214844 84.703125-22.621094-22.621094 56.878906-56.898437c6.246094-6.246094 16.375-6.246094 22.625 0 6.246094 6.25 6.246094 16.378906 0 22.625zm0 0"
-                    fill="#0ac1a7"
-                  />
-                  <path
-                    d="m432 233.394531h-352v-32c0-97.203125 78.796875-176 176-176s176 78.796875 176 176zm0 0"
-                    fill="#6ae5d3"
-                  />
-                  <path d="m176 137.394531h32v32h-32zm0 0" fill="#fff" />
-                  <path d="m304 137.394531h32v32h-32zm0 0" fill="#fff" />
-                  <g fill="#51dbca">
-                    <path d="m480 281.394531h32v32h-32zm0 0" />
-                    <path d="m80 281.394531h352c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-352c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                    <path d="m0 281.394531h32v32h-32zm0 0" />
-                    <path d="m16 201.394531h480c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-480c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                  </g>
-                </svg>
-                <span>Python</span>
-              </div>
-              <div className="md:w-48 md:h-36 md:m-3 m-auto w-40 my-3 h-32 rounded-2xl bg-zinc-100 flex flex-col justify-center items-center ">
-                <svg
-                  height="40pt"
-                  viewBox="0 -99 512 511"
-                  width="40pt"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m150.785156 84.703125-56.882812-56.894531c-6.246094-6.246094-6.246094-16.375 0-22.625 6.25-6.246094 16.378906-6.246094 22.625 0l56.878906 56.898437zm0 0"
-                    fill="#0ac1a7"
-                  />
-                  <path
-                    d="m361.214844 84.703125-22.621094-22.621094 56.878906-56.898437c6.246094-6.246094 16.375-6.246094 22.625 0 6.246094 6.25 6.246094 16.378906 0 22.625zm0 0"
-                    fill="#0ac1a7"
-                  />
-                  <path
-                    d="m432 233.394531h-352v-32c0-97.203125 78.796875-176 176-176s176 78.796875 176 176zm0 0"
-                    fill="#6ae5d3"
-                  />
-                  <path d="m176 137.394531h32v32h-32zm0 0" fill="#fff" />
-                  <path d="m304 137.394531h32v32h-32zm0 0" fill="#fff" />
-                  <g fill="#51dbca">
-                    <path d="m480 281.394531h32v32h-32zm0 0" />
-                    <path d="m80 281.394531h352c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-352c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                    <path d="m0 281.394531h32v32h-32zm0 0" />
-                    <path d="m16 201.394531h480c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-480c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                  </g>
-                </svg>
-                <span>Java</span>
-              </div>
-              <div className="md:w-48 md:h-36 md:m-3 m-auto w-40 my-3 h-32 rounded-2xl bg-zinc-100 flex flex-col justify-center items-center ">
-                <svg
-                  height="40pt"
-                  viewBox="0 -99 512 511"
-                  width="40pt"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m150.785156 84.703125-56.882812-56.894531c-6.246094-6.246094-6.246094-16.375 0-22.625 6.25-6.246094 16.378906-6.246094 22.625 0l56.878906 56.898437zm0 0"
-                    fill="#0ac1a7"
-                  />
-                  <path
-                    d="m361.214844 84.703125-22.621094-22.621094 56.878906-56.898437c6.246094-6.246094 16.375-6.246094 22.625 0 6.246094 6.25 6.246094 16.378906 0 22.625zm0 0"
-                    fill="#0ac1a7"
-                  />
-                  <path
-                    d="m432 233.394531h-352v-32c0-97.203125 78.796875-176 176-176s176 78.796875 176 176zm0 0"
-                    fill="#6ae5d3"
-                  />
-                  <path d="m176 137.394531h32v32h-32zm0 0" fill="#fff" />
-                  <path d="m304 137.394531h32v32h-32zm0 0" fill="#fff" />
-                  <g fill="#51dbca">
-                    <path d="m480 281.394531h32v32h-32zm0 0" />
-                    <path d="m80 281.394531h352c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-352c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                    <path d="m0 281.394531h32v32h-32zm0 0" />
-                    <path d="m16 201.394531h480c8.835938 0 16 7.160157 16 16 0 8.835938-7.164062 16-16 16h-480c-8.835938 0-16-7.164062-16-16 0-8.839843 7.164062-16 16-16zm0 0" />
-                  </g>
-                </svg>
-                <span>Swift</span>
+          <div className="text-center  py-16 dark:bg-slate-950 dark:text-white">
+            <h1 className="text-5xl font-bold mb-7">Skills</h1>
+            <p className="text-xl px-56">
+              Each skill is a brushstroke contributing to the masterpiece of
+              your online presence. Let us weave innovation, aesthetics, and
+              leadership into the fabric of your digital journey.
+            </p>
+            <div className="bg-[#D8F7F2] mx-40 py-20 rounded-[100px] my-12">
+              <span className="bg-gradient-to-r from-[#9648F6] via-[#14B4FF] to-[#66D898] text-5xl  ms-2 bg-clip-text text-transparent font-bold">
+                TECHNOLOGIES WE WORK WITH
+              </span>
+              <div className="flex justify-center flex-wrap items-center mt-6">
+                <div className="md:w-48 md:h-36  md:mx-2 w-40 h-32 my-3  flex justify-center items-center">
+                  <Image className="w-20" src={android}></Image>
+                  <span className="text-3xl font-bold dark:text-black mx-2">
+                    Android
+                  </span>
+                </div>
+                <div className="md:w-48 md:h-36  md:mx-2 w-40 h-32 my-3 flex justify-center items-center ">
+                  <Image className="w-20" src={flutter}></Image>
+                  <span className="text-3xl font-bold dark:text-black mx-2">
+                    flutter
+                  </span>
+                </div>
+                <div className="md:w-48 md:h-36  md:mx-2 w-40 h-32 flex justify-center items-center ">
+                  <Image className="w-20" src={apple}></Image>
+                  <span className="text-3xl font-bold dark:text-black mx-2">
+                    ios
+                  </span>
+                </div>
+                <div className="md:w-48 md:h-36  md:mx-2 w-40 my-3 h-32 flex justify-center items-center ">
+                  <Image className="w-20" src={java}></Image>
+                  <span className="text-3xl font-bold dark:text-black mx-2">
+                    JAVA
+                  </span>
+                </div>
+                <div className="md:w-48 md:h-36  md:mx-2 w-40 my-3 h-32 flex justify-center items-center ">
+                  <Image className="w-20" src={python}></Image>
+                  <span className="text-3xl font-bold dark:text-black mx-2">
+                    Python
+                  </span>
+                </div>
+                <div className="md:w-48 md:h-36  md:mx-2 w-40 my-3 h-32 flex justify-center items-center ">
+                  <Image className="w-20" src={react}></Image>
+                  <span className="text-3xl font-bold dark:text-black mx-2">
+                    React Native
+                  </span>
+                </div>
+                <div className="md:w-48 md:h-36  md:mx-2 w-40 my-3 h-32 flex justify-center items-center ">
+                  <Image className="w-20" src={swift}></Image>
+                  <span className="text-3xl font-bold dark:text-black mx-2">
+                    Swift
+                  </span>
+                </div>
+                <div className="md:w-48 md:h-36  md:mx-2 w-40 my-3 h-32 flex justify-center items-center ">
+                  <Image className="w-20" src={pwa}></Image>
+                  <span className="text-3xl font-bold dark:text-black mx-2">
+                    PWA
+                  </span>
+                </div>
               </div>
             </div>
           </div>
 
           {/* ==============Our clients praise========== */}
-          <div className="text-center py-5 bg-zinc-100">
-            <div className="flex justify-between items-center md:p-28 flex-wrap">
+          <div className="text-center  dark:bg-slate-950 dark:text-white py-16">
+            <div className="flex justify-between items-center md:px-28 flex-wrap">
               <Image
                 src={customerLogo1}
                 width={110}
@@ -798,18 +305,26 @@ export default function Home() {
                 alt="Picture of the author"
               />
             </div>
-            <h1 className="text-4xl font-bold ">
+            <h1 className="text-5xl font-bold mt-16">
               Our clients praise us for our great results
             </h1>
-            <Carousel />
+            <div className="">
+              <Carousel />
+            </div>
           </div>
           {/* =================contact us============= */}
           {/* <Inquiry /> */}
           <Footer />
-        </>
+        </div>
       ) : (
-        <div  style={{display:"flex",alignItems:"center",justifyContent:"center"}}>
-          <Image width={1000} height={1000} src="https://assets-v2.lottiefiles.com/a/f10b0b16-1163-11ee-b83c-6f51864feb33/8tmoF5c41v.gif" alt="img"></Image>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Image width={1000} height={1000} src={underm} alt="img"></Image>
           <h1 className="text-5xl">is under maintenance...</h1>
         </div>
       )}

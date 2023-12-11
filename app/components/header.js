@@ -2,6 +2,7 @@
 
 import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
+import sun from "../../public/images/sun.svg";
 import {
   ArrowPathIcon,
   Bars3Icon,
@@ -16,6 +17,9 @@ import {
   PhoneIcon,
   PlayCircleIcon,
 } from "@heroicons/react/20/solid";
+import Image from "next/image";
+import { useDispatch, useSelector } from "react-redux";
+import { toggle } from "@/store/themeSlice";
 
 const products = [
   {
@@ -60,28 +64,29 @@ function classNames(...classes) {
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  // const [theme, settheme] = useState(true);
+
+  const toggleDarkMode= ()=>{
+    settheme(!theme)
+
+  }
+  const dispatch = useDispatch()
+  const theme = useSelector((state) => state.toggle.value);
 
   return (
-    <header className="bg-white">
+    <header className="bg-white dark:bg-slate-950 border-b-2 border-[#9648F6] p-5 relative">
+     
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-2 lg:px-8"
+        className="m-auto flex max-w-7xl items-center justify-between p-2 lg:px-8"
         aria-label="Global"
-      > 
+      >
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5 flex items-center">
             <span className="sr-only">Your Company</span>
-            <img
-              className="h-24 w-auto"
-              src="logo.png"
-              alt=""
-            />
-            <span className="text-5xl mt-10 -ms-5">
-                  <span className="text-[#9648F6]">
-                    <span className="text-[#587AF9]">irt</span>
-                  </span>
-                  <span className="text-[#14B4FF]">ual</span>
-                  <span className="text-[#66D898]">ify</span>
-                </span>
+            <img className="h-12 w-auto" src="logo.png" alt="" />
+            <span className="bg-gradient-to-r from-[#9648F6] via-[#14B4FF] to-[#66D898] text-4xl  ms-2 bg-clip-text text-transparent mt-3">
+              Virtualify
+            </span>
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -95,8 +100,26 @@ export default function Header() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
+          <a
+            href="#"
+            className="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+          >
+            Home
+          </a>
+          <a
+            href="#"
+            className="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+          >
+            About Us
+          </a>
+          <a
+            href="#"
+            className="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+          >
+            Projects
+          </a>
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 dark:text-white">
               Product
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
@@ -157,23 +180,13 @@ export default function Header() {
               </Popover.Panel>
             </Transition>
           </Popover>
-
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Home
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            About Us
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Projects
-          </a>
         </Popover.Group>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end ">
           <a
-            className="group inline-block rounded-full bg-gradient-to-r from-[#9648F6] via-[#14B4FF] to-[#66D898] p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
+            className="group inline-block rounded-full bg-gradient-to-r from-[#3EC7E7] to-[#5179F5] p-[2px] focus:outline-none focus:ring "
             href="/download"
           >
-            <span className="block rounded-full bg-white px-8 py-3 text-sm font-medium group-hover:bg-transparent">
+            <span className="block rounded-full px-8 py-3 text-sm font-medium group-hover:bg-transparent text-white">
               Contact us <span aria-hidden="true">&rarr;</span>
             </span>
           </a>
@@ -267,6 +280,41 @@ export default function Header() {
           </div>
         </Dialog.Panel>
       </Dialog>
+      <div className="absolute right-6 top-10 dark:text-white">
+        {theme?
+        <button onClick={()=>dispatch(toggle(false))} className=" ">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+            />
+          </svg>
+        </button>:
+        <button onClick={()=>dispatch(toggle(true))} className=" ">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+            />
+          </svg>
+        </button>}
+      </div>
     </header>
   );
 }
