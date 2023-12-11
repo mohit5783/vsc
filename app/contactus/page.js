@@ -6,7 +6,7 @@ const Page = () => {
       <div className="bg-slate-950 text-white p-5">
         <div className="md:w-[90%] mx-auto flex justify-evenly items-center">
           <div className="w-full md:w-1/2">
-            <h4>LET'S TALK</h4>
+            <h4>LET&apos;S TALK</h4>
             <h1 className="text-5xl font-bold my-8">
               Good talks make good projects
             </h1>
@@ -113,7 +113,7 @@ const Page = () => {
         <div>
           <div className="md:w-4/5 mx-auto flex justify-evenly  py-20 border">
             <div className="w-full md:w-1/2">
-              <h4>LET'S TALK</h4>
+              <h4>LET&apos;S TALK</h4>
               <h1 className="text-5xl font-bold my-8">
                 Good talks make good projects
               </h1>
@@ -128,41 +128,9 @@ const Page = () => {
               <div className="w-full">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
                 itaque perferendis eligendi rerum excepturi ducimus, deserunt,
-                id cupiditate quod adipisci nulla accusamus unde, consequatur
-                omnis quis. Nisi, maxime repellat, modi numquam, vel odit
-                placeat facilis delectus odio suscipit voluptatem corporis a
-                sequi. Exercitationem ullam quae rem veniam maiores pariatur
-                quidem esse voluptates laborum, ratione quo laudantium nam,
-                aperiam praesentium debitis distinctio doloribus dolores? Eaque
-                delectus voluptates nisi facilis cumque dolorum veniam nostrum
-                earum debitis perspiciatis, voluptatum fuga adipisci iusto
-                dolore, ipsum harum. Dolores nesciunt ut molestias eos? Minima
-                ullam laboriosam voluptatem molestias. Non eligendi possimus qui
-                quidem nulla corrupti, fuga molestias pariatur, odio consequatur
-                aperiam reprehenderit? Adipisci ab mollitia, temporibus
-                voluptatibus magnam sint quasi, optio sit vero quaerat et
-                eligendi odit qui similique soluta modi id architecto porro
-                nobis! Molestiae atque est iusto hic nesciunt libero,
-                perspiciatis aperiam. Debitis facilis quis, cum a nulla,
-                sapiente nemo ullam ipsam, earum saepe itaque dolores quia ut
-                perspiciatis eaque nihil inventore recusandae culpa reiciendis
-                molestiae! Consequuntur temporibus sapiente culpa ea deserunt,
-                rerum illo magni dolor eius porro incidunt expedita error sunt
-                voluptate eveniet? Eum excepturi ratione nobis eveniet commodi
-                atque quis mollitia veniam voluptate nisi tempore numquam, et
-                dolores quibusdam, consequuntur error dolor libero laudantium
-                illo impedit voluptatem nesciunt maiores vero pariatur? Eos
-                veniam magnam dolore facilis magni optio nam. Accusantium quod
-                nemo, dolor ducimus explicabo eum voluptatibus quam quisquam
-                sunt sint labore, dolore ea sed temporibus obcaecati ut
-                laboriosam ratione dolorem ipsam deserunt ab a aspernatur porro.
-                Quaerat cumque maiores tempore sunt, et molestiae ut optio vero
-                delectus doloremque assumenda recusandae voluptate, corporis
-                atque numquam quisquam enim repellat libero nesciunt? Sit
-                dignissimos nesciunt aut, est voluptate autem delectus
-                perferendis, fugit in beatae obcaecati magni exercitationem
-                earum repellendus cum. Aliquam nulla sapiente quo quasi minima
-                maxime, voluptatem odio rerum consequatur soluta nam. Dolorem.
+                id cupiditate quod adipisci nulla accusamus unde, consequatur.
+               
+      
               </div>
             </div>
           </div>
