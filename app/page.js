@@ -1,9 +1,5 @@
 import Image from "next/image";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import Carousel from "../components/Carousel";
-import mobile1 from "../public/images/mobile.png";
-import team from "../public/images/team.png";
 import flutter from "../public/images/flutter.svg";
 import android from "../public/images/android.svg";
 import apple from "../public/images/apple.svg";
@@ -12,7 +8,6 @@ import python from "../public/images/python.svg";
 import react from "../public/images/react.svg";
 import swift from "../public/images/swift.svg";
 import pwa from "../public/images/pwa.svg";
-import tab from "../public/images/2.png";
 
 export default function Home() {
   return (
@@ -184,45 +179,45 @@ export default function Home() {
             </span>
             <div className="flex justify-center flex-wrap items-center mt-6">
               <div className="md:w-48 md:h-36 w-full md:mx-2  h-32 my-3  flex justify-center items-center">
-                <Image className="w-20" src={android}></Image>
+                <Image className="w-20" src={android} alt="Android"/>
                 <span className="text-3xl font-bold text-black mx-2">
                   Android
                 </span>
               </div>
               <div className="md:w-48 md:h-36  md:mx-2 w-full h-32 my-3 flex justify-center items-center ">
-                <Image className="w-20" src={flutter}></Image>
+                <Image className="w-20" src={flutter} alt="flutter"/>
                 <span className="text-3xl font-bold text-black mx-2">
                   flutter
                 </span>
               </div>
               <div className="md:w-48 md:h-36  md:mx-2 w-full h-32 flex justify-center items-center ">
-                <Image className="w-20" src={apple}></Image>
+                <Image className="w-20" src={apple} alt="ios"/>
                 <span className="text-3xl font-bold text-black mx-2">ios</span>
               </div>
               <div className="md:w-48 md:h-36  md:mx-2 w-full my-3 h-32 flex justify-center items-center ">
-                <Image className="w-20" src={java}></Image>
+                <Image className="w-20" src={java} alt="JAVA"/>
                 <span className="text-3xl font-bold text-black mx-2">JAVA</span>
               </div>
               <div className="md:w-48 md:h-36  md:mx-2 w-full my-3 h-32 flex justify-center items-center ">
-                <Image className="w-20" src={python}></Image>
+                <Image className="w-20" src={python} alt="Python"/>
                 <span className="text-3xl font-bold text-black mx-2">
                   Python
                 </span>
               </div>
               <div className="md:w-48 md:h-36  md:mx-2 w-full my-3 h-32 flex justify-center items-center ">
-                <Image className="w-20" src={react}></Image>
+                <Image className="w-20" src={react} alt="React Native"/>
                 <span className="text-3xl font-bold text-black mx-2">
                   React Native
                 </span>
               </div>
               <div className="md:w-48 md:h-36  md:mx-2 w-full my-3 h-32 flex justify-center items-center ">
-                <Image className="w-20" src={swift}></Image>
+                <Image className="w-20" src={swift} alt="swift"/>
                 <span className="text-3xl font-bold text-black mx-2">
                   Swift
                 </span>
               </div>
               <div className="md:w-48 md:h-36  md:mx-2 w-full my-3 h-32 flex justify-center items-center ">
-                <Image className="w-20" src={pwa}></Image>
+                <Image className="w-20" src={pwa} alt="PWA"/>
                 <span className="text-3xl font-bold text-black mx-2">PWA</span>
               </div>
             </div>

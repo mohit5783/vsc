@@ -4,7 +4,7 @@ const Page = () => {
   return (
     <>
       <div className="bg-slate-950 text-white p-5">
-        <div className="md:w-[90%] mx-auto flex justify-evenly items-center">
+        <div className="md:w-[90%] mx-auto flex flex-wrap justify-evenly items-center">
           <div className="w-full md:w-1/2">
             <h4>LET&apos;S TALK</h4>
             <h1 className="text-5xl font-bold my-8">
@@ -34,7 +34,7 @@ const Page = () => {
                 </svg>
               </div>
               <div>
-                <p className="mb-3 text-xl">Salse Department</p>
+                <p className="mb-3 text-xl">Sales Department</p>
                 <p>+91 9867789004</p>
                 <p>+91 9867789004</p>
               </div>
@@ -57,7 +57,7 @@ const Page = () => {
                 </svg>
               </div>
               <div>
-                <p className="mb-3 text-xl">Salse Department</p>
+                <p className="mb-3 text-xl">Sales Department</p>
                 <p>+91 9867789004</p>
                 <p>+91 9867789004</p>
               </div>
@@ -80,7 +80,7 @@ const Page = () => {
                 </svg>
               </div>
               <div>
-                <p className="mb-3 text-xl">Salse Department</p>
+                <p className="mb-3 text-xl">Sales Department</p>
                 <p>+91 9867789004</p>
                 <p>+91 9867789004</p>
               </div>
@@ -103,7 +103,7 @@ const Page = () => {
                 </svg>
               </div>
               <div>
-                <p className="mb-3 text-xl">Salse Department</p>
+                <p className="mb-3 text-xl">Sales Department</p>
                 <p>+91 9867789004</p>
                 <p>+91 9867789004</p>
               </div>
@@ -111,7 +111,7 @@ const Page = () => {
           </div>
         </div>
         <div>
-          <div className="md:w-4/5 mx-auto flex justify-evenly  py-20 border">
+          <div className="md:w-4/5 mx-auto flex flex-wrap justify-evenly  py-20 ">
             <div className="w-full md:w-1/2">
               <h4>LET&apos;S TALK</h4>
               <h1 className="text-5xl font-bold my-8">
