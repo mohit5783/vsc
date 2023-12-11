@@ -2,7 +2,7 @@
 
 import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
-import sun from "../../public/images/sun.svg";
+import sun from "../public/images/sun.svg";
 import {
   ArrowPathIcon,
   Bars3Icon,

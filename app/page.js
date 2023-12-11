@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Carousel from "./components/Carousel";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Carousel from "../components/Carousel";
 import customerLogo1 from "../public/images/BrandLogo/customer-logo-1.png";
 import customerLogo2 from "../public/images/BrandLogo/customer-logo-2.png";
 import customerLogo3 from "../public/images/BrandLogo/customer-logo-3.png";
