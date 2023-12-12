@@ -20,7 +20,7 @@ export default function Home() {
             </h1>
            
             <p className="md:text-2xl text-md text-[#00E2C2] font-thin ">
-            Welcome to our Vitualify’s digital playground, where innovation meets expertise! We're a passionate team of web wizards dedicated to optimize your ideas into stunning realities. From sleek designs to seamless functionality, we breathe life into your online presence. Whether you're a startup, an established enterprise, or somewhere in between, our tailored solutions cater to your every digital need. Join us on this transformative journey as we build, optimize, and elevate your web experience, one pixel at a time.
+            Welcome to our Vitualify&apos;s digital playground, where innovation meets expertise! We&apos;re a passionate team of web wizards dedicated to optimize your ideas into stunning realities. From sleek designs to seamless functionality, we breathe life into your online presence. Whether you&apos;re a startup, an established enterprise, or somewhere in between, our tailored solutions cater to your every digital need. Join us on this transformative journey as we build, optimize, and elevate your web experience, one pixel at a time.
             </p>
             <div className="flex items-center md:justify-between justify-center mb-9 md:flex-nowrap flex-wrap my-4">
               <div className="border border-[#00E2C2] p-2 flex items-center justify-evenly rounded-full md:w-[30%] w-[90%] ">

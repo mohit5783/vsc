@@ -122,7 +122,7 @@ const Page = () => {
                 below or mail us your requirements.
               </p>
 
-              <Image src="/brain.webp" width={600} height={400} />
+              <Image src="/brain.webp" width={600} height={400} alt="image"/>
             </div>
             <div className="w-full md:w-1/2 flex flex-wrap justify-evenly items-center ">
               <div className="w-full">
