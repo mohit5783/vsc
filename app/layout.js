@@ -30,40 +30,43 @@ export const metadata = {
     "Virtualify Software Consultancy",
     "VSC",
   ],
+  open,
 };
 const jsonLd = {
   "@context": "http://www.schema.org",
   "@type": "LocalBusiness",
-  "name": "Virtualify Software Consultancy Pvt. Ltd.",
-  "url": "https://www.virtualifyme.com/",
-  "sameAs": [
-     "facebook",
-     "twitter",
-     "youtube",
-     "linkedin"
-  ],
-  "logo": "https://www.virtualifyme.com/_next/image?url=%2Flogo.webp&w=128&q=75",
-  "image": "https://www.virtualifyme.com/_next/image?url=%2Flogo.webp&w=128&q=75",
-  "description": "Elevate your technological landscape with Virtualify Software Consultancy (VSC). Experience innovation at its best as we craft custom software solutions tailored to meet the unique needs of your business. Join the ranks of satisfied clients and revolutionize the way you operate in the digital era.",
-  "address": {
-     "@type": "PostalAddress",
-     "streetAddress": "103, Maharana Pratap Colony, Subhash Ward",
-     "addressLocality": "Harda",
-     "addressRegion": "Madhya Pradesh",
-     "postalCode": "461331",
-     "addressCountry": "India"
+  name: "Virtualify Software Consultancy Pvt. Ltd.",
+  url: "https://www.virtualifyme.com/",
+  sameAs: ["facebook", "twitter", "youtube", "linkedin"],
+  logo: "https://www.virtualifyme.com/_next/image?url=%2Flogo.webp&w=128&q=75",
+  image: "https://www.virtualifyme.com/_next/image?url=%2Flogo.webp&w=128&q=75",
+  description:
+    "Elevate your technological landscape with Virtualify Software Consultancy (VSC). Experience innovation at its best as we craft custom software solutions tailored to meet the unique needs of your business. Join the ranks of satisfied clients and revolutionize the way you operate in the digital era.",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "103, Maharana Pratap Colony, Subhash Ward",
+    addressLocality: "Harda",
+    addressRegion: "Madhya Pradesh",
+    postalCode: "461331",
+    addressCountry: "India",
   },
-  "geo": {
-     "@type": "GeoCoordinates",
-     "latitude": "22.342117913308744",
-     "longitude": "77.09277144451126"
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "22.342117913308744",
+    longitude: "77.09277144451126",
   },
-  "hasMap": "https://maps.app.goo.gl/anEqib4CjRaTyzWD7"
-}
+  hasMap: "https://maps.app.goo.gl/anEqib4CjRaTyzWD7",
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="og:title" content="Vercel Edge Network" />
+        <meta name="og:description" content="Vercel Edge Network" />
+        <meta name="og:image" content={"https://www.virtualifyme.com/og"} />
+        <meta name="og:url" content="https://www.virtualifyme.com/og" />
+      </head>
       <body className={inter.className}>
         <div className="sticky top-0 z-20">
           <Header />
@@ -71,9 +74,9 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
     </html>
   );
