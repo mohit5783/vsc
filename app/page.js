@@ -13,19 +13,14 @@ export default function Home() {
   return (
     <>
       <div>
-       
-
         <div className="md:px-28 px-5 md:pb-20 md:pt-12 flex flex-wrap justify-between items-center bg-slate-950 text-white">
           <div className="w-full text-center md:px-24">
             <h1 className="md:text-6xl text-4xl font-bold my-10">
               Top Mobile App Development Company in India
             </h1>
-            <p className="md:text-2xl text-md   md:m-0 text-[#00E2C2] font-thin">
-              Virtualify solve the world&apos;s biggest problems with Expertise.
-            </p>
+           
             <p className="md:text-2xl text-md text-[#00E2C2] font-thin ">
-              Virtualify helps global brand with digital products on web, mobile
-              and connected platforms.
+            Welcome to our Vitualify’s digital playground, where innovation meets expertise! We're a passionate team of web wizards dedicated to optimize your ideas into stunning realities. From sleek designs to seamless functionality, we breathe life into your online presence. Whether you're a startup, an established enterprise, or somewhere in between, our tailored solutions cater to your every digital need. Join us on this transformative journey as we build, optimize, and elevate your web experience, one pixel at a time.
             </p>
             <div className="flex items-center md:justify-between justify-center mb-9 md:flex-nowrap flex-wrap my-4">
               <div className="border border-[#00E2C2] p-2 flex items-center justify-evenly rounded-full md:w-[30%] w-[90%] ">
@@ -85,7 +80,12 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full flex justify-center items-center md:-mt-36 -mt-16 ">
-            <Image width={900} height={600} src="/mobile.webp" alt="image"></Image>
+            <Image
+              width={900}
+              height={600}
+              src="/mobile.webp"
+              alt="image"
+            ></Image>
           </div>
         </div>
         {/* ===========Award winning development=========== */}
@@ -103,29 +103,29 @@ export default function Home() {
                 and execute strategies that propel your brand forward.
               </p>
             </div>
-            <div className="flex justify-center items-center my-5 flex-col relative bg-[rgba(0,0,0,0.5)] bg-blend-darken">
+            <div className="flex justify-center items-center my-5 flex-col ">
               <Image
-              width={1300}
-              height={800}
+                width={1300}
+                height={800}
                 src="/team.webp"
                 className="rounded-t-3xl"
                 alt="image"
               ></Image>
-              <div className="md:w-[85%] absolute bottom-0 grid grid-cols-5 divide-x ">
+              <div className="md:w-[1300px] grid grid-cols-5 divide-x my-2">
                 <div className="vc items-center flex-col ">
-                  <p className="md:text-5xl text-md font-bold">84+</p>
+                  <p className="md:text-5xl text-md font-bold">20+</p>
                   <p className="md:text-2xl text-xs text-center">
                     Expert Members
                   </p>
                 </div>
                 <div className="vc items-center flex-col">
-                  <p className="md:text-5xl text-md font-bold">30+</p>
+                  <p className="md:text-5xl text-md font-bold">35+</p>
                   <p className="md:text-2xl text-xs text-center">
                     Marketing Tactics
                   </p>
                 </div>
                 <div className="vc items-center flex-col">
-                  <p className="md:text-5xl text-md font-bold">15yr+</p>
+                  <p className="md:text-5xl text-md font-bold">3yr+</p>
                   <p className="md:text-2xl text-xs text-center">
                     Industry Experience
                   </p>
@@ -137,7 +137,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="vc items-center flex-col">
-                  <p className="md:text-5xl text-md font-bold">145+</p>
+                  <p className="md:text-5xl text-md font-bold">36+</p>
                   <p className="md:text-2xl text-xs text-center">
                     Global Companies
                   </p>
@@ -150,13 +150,11 @@ export default function Home() {
 
         <div className="md:p-16 md:px-28 bg-[#230B46] px-5 py-10">
           <h1 className="md:text-5xl text-4xl text-[#5179F5]">WHAT WE DO</h1>
-          <p className="md:text-xl text-md md:w-1/2 text-justify md:my-10 my-5 text-white">
-            We imagine and build experiences, products and businesses that
-            disrupt the status quo, win hearts and realize the future. Explore
-            how we work.
+          <p className="md:text-xl text-md  text-justify md:my-10 my-5 text-white">
+          Virtualify is a forward-thinking IT company specializing in comprehensive technological solutions. From designing user-friendly interfaces to implementing robust network infrastructures, we cater to diverse needs across industries. Our expertise encompasses software development, IT consulting, cybersecurity, and managed services. We thrive on transforming complex challenges into streamlined, efficient systems that empower businesses to thrive in the digital age. At ABC Tech Services, innovation meets reliability, ensuring our clients stay ahead in an ever-evolving technological landscape.
           </p>
           <div className="vc justify-between flex-wrap">
-            <Image width={600} height={350} src="/2.webp" alt="image"/>
+            <Image width={600} height={350} src="/2.webp" alt="image" />
             <div>
               <p className="md:text-6xl text-[#735992]">App Development</p>
               <p className="md:text-7xl text-[#9648F6] my-3">Web Development</p>
@@ -179,45 +177,45 @@ export default function Home() {
             </span>
             <div className="flex justify-center flex-wrap items-center mt-6">
               <div className="md:w-48 md:h-36 w-full md:mx-2  h-32 my-3  flex justify-center items-center">
-                <Image className="w-20" src={android} alt="Android"/>
+                <Image className="w-20" src={android} alt="Android" />
                 <span className="text-3xl font-bold text-black mx-2">
                   Android
                 </span>
               </div>
               <div className="md:w-48 md:h-36  md:mx-2 w-full h-32 my-3 flex justify-center items-center ">
-                <Image className="w-20" src={flutter} alt="flutter"/>
+                <Image className="w-20" src={flutter} alt="flutter" />
                 <span className="text-3xl font-bold text-black mx-2">
                   flutter
                 </span>
               </div>
               <div className="md:w-48 md:h-36  md:mx-2 w-full h-32 flex justify-center items-center ">
-                <Image className="w-20" src={apple} alt="ios"/>
+                <Image className="w-20" src={apple} alt="ios" />
                 <span className="text-3xl font-bold text-black mx-2">ios</span>
               </div>
               <div className="md:w-48 md:h-36  md:mx-2 w-full my-3 h-32 flex justify-center items-center ">
-                <Image className="w-20" src={java} alt="JAVA"/>
+                <Image className="w-20" src={java} alt="JAVA" />
                 <span className="text-3xl font-bold text-black mx-2">JAVA</span>
               </div>
               <div className="md:w-48 md:h-36  md:mx-2 w-full my-3 h-32 flex justify-center items-center ">
-                <Image className="w-20" src={python} alt="Python"/>
+                <Image className="w-20" src={python} alt="Python" />
                 <span className="text-3xl font-bold text-black mx-2">
                   Python
                 </span>
               </div>
               <div className="md:w-48 md:h-36  md:mx-2 w-full my-3 h-32 flex justify-center items-center ">
-                <Image className="w-20" src={react} alt="React Native"/>
+                <Image className="w-20" src={react} alt="React Native" />
                 <span className="text-3xl font-bold text-black mx-2">
                   React Native
                 </span>
               </div>
               <div className="md:w-48 md:h-36  md:mx-2 w-full my-3 h-32 flex justify-center items-center ">
-                <Image className="w-20" src={swift} alt="swift"/>
+                <Image className="w-20" src={swift} alt="swift" />
                 <span className="text-3xl font-bold text-black mx-2">
                   Swift
                 </span>
               </div>
               <div className="md:w-48 md:h-36  md:mx-2 w-full my-3 h-32 flex justify-center items-center ">
-                <Image className="w-20" src={pwa} alt="PWA"/>
+                <Image className="w-20" src={pwa} alt="PWA" />
                 <span className="text-3xl font-bold text-black mx-2">PWA</span>
               </div>
             </div>
@@ -233,8 +231,6 @@ export default function Home() {
             <Carousel />
           </div>
         </div>
-        {/* =================contact us============= */}
-
       
       </div>
     </>
