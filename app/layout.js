@@ -30,7 +30,7 @@ export const metadata = {
     "Virtualify Software Consultancy",
     "VSC",
   ],
-  open,
+ 
 };
 const jsonLd = {
   "@context": "http://www.schema.org",
