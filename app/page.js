@@ -298,11 +298,11 @@ export default function Home() {
                   />
                 </div>
                 <h2 className="text-xl ms-2">
-                  Crafting Tomorrow's Solutions Today:
+                  Crafting Tomorrow&apos;s Solutions Today:
                 </h2>
               </div>
               <p className="text-md text-justify">
-                At Virtualify, we don't just follow trends; we set them. Our
+                At Virtualify, we don&apos;t just follow trends; we set them. Our
                 commitment to staying abreast of the latest technological trends
                 ensures that your project is not just current but future-proof.
               </p>
@@ -320,7 +320,7 @@ export default function Home() {
                 </h2>
               </div>
               <p className="text-md text-justify">
-                Whether you're a startup looking to make your mark or an
+                Whether you&apos;re a startup looking to make your mark or an
                 established enterprise seeking digital transformation,
                 Virtualify has the expertise to tailor solutions that align with
                 your unique requirements.
@@ -340,7 +340,7 @@ export default function Home() {
                 Your success is our success. Virtualify values collaborative
                 partnerships, working hand-in-hand with you to bring your vision
                 to life. From ideation to deployment, we are committed to your
-                project's success.
+                project&apos;s success.
               </p>
             </div>
             <div className="md:w-[29%] w-[90%] border rounded-3xl p-4 mb-12 mx-auto">
@@ -356,7 +356,7 @@ export default function Home() {
                 </h2>
               </div>
               <p className="text-md text-justify">
-                It's been an incredible journey, and as we mark our first
+                It&apos;s been an incredible journey, and as we mark our first
                 anniversary, we express gratitude to our clients, partners, and
                 our dedicated team for being a part of this remarkable
                 adventure.
