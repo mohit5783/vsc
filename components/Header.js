@@ -1,24 +1,13 @@
-
-"use client"
-import {  useState } from "react";
+"use client";
+import { useState } from "react";
 import { Dialog, Popover } from "@headlessui/react";
-import {
- 
-  Bars3Icon,
- 
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import Image from "next/image";
 import Link from "next/link";
 
-
-
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
- 
-
-
 
   return (
     <header className="text-white bg-slate-950 border-b-2 border-[#9648F6] md:p-5 relative">
@@ -29,7 +18,12 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5 flex items-center ">
             <span className="sr-only">Your Company</span>
-            <Image width={60} height={60} src="/logo.webp" alt="Virtualify logo" />
+            <Image
+              width={60}
+              height={60}
+              src="/logo.webp"
+              alt="Virtualify logo"
+            />
             <span className="bg-gradient-to-r from-[#9648F6] via-[#14B4FF] to-[#66D898] text-4xl  ms-2 bg-clip-text text-transparent mt-3">
               Virtualify
             </span>
@@ -46,10 +40,7 @@ export default function Header() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <Link
-            href="/"
-            className="text-sm font-semibold leading-6text-white"
-          >
+          <Link href="/" className="text-sm font-semibold leading-6text-white">
             Home
           </Link>
           <Link
@@ -64,7 +55,6 @@ export default function Header() {
           >
             Projects
           </Link>
-       
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end ">
           <Link
@@ -88,7 +78,12 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <Image width={60} height={60} src="/logo.webp" alt="Virtualify logo" />
+              <Image
+                width={60}
+                height={60}
+                src="/logo.webp"
+                alt="Virtualify logo"
+              />
             </a>
             <button
               type="button"
@@ -102,42 +97,39 @@ export default function Header() {
           <div className="mt-6 flow-root ">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                
                 <Link
-                onClick={() => setMobileMenuOpen(false)}
+                  onClick={() => setMobileMenuOpen(false)}
                   href="/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-slate-600"
                 >
                   Home
                 </Link>
                 <Link
-                onClick={() => setMobileMenuOpen(false)}
+                  onClick={() => setMobileMenuOpen(false)}
                   href="aboutus"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-slate-600"
                 >
                   About Us
                 </Link>
                 <Link
-                onClick={() => setMobileMenuOpen(false)}
+                  onClick={() => setMobileMenuOpen(false)}
                   href="/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-slate-600"
                 >
                   Projects
                 </Link>
                 <Link
-                onClick={() => setMobileMenuOpen(false)}
+                  onClick={() => setMobileMenuOpen(false)}
                   href="/contactus"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-slate-600"
                 >
                   Contact Us
                 </Link>
               </div>
-            
             </div>
           </div>
         </Dialog.Panel>
       </Dialog>
-   
     </header>
   );
 }

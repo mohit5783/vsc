@@ -54,7 +54,7 @@ const Carousel = () => {
                           <span className="block  font-semibold text-[#5179F5]">
                             {item.name}
                           </span>
-                          <span className="block text-gray-600 text-sm mt-0.5 dark:text-gray-400">
+                          <span className="block text-sm mt-0.5 text-gray-300">
                             {item.title}
                           </span>
                         </div>
@@ -70,7 +70,7 @@ const Carousel = () => {
           <div className="mt-6">
             <ul className="flex gap-x-3 justify-center">
               {testimonials.map((item, idx) => (
-                <div
+                <li
                   key={idx}
                   onClick={() => setCurrentTestimonial(idx)}
                   className={`mt-6 ${currentTestimonial == idx ?  "ring-4  ring-offset-4 ring-[#5179F5] rounded-xl" : null}`}
@@ -84,7 +84,7 @@ const Carousel = () => {
                     alt="image"
 
                   />
-                </div>
+                </li>
               ))}
             </ul>
           </div>

@@ -8,6 +8,14 @@ import python from "../public/images/python.svg";
 import react from "../public/images/react.svg";
 import swift from "../public/images/swift.svg";
 import pwa from "../public/images/pwa.svg";
+import { MdEngineering } from "react-icons/md";
+import { ImMobile } from "react-icons/im";
+import { SiSnapcraft } from "react-icons/si";
+import { FaHandshake } from "react-icons/fa";
+import { BiWorld } from "react-icons/bi";
+import { TbNeedleThread } from "react-icons/tb";
+import { MdCelebration } from "react-icons/md";
+
 
 export default function Home() {
   return (
@@ -18,9 +26,17 @@ export default function Home() {
             <h1 className="md:text-6xl text-4xl font-bold my-10">
               Top Mobile App Development Company in India
             </h1>
-           
+
             <p className="md:text-2xl text-md text-[#00E2C2] font-thin ">
-            Welcome to our Vitualify&apos;s digital playground, where innovation meets expertise! We&apos;re a passionate team of web wizards dedicated to optimize your ideas into stunning realities. From sleek designs to seamless functionality, we breathe life into your online presence. Whether you&apos;re a startup, an established enterprise, or somewhere in between, our tailored solutions cater to your every digital need. Join us on this transformative journey as we build, optimize, and elevate your web experience, one pixel at a time.
+              Welcome to our Vitualify&apos;s digital playground, where
+              innovation meets expertise! We&apos;re a passionate team of web
+              wizards dedicated to optimize your ideas into stunning realities.
+              From sleek designs to seamless functionality, we breathe life into
+              your online presence. Whether you&apos;re a startup, an
+              established enterprise, or somewhere in between, our tailored
+              solutions cater to your every digital need. Join us on this
+              transformative journey as we build, optimize, and elevate your web
+              experience, one pixel at a time.
             </p>
             <div className="flex items-center md:justify-between justify-center mb-9 md:flex-nowrap flex-wrap my-4">
               <div className="border border-[#00E2C2] p-2 flex items-center justify-evenly rounded-full md:w-[30%] w-[90%] ">
@@ -90,7 +106,6 @@ export default function Home() {
         </div>
         {/* ===========Award winning development=========== */}
         <div className="bg-slate-950  py-16 px-5">
-          {" "}
           <div className="w-full text-white">
             <div className="w-full md:w-3/4 text-center m-auto ">
               <h1 className="md:text-5xl text-4xl font-bold">
@@ -109,7 +124,7 @@ export default function Home() {
                 height={800}
                 src="/team.webp"
                 className="rounded-t-3xl"
-                alt="image"
+                alt="team image"
               ></Image>
               <div className="md:w-[1300px] grid grid-cols-5 divide-x my-2">
                 <div className="vc items-center flex-col ">
@@ -151,14 +166,23 @@ export default function Home() {
         <div className="md:p-16 md:px-28 bg-[#230B46] px-5 py-10">
           <h1 className="md:text-5xl text-4xl text-[#5179F5]">WHAT WE DO</h1>
           <p className="md:text-xl text-md  text-justify md:my-10 my-5 text-white">
-          Virtualify is a forward-thinking IT company specializing in comprehensive technological solutions. From designing user-friendly interfaces to implementing robust network infrastructures, we cater to diverse needs across industries. Our expertise encompasses software development, IT consulting, cybersecurity, and managed services. We thrive on transforming complex challenges into streamlined, efficient systems that empower businesses to thrive in the digital age. At ABC Tech Services, innovation meets reliability, ensuring our clients stay ahead in an ever-evolving technological landscape.
+            Virtualify is a forward-thinking IT company specializing in
+            comprehensive technological solutions. From designing user-friendly
+            interfaces to implementing robust network infrastructures, we cater
+            to diverse needs across industries. Our expertise encompasses
+            software development, IT consulting, cybersecurity, and managed
+            services. We thrive on transforming complex challenges into
+            streamlined, efficient systems that empower businesses to thrive in
+            the digital age. At ABC Tech Services, innovation meets reliability,
+            ensuring our clients stay ahead in an ever-evolving technological
+            landscape.
           </p>
           <div className="vc justify-between flex-wrap">
             <Image width={600} height={350} src="/2.webp" alt="image" />
             <div>
-              <p className="md:text-6xl text-[#735992]">App Development</p>
+              <p className="md:text-6xl text-white">App Development</p>
               <p className="md:text-7xl text-[#9648F6] my-3">Web Development</p>
-              <p className="md:text-6xl text-[#735992]">Cloud Services</p>
+              <p className="md:text-6xl text-white">Cloud Services</p>
             </div>
           </div>
         </div>
@@ -222,6 +246,124 @@ export default function Home() {
           </div>
         </div>
 
+        {/* ====================why us==================== */}
+
+        <div className="md:px-20 py-10 bg-slate-950 text-white px-5">
+          <h1 className="text-5xl font-bold ">Why Choose Virtualify?</h1>
+          <div className="flex justify-between items-center my-16 flex-wrap">
+            <div className="md:w-[29%] w-[90%] border rounded-3xl p-4 mb-12 mx-auto">
+              <div className="flex items-center mb-3">
+                <div className="text-2xl">
+                  <MdEngineering
+                    className="text-yellow-400 text-6xl
+                "
+                  />
+                </div>
+                <h2 className="text-xl ms-2">
+                  Pioneers in Emerging Technologies:
+                </h2>
+              </div>
+              <p className="text-md text-justify">
+                Dive into the future with Virtualify, where we are at the
+                forefront of the latest technological revolutions. From IoT to
+                Web3.0, NFTs, and beyond, we embrace innovation to turn your
+                ideas into reality.
+              </p>
+            </div>
+            <div className="md:w-[29%] w-[90%] border rounded-3xl p-4 mb-12 mx-auto">
+              <div className="flex items-center mb-3">
+                <div className="text-2xl">
+                  <ImMobile
+                    className="text-blue-500 text-6xl
+                "
+                  />
+                </div>
+                <h2 className="text-xl ms-2">
+                  Seamless Mobile App Development:{" "}
+                </h2>
+              </div>
+              <p className="text-md text-justify">
+                Immerse your audience in captivating user experiences with our
+                world-class mobile app development services. Our team of skilled
+                developers and designers ensures that your app not only meets
+                but exceeds industry standards.
+              </p>
+            </div>
+            <div className="md:w-[29%] w-[90%] border rounded-3xl p-4 mb-12 mx-auto">
+              <div className="flex items-center mb-3">
+                <div className="text-2xl">
+                  <SiSnapcraft
+                    className="text-green-400 text-6xl
+                "
+                  />
+                </div>
+                <h2 className="text-xl ms-2">
+                  Crafting Tomorrow's Solutions Today:
+                </h2>
+              </div>
+              <p className="text-md text-justify">
+                At Virtualify, we don't just follow trends; we set them. Our
+                commitment to staying abreast of the latest technological trends
+                ensures that your project is not just current but future-proof.
+              </p>
+            </div>
+            <div className="md:w-[29%] w-[90%] border rounded-3xl p-4 mb-12 mx-auto">
+              <div className="flex items-center mb-3">
+                <div className="text-2xl">
+                  <TbNeedleThread
+                    className="text-pink-400 text-6xl
+                "
+                  />
+                </div>
+                <h2 className="text-xl ms-2">
+                  Tailored Solutions for Every Need:
+                </h2>
+              </div>
+              <p className="text-md text-justify">
+                Whether you're a startup looking to make your mark or an
+                established enterprise seeking digital transformation,
+                Virtualify has the expertise to tailor solutions that align with
+                your unique requirements.
+              </p>
+            </div>
+            <div className="md:w-[29%] w-[90%] border rounded-3xl p-4 mb-12 mx-auto">
+              <div className="flex items-center mb-3">
+                <div className="text-2xl">
+                  <FaHandshake
+                    className="text-orange-400 text-6xl
+                "
+                  />
+                </div>
+                <h2 className="text-xl ms-2">Collaborative Partnership:</h2>
+              </div>
+              <p className="text-md text-justify">
+                Your success is our success. Virtualify values collaborative
+                partnerships, working hand-in-hand with you to bring your vision
+                to life. From ideation to deployment, we are committed to your
+                project's success.
+              </p>
+            </div>
+            <div className="md:w-[29%] w-[90%] border rounded-3xl p-4 mb-12 mx-auto">
+              <div className="flex items-center mb-3">
+                <div className="text-2xl">
+                  <MdCelebration
+                    className="text-red-500 text-6xl
+                "
+                  />
+                </div>
+                <h2 className="text-xl ms-2">
+                  Celebrating three Year of Innovation:
+                </h2>
+              </div>
+              <p className="text-md text-justify">
+                It's been an incredible journey, and as we mark our first
+                anniversary, we express gratitude to our clients, partners, and
+                our dedicated team for being a part of this remarkable
+                adventure.
+              </p>
+            </div>
+          </div>
+        </div>
         {/* ==============Our clients praise========== */}
         <div className="text-center  bg-slate-950 text-white md:py-16 p-5">
           <h1 className="text-5xl font-bold ">
@@ -231,7 +373,6 @@ export default function Home() {
             <Carousel />
           </div>
         </div>
-      
       </div>
     </>
   );

@@ -62,10 +62,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="og:title" content="Vercel Edge Network" />
-        <meta name="og:description" content="Vercel Edge Network" />
-        <meta name="og:image" content={"https://www.virtualifyme.com/og"} />
-        <meta name="og:url" content="https://www.virtualifyme.com/og" />
+        <meta name="og:title" content="Virtualify Software Consultancy (VSC) – Pioneering Innovation in Software Solutions" />
+        <meta name="og:description" content="Experience innovation at its best as we craft custom software solutions tailored to meet the unique needs of your business." />
+        <meta name="og:image" content={"https://www.virtualifyme.com/_next/image?url=%2Flogo.webp&w=128&q=75"} />
+        <meta name="og:url" content="https://www.virtualifyme.com" />
       </head>
       <body className={inter.className}>
         <div className="sticky top-0 z-20">
