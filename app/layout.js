@@ -59,28 +59,6 @@ const jsonLd = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <meta
-          name="og:title"
-          content="Virtualify Software Consultancy (VSC) – Mastering Digital Solutions"
-        />
-        <meta
-          name="og:description"
-          content="Elevate your technological landscape with Virtualify Software Consultancy Pvt Ltd. Experience innovation at its best as we craft digital solutions tailored to meet the unique needs of your business."
-        />
-        <meta
-          name="og:image"
-          content={
-            "https://www.virtualifyme.com/_next/image?url=%2Flogo.webp&w=128&q=75"
-          }
-        />
-        <meta name="og:url" content="https://www.virtualifyme.com" />
-        <meta name="twitter:image" content="https://www.virtualifyme.com/_next/image?url=%2Flogo.webp&w=128&q=75" />
-        <meta name="twitter:image:type" content="<generated>" />
-        <meta name="twitter:image:width" content="1200" />
-        <meta name="twitter:image:height" content="630" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      </head>
       <body className={inter.className}>
         <div className="sticky top-0 z-20">
           <Header />
