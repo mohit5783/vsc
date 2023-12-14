@@ -98,7 +98,7 @@ export default function Home() {
           <div className="w-full flex justify-center items-center md:-mt-36 -mt-16 ">
             <Image
               width={900}
-              height={600}
+              height={300}
               src="/mobile.webp"
               alt="image"
             ></Image>
@@ -121,7 +121,7 @@ export default function Home() {
             <div className="flex justify-center items-center my-5 flex-col ">
               <Image
                 width={1300}
-                height={800}
+                height={400}
                 src="/team.webp"
                 className="rounded-t-3xl"
                 alt="team image"

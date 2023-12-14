@@ -6,10 +6,9 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title:
-    "Virtualify Software Consultancy (VSC) – Pioneering Innovation in Software Solutions",
+  title: "Virtualify Software Consultancy (VSC) – Mastering Digital Solutions",
   description:
-    "Elevate your technological landscape with Virtualify Software Consultancy (VSC). Experience innovation at its best as we craft custom software solutions tailored to meet the unique needs of your business. Join the ranks of satisfied clients and revolutionize the way you operate in the digital era.",
+    "Elevate your technological landscape with Virtualify Software Consultancy Pvt Ltd. Experience innovation at its best as we craft digital solutions tailored to meet the unique needs of your business.",
 
   keywords: [
     "Software",
@@ -30,7 +29,6 @@ export const metadata = {
     "Virtualify Software Consultancy",
     "VSC",
   ],
- 
 };
 const jsonLd = {
   "@context": "http://www.schema.org",
@@ -41,7 +39,7 @@ const jsonLd = {
   logo: "https://www.virtualifyme.com/_next/image?url=%2Flogo.webp&w=128&q=75",
   image: "https://www.virtualifyme.com/_next/image?url=%2Flogo.webp&w=128&q=75",
   description:
-    "Elevate your technological landscape with Virtualify Software Consultancy (VSC). Experience innovation at its best as we craft custom software solutions tailored to meet the unique needs of your business. Join the ranks of satisfied clients and revolutionize the way you operate in the digital era.",
+    "Elevate your technological landscape with Virtualify Software Consultancy Pvt Ltd. Experience innovation at its best as we craft digital solutions tailored to meet the unique needs of your business.",
   address: {
     "@type": "PostalAddress",
     streetAddress: "103, Maharana Pratap Colony, Subhash Ward",
@@ -62,10 +60,26 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="og:title" content="Virtualify Software Consultancy (VSC) – Pioneering Innovation in Software Solutions" />
-        <meta name="og:description" content="Experience innovation at its best as we craft custom software solutions tailored to meet the unique needs of your business." />
-        <meta name="og:image" content={"https://www.virtualifyme.com/_next/image?url=%2Flogo.webp&w=128&q=75"} />
+        <meta
+          name="og:title"
+          content="Virtualify Software Consultancy (VSC) – Mastering Digital Solutions"
+        />
+        <meta
+          name="og:description"
+          content="Elevate your technological landscape with Virtualify Software Consultancy Pvt Ltd. Experience innovation at its best as we craft digital solutions tailored to meet the unique needs of your business."
+        />
+        <meta
+          name="og:image"
+          content={
+            "https://www.virtualifyme.com/_next/image?url=%2Flogo.webp&w=128&q=75"
+          }
+        />
         <meta name="og:url" content="https://www.virtualifyme.com" />
+        <meta name="twitter:image" content="https://www.virtualifyme.com/_next/image?url=%2Flogo.webp&w=128&q=75" />
+        <meta name="twitter:image:type" content="<generated>" />
+        <meta name="twitter:image:width" content="1200" />
+        <meta name="twitter:image:height" content="630" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       </head>
       <body className={inter.className}>
         <div className="sticky top-0 z-20">
