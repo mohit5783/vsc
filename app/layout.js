@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
+  metadataBase: new URL("https://www.virtualifyme.com/"),
   title: "Virtualify Software Consultancy (VSC) – Mastering Digital Solutions",
   description:
     "Elevate your technological landscape with Virtualify Software Consultancy Pvt Ltd. Experience innovation at its best as we craft digital solutions tailored to meet the unique needs of your business.",
@@ -55,6 +56,7 @@ const jsonLd = {
   },
   hasMap: "https://maps.app.goo.gl/anEqib4CjRaTyzWD7",
 };
+
 
 export default function RootLayout({ children }) {
   return (
