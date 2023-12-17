@@ -50,7 +50,7 @@ export default function Header() {
             About Us
           </Link>
           <Link
-            href="/"
+            href="/projects"
             className="text-sm font-semibold leading-6  text-white"
           >
             Projects

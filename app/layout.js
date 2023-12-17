@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,7 +37,12 @@ const jsonLd = {
   "@type": "LocalBusiness",
   name: "Virtualify Software Consultancy Pvt. Ltd.",
   url: "https://www.virtualifyme.com/",
-  sameAs: ["facebook", "twitter", "youtube", "linkedin"],
+  sameAs: [
+    "facebook",
+    "https://www.linkedin.com/in/virtualify-software-consultancy-78b7242a5/",
+    "https://twitter.com/vscsocialhandle",
+    "https://www.youtube.com/channel/UCJqoy7i4OV8VaKq7gcvChhA",
+  ],
   logo: "https://www.virtualifyme.com/_next/image?url=%2Flogo.webp&w=128&q=75",
   image: "https://www.virtualifyme.com/_next/image?url=%2Flogo.webp&w=128&q=75",
   description:
@@ -62,12 +68,31 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <div className="sticky top-0 z-20">
           <Header />
         </div>
         {children}
         <Footer />
-        <script
+
+        <Script
+          defer
+          fetchpriority="low"
+          src="https://www.googletagmanager.com/gtag/js?id=G-EMXKKVZRCB"
+        />
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-EMXKKVZRCB');
+        `}
+        </Script>
+        <Script
+        id="json_ld"
+          defer
+          fetchpriority="low"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />

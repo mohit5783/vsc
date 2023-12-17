@@ -12,6 +12,7 @@
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
     "@react-icons/all-files": "^4.1.0",
+    "aos": "^2.3.4",
     "framer-motion": "^10.16.15",
     "next": "14.0.4",
     "react": "^18",
