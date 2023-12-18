@@ -246,7 +246,7 @@ const Page = () => {
                 alt="image"
               ></Image>
               <h4 className="text-2xl font-bold text-[#66D898]">
-                Communicate Your Requirements
+              Understanding the Requirement 
               </h4>
               <p className="text-justify">
               we recognize the paramount importance of understanding your requirements. Our process begins with in-depth consultations to grasp the nuances of your goals, challenges, and aspirations. Through active listening and collaboration, we ensure paving the way for customized IT solutions that precisely align with your needs.
@@ -262,7 +262,8 @@ const Page = () => {
                 alt="image"
               ></Image>
               <h4 className="text-2xl font-bold text-[#66D898]">
-              Understanding the Requirement 
+
+              Respecting the Client Needs
               </h4>
               <p className="text-justify">
               We uphold a fundamental principle: respecting our clients' needs. We recognize that every client is unique, and we approach each project with a deep understanding .Our commitment to respect goes beyond delivering solutions; it's about fostering a partnership where client needs are not just met but prioritized.

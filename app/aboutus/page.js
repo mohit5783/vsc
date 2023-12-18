@@ -48,7 +48,7 @@ const Page = () => {
           Transparency and Ethics
         </h1>
         <div className="md:mx-28 md:mt-24 flex justify-between items-center  flex-wrap mt-16">
-          <div className="md:w-[30%] w-full text-left md:h-80 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
+          <div className="md:w-[30%] w-full text-left md:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">
               Client-centric Approach
             </h3>
@@ -69,7 +69,7 @@ const Page = () => {
               ></Image>
             </div>
           </div>
-          <div className="md:w-[30%] w-full text-left md:h-80 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
+          <div className="md:w-[30%] w-full text-left md:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">
               Service Delivered in Time
             </h3>
@@ -91,7 +91,7 @@ const Page = () => {
               ></Image>
             </div>
           </div>
-          <div className="md:w-[30%] w-full text-left md:h-80 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
+          <div className="md:w-[30%] w-full text-left md:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">
               Effective Collaboration
             </h3>
@@ -113,7 +113,7 @@ const Page = () => {
               ></Image>
             </div>
           </div>
-          <div className="md:w-[30%] w-full text-left md:h-80 h-96  px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
+          <div className="md:w-[30%] w-full text-left md:h-96 h-96  px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">Employee Benefits</h3>
             <p className="my-5 text-zinc-500">
             We invest in our team's success and happiness. Our commitment to employee satisfaction extends beyond the workplace, promoting a healthy work-life balance and fostering a culture that values the overall growth and fulfillment of each team member.
@@ -133,7 +133,7 @@ const Page = () => {
               ></Image>
             </div>
           </div>
-          <div className="md:w-[30%] w-full text-left md:h-80 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
+          <div className="md:w-[30%] w-full text-left md:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">Team Work</h3>
             <p className="my-5 text-zinc-500">
             Embracing the strengths of each team member, we foster a collaborative culture that not only drives project success but also cultivates a dynamic and cohesive work environment, propelling us to new heights in the ever-evolving tech landscape.
@@ -153,7 +153,7 @@ const Page = () => {
               ></Image>
             </div>
           </div>
-          <div className="md:w-[30%] w-full text-left md:h-80 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
+          <div className="md:w-[30%] w-full text-left md:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">
               Quality of Service
             </h3>
@@ -191,7 +191,7 @@ const Page = () => {
               >
                 <span class="flex justify-evenly items-center rounded-full bg-white px-8 py-3 text-sm font-medium group-hover:bg-transparent">
                   Join Our Team
-                  <FaArrowRight />
+                  <FaArrowRight className="ms-3" />
                 </span>
               </button>
             </Link>

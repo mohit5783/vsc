@@ -22,7 +22,8 @@ const Footer = () => {
               </div>
 
               <p className="mt-4 md:max-w-xs text-white text-justify">
-              Elevate your business with Virtualify Software Consultancy. Experience innovation as we craft tailored digital solutions.
+                Elevate your business with Virtualify Software Consultancy.
+                Experience innovation as we craft tailored digital solutions.
               </p>
 
               <ul className="mt-8 flex gap-6 justify-center md:justify-start">
@@ -149,40 +150,16 @@ const Footer = () => {
                 <p className="font-medium text-[#66D898]">Services</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
-                  <li>
-                   
-                      Hire Dedicated Developers
-                   
-                  </li>
+                  <li>Hire Dedicated Developers</li>
 
-                  <li>
-                 
-                      Web App Development
-                    
-                  </li>
+                  <li>Web App Development</li>
 
-                  <li>
-                  
-                      Mobile App Development
-                  
-                  </li>
+                  <li>Mobile App Development</li>
 
-                  <li>
-                  
-                      Search Engine Optimization
-                 
-                  </li>
+                  <li>Search Engine Optimization</li>
 
-                  <li>
-                  
-                      Pay-Per-Click
-                   
-                  </li>
-                  <li>
-                   
-                      Social Media Marketing
-                 
-                  </li>
+                  <li>DevOps</li>
+                  <li>UI/UX Design</li>
                 </ul>
               </div>
 
@@ -190,23 +167,11 @@ const Footer = () => {
                 <p className="font-medium text-[#66D898] ">Company</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
-                  <li>
-                   
-                      About{" "}
-                   
-                  </li>
+                  <li>About </li>
 
-                  <li>
-                   
-                      Meet the Team{" "}
-                   
-                  </li>
+                  <li>Meet the Team </li>
 
-                  <li>
-                
-                      Accounts Review{" "}
-                   
-                  </li>
+                  <li>Contact Us </li>
                 </ul>
               </div>
 
@@ -214,23 +179,9 @@ const Footer = () => {
                 <p className="font-medium text-[#66D898]">Helpful Links</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
-                  <li>
-                  
-                      Contact{" "}
-                   
-                  </li>
+                  <li>Contact </li>
 
-                  <li>
-                   
-                      FAQs{" "}
-                   
-                  </li>
-
-                  <li>
-              
-                      Live Chat{" "}
-                    
-                  </li>
+                  <li>FAQs </li>
                 </ul>
               </div>
 
@@ -238,35 +189,12 @@ const Footer = () => {
                 <p className="font-medium text-[#66D898]">Industries</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
-                  <li>
-                   
-                      Healthcare{" "}
-                    
-                  </li>
+                  <li>FMCG </li>
 
-                  <li>
-                  
-                      Education{" "}
-                    
-                  </li>
+                  <li>Education </li>
 
-                  <li>
-                
-                      Retail
-                    
-                  </li>
-
-                  <li>
-                    
-                
-                      Logistics
-                  
-                  </li>
-                  <li>
-                   
-                      Music & Video
-                    
-                  </li>
+                  <li>Retail</li>
+                  <li>Logistics</li>
                 </ul>
               </div>
             </div>

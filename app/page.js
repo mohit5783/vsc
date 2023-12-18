@@ -72,7 +72,7 @@ export default function Home() {
                   />
                 </svg>
 
-                <p>100+ Featured App</p>
+                <p>50+ Featured App</p>
               </div>
               <div className="border border-[#00E2C2] p-2 flex items-center justify-evenly rounded-full md:w-[30%] w-[90%]">
                 <svg
@@ -90,7 +90,7 @@ export default function Home() {
                   />
                 </svg>
 
-                <p>600+ App Published</p>
+                <p>15+ App Published</p>
               </div>
             </div>
           </div>
@@ -176,8 +176,8 @@ export default function Home() {
             ensuring our clients stay ahead in an ever-evolving technological
             landscape.
           </p>
-          <div className="vc justify-between flex-wrap">
-            <Image width={600} height={350} src="/2.webp" alt="image" />
+          <div className="flex items-center justify-between flex-wrap">
+            <Image className="" width={600} height={350} src="/2.webp" alt="image" />
             <div>
               <p className="md:text-6xl text-white">App Development</p>
               <p className="md:text-7xl text-[#9648F6] my-3">Web Development</p>
