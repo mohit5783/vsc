@@ -10,7 +10,7 @@ const Page = () => {
     <div className="bg-slate-950 text-white">
       <div className="">
         <div className="relative">
-          <div className="absolute md:bottom-20 bottom-0 z-20 right-[25%] w-1/2 mx-auto text-center">
+          <div className="absolute md:bottom-20 -bottom-0 z-20 right-[25%] w-1/2 mx-auto text-center">
             <h1 className="text-3xl">
               <span className="md:text-5xl text-2xl font-bold">
                 JourneyCrafter
@@ -108,7 +108,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="py-20">
+      <div className="py-20 mx-5">
         <h1 className="text-center text-5xl font-bold">Creative work</h1>
         <p className="text-center">
           We have completed thousands of projects, some of them showing
@@ -121,7 +121,7 @@ const Page = () => {
               Furniture ios app kit developed in swift framework
             </h1>
             <p className="my-5 flex  items-center">
-              Vist <FaLongArrowAltRight />
+              Vist <FaLongArrowAltRight/>
             </p>
 
             <Image

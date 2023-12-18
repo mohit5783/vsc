@@ -22,8 +22,7 @@ const Footer = () => {
               </div>
 
               <p className="mt-4 md:max-w-xs text-white text-justify">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
-                non cupiditate quae nam molestias.
+              Elevate your business with Virtualify Software Consultancy. Experience innovation as we craft tailored digital solutions.
               </p>
 
               <ul className="mt-8 flex gap-6 justify-center md:justify-start">
@@ -151,62 +150,38 @@ const Footer = () => {
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <Link
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      {" "}
+                   
                       Hire Dedicated Developers
-                    </Link>
+                   
                   </li>
 
                   <li>
-                    <Link
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      {" "}
+                 
                       Web App Development
-                    </Link>
+                    
                   </li>
 
                   <li>
-                    <Link
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      {" "}
+                  
                       Mobile App Development
-                    </Link>
+                  
                   </li>
 
                   <li>
-                    <Link
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      {" "}
+                  
                       Search Engine Optimization
-                    </Link>
+                 
                   </li>
 
                   <li>
-                    <Link
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      {" "}
+                  
                       Pay-Per-Click
-                    </Link>
+                   
                   </li>
                   <li>
-                    <Link
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      {" "}
+                   
                       Social Media Marketing
-                    </Link>
+                 
                   </li>
                 </ul>
               </div>
@@ -216,33 +191,21 @@ const Footer = () => {
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <Link
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      {" "}
+                   
                       About{" "}
-                    </Link>
+                   
                   </li>
 
                   <li>
-                    <Link
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      {" "}
+                   
                       Meet the Team{" "}
-                    </Link>
+                   
                   </li>
 
                   <li>
-                    <Link
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      {" "}
+                
                       Accounts Review{" "}
-                    </Link>
+                   
                   </li>
                 </ul>
               </div>
@@ -252,33 +215,21 @@ const Footer = () => {
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <Link
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      {" "}
+                  
                       Contact{" "}
-                    </Link>
+                   
                   </li>
 
                   <li>
-                    <Link
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      {" "}
+                   
                       FAQs{" "}
-                    </Link>
+                   
                   </li>
 
                   <li>
-                    <Link
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      {" "}
+              
                       Live Chat{" "}
-                    </Link>
+                    
                   </li>
                 </ul>
               </div>
@@ -288,52 +239,33 @@ const Footer = () => {
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <Link
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      {" "}
+                   
                       Healthcare{" "}
-                    </Link>
+                    
                   </li>
 
                   <li>
-                    <Link
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      {" "}
+                  
                       Education{" "}
-                    </Link>
+                    
                   </li>
 
                   <li>
-                    <Link
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      {" "}
+                
                       Retail
-                    </Link>
+                    
                   </li>
 
                   <li>
-                    <Link
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      {" "}
+                    
+                
                       Logistics
-                    </Link>
+                  
                   </li>
                   <li>
-                    <Link
-                      href="#"
-                      className="text-white transition hover:opacity-75"
-                    >
-                      {" "}
+                   
                       Music & Video
-                    </Link>
+                    
                   </li>
                 </ul>
               </div>

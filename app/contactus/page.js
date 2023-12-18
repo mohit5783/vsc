@@ -1,212 +1,75 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaLocationArrow } from "react-icons/fa";
+import { MdHeadsetMic } from "react-icons/md";
 
 const Page = () => {
   return (
     <>
       <div className="w-full flex justify-evenly flex-wrap items-center md:px-36 m-5">
         <div className="w-full md:w-1/2">
-          <h4 className="text-xl">CONTACT US</h4>
+          <div className="flex items-center text-[#66D898]">
+          <MdHeadsetMic className="text-3xl me-3"/>
+          <h4 className="text-2xl">CONTACT US</h4>
+          </div>
           <h1 className="text-5xl font-bold my-8">
-          We are a creative digital agency based in India.
+            We are a creative digital agency based in India.
           </h1>
-         
         </div>
-        <Image className="w-full md:w-1/2" width={650} height={400} src="/smiling.jpg" alt="image"></Image>
+        <Image
+          className="w-full md:w-1/2"
+          width={650}
+          height={400}
+          src="/smiling.jpg"
+          alt="image"
+        ></Image>
       </div>
       <div className="bg-slate-950 text-white p-5">
-        {/* <div className="md:w-[90%] mx-auto flex flex-wrap justify-evenly items-center">
-          <div className="w-full md:w-1/2">
-            <h4>LET&apos;S TALK</h4>
-            <h1 className="text-5xl font-bold my-8">
-              Good talks make good projects
-            </h1>
-            <p>
-              We would be happy to hear from you, Please fill in the form below
-              or mail us your requirements.
-            </p>
-          </div>
-          <div className="w-full md:w-1/2 flex flex-wrap justify-evenly items-center ">
-            <div className="w-64 flex p-6 justify-evenly border rounded-2xl m-5">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p className="mb-3 text-xl">Sales Department</p>
-                <p>+91 9867789004</p>
-                <p>+91 9867789004</p>
-              </div>
-            </div>
-            <div className="w-64 flex p-6 justify-evenly border rounded-2xl m-5">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p className="mb-3 text-xl">Sales Department</p>
-                <p>+91 9867789004</p>
-                <p>+91 9867789004</p>
-              </div>
-            </div>
-            <div className="w-64 flex p-6 justify-evenly border rounded-2xl m-5">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p className="mb-3 text-xl">Sales Department</p>
-                <p>+91 9867789004</p>
-                <p>+91 9867789004</p>
-              </div>
-            </div>
-            <div className="w-64 flex p-6 justify-evenly border rounded-2xl m-5">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p className="mb-3 text-xl">Sales Department</p>
-                <p>+91 9867789004</p>
-                <p>+91 9867789004</p>
-              </div>
-            </div>
-          </div>
-        </div> */}
         <div>
           <div className="md:w-4/5 mx-auto flex flex-wrap justify-evenly py-20">
             <div className="w-full md:w-1/2">
-              <h4>LET&apos;S TALK</h4>
+              <h4 className="text-[#66D898] text-2xl">LET&apos;S TALK</h4>
               <h1 className="text-5xl font-bold my-8">
                 Good talks make good projects
               </h1>
               <p>
-                We would be happy to hear from you, Please fill in the form
-                below or mail us your requirements.
+                We would be happy to hear from you, Please Call us or mail us your requirements.
               </p>
 
               <Image src="/brain.webp" width={600} height={400} alt="image" />
             </div>
-            <div className="w-full md:w-1/2 flex flex-wrap justify-evenly items-center  md:px-16">
-              <div>
-                <h1 className="text-4xl font-bold">Get in touch</h1>
-                <div className=" flex items-center my-5">
+            <div className="w-full md:w-1/2    md:px-16">
+              <div className="flex flex-col items-start">
+                <h1 className="text-4xl font-bold ">Get in touch</h1>
+                <div className=" flex items-center mt-3">
                   <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="w-6 h-6"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
+                    <FaPhoneAlt className="text-xl me-3" />
                   </div>
                   <p className="text-xl underline">+91 123 456 7890</p>
                 </div>
-                <div className=" flex items-center my-5">
+                <div className=" flex items-center mt-3">
                   <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="w-6 h-6"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
+                    <FaWhatsapp className="text-2xl me-3" />
                   </div>
                   <p className="text-xl underline">+91 123 456 7890</p>
                 </div>
-                <div className=" flex items-center my-5">
+                <div className=" flex items-center mt-3">
                   <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="w-6 h-6"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
+                    <MdEmail className="text-2xl me-3" />
                   </div>
-                  <p className="text-xl underline">+91 123 456 7890</p>
+                  <p className="text-xl underline">vsc@gmail.com</p>
                 </div>
               </div>
-              <div className="text-center">
+              <div className="text-center flex flex-col justify-start items-start my-10">
                 <h1 className="text-4xl font-bold">Come meet us</h1>
-                <div className=" flex items-center my-5">
+                <div className=" flex items-center mt-3">
                   <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="w-6 h-6"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
+                    <FaLocationDot className="text-2xl" />
                   </div>
                   <p className="text-xl underline">
                     {" "}
@@ -214,28 +77,19 @@ const Page = () => {
                     Jaipur, Rajasthan 123456
                   </p>
                 </div>
-                <div className=" flex items-center my-5 text-center">
+                <div className=" flex justify-start items-center my-3 text-center">
                   <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="w-6 h-6"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
+                    <FaLocationArrow className="text-2xl me-3" />
                   </div>
-                  <p className="text-xl underline text-center">Get Directions</p>
+                  <p className="text-xl underline text-center">
+                    Get Directions
+                  </p>
                 </div>
               </div>
               <div>
-                <h1 className="text-4xl font-bold text-center">Follow us</h1>
-                <div className=" flex items-center my-5">
-                  <ul className="mt-8 flex gap-6 justify-center md:justify-start">
+                <h1 className="text-4xl font-bold ">Follow us</h1>
+                <div className=" flex items-center mt-3">
+                  <ul className=" flex gap-6 justify-center md:justify-start">
                     <li>
                       <Link
                         href="/"
@@ -358,13 +212,15 @@ const Page = () => {
           </div>
         </div>
         <div className=" md:px-24 py-16">
-          <h1 className="text-5xl text-center font-bold"> We&apos; re Here to Help </h1>
+          <h1 className="text-5xl text-center font-bold">
+            {" "}
+            We&apos; re Here to Help{" "}
+          </h1>
           <p className="text-center mt-5">
-            Lipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
+          At Virtualify, we're more than technology – we&apos;re here to help you navigate the future with confidence.
           </p>
           <div className="flex justify-evenly items-center flex-wrap my-10">
-            <div className="w-80 border rounded-2xl p-6 my-5">
+            <div className="w-96 md:h-96 h-[450px] border rounded-2xl p-6 my-5">
               <Image
                 width={100}
                 height={100}
@@ -373,15 +229,14 @@ const Page = () => {
                 }
                 alt="image"
               ></Image>
-              <h4 className="text-2xl font-bold">
+              <h4 className="text-2xl font-bold text-[#66D898]">
                 Communicate Your Requirements
               </h4>
-              <p>
-                Our software house has been recognised by google for outstanding
-                android application quality.
+              <p className="text-justify">
+              We value your unique needs. Communicate your requirements, and we'll transform your vision into tailored IT solutions. Our team is ready to listen, understand, and collaborate, ensuring that your specific goals drive the design and delivery of technology solutions that exceed expectations. Let's turn your requirements into reality.
               </p>
             </div>
-            <div className="w-80 border rounded-2xl p-6 my-5">
+            <div className="w-96 md:h-96 h-[450px] border rounded-2xl p-6 my-5">
               <Image
                 width={100}
                 height={100}
@@ -390,15 +245,14 @@ const Page = () => {
                 }
                 alt="image"
               ></Image>
-              <h4 className="text-2xl font-bold">
+              <h4 className="text-2xl font-bold text-[#66D898]">
                 Communicate Your Requirements
               </h4>
-              <p>
-                Our software house has been recognised by google for outstanding
-                android application quality.
+              <p className="text-justify">
+              we recognize the paramount importance of understanding your requirements. Our process begins with in-depth consultations to grasp the nuances of your goals, challenges, and aspirations. Through active listening and collaboration, we ensure paving the way for customized IT solutions that precisely align with your needs.
               </p>
             </div>
-            <div className="w-80 border rounded-2xl p-6  my-5">
+            <div className="w-96 md:h-96 h-[450px] border rounded-2xl p-6  my-5">
               <Image
                 width={100}
                 height={100}
@@ -407,12 +261,11 @@ const Page = () => {
                 }
                 alt="image"
               ></Image>
-              <h4 className="text-2xl font-bold">
-                Communicate Your Requirements
+              <h4 className="text-2xl font-bold text-[#66D898]">
+              Understanding the Requirement 
               </h4>
-              <p>
-                Our software house has been recognised by google for outstanding
-                android application quality.
+              <p className="text-justify">
+              We uphold a fundamental principle: respecting our clients' needs. We recognize that every client is unique, and we approach each project with a deep understanding .Our commitment to respect goes beyond delivering solutions; it's about fostering a partnership where client needs are not just met but prioritized.
               </p>
             </div>
           </div>

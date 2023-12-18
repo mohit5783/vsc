@@ -3,14 +3,22 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Script from "next/script";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1.5,
+  // Also supported by less commonly used
+  // interactiveWidget: 'resizes-visual',
+};
 
 export const metadata = {
   metadataBase: new URL("https://www.virtualifyme.com/"),
   title: "Virtualify Software Consultancy (VSC) – Mastering Digital Solutions",
   description:
-    "Elevate your technological landscape with Virtualify Software Consultancy Pvt Ltd. Experience innovation at its best as we craft digital solutions tailored to meet the unique needs of your business.",
+    "Elevate your business with Virtualify Software Consultancy. Experience innovation as we craft tailored digital solutions.",
 
   keywords: [
     "Software",
@@ -63,13 +71,17 @@ const jsonLd = {
   hasMap: "https://maps.app.goo.gl/anEqib4CjRaTyzWD7",
 };
 
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1.5"
+        />
+      </Head>
       <body className={inter.className}>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <div className="sticky top-0 z-20">
+        <div className="sticky top-0 z-50">
           <Header />
         </div>
         {children}
@@ -90,7 +102,7 @@ export default function RootLayout({ children }) {
         `}
         </Script>
         <Script
-        id="json_ld"
+          id="json_ld"
           defer
           fetchpriority="low"
           type="application/ld+json"
