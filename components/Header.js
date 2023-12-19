@@ -69,7 +69,7 @@ export default function Header() {
       </nav>
       <Dialog
         as="div"
-        className="lg:hidden"
+        className="lg:hidden transition"
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
@@ -94,7 +94,7 @@ export default function Header() {
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="mt-6 flow-root ">
+          <div className="mt-6 flow-root relative z-50">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <Link
@@ -113,7 +113,7 @@ export default function Header() {
                 </Link>
                 <Link
                   onClick={() => setMobileMenuOpen(false)}
-                  href="/"
+                  href="/projects"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-slate-600"
                 >
                   Projects

@@ -3,15 +3,13 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Script from "next/script";
-import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 export const viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1.5,
-  // Also supported by less commonly used
-  // interactiveWidget: 'resizes-visual',
+  maximumScale: 5,
+  userScalable: 1,
 };
 
 export const metadata = {
@@ -74,12 +72,6 @@ const jsonLd = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1.5"
-        />
-      </Head>
       <body className={inter.className}>
         <div className="sticky top-0 z-50">
           <Header />
@@ -97,7 +89,6 @@ export default function RootLayout({ children }) {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
- 
           gtag('config', 'G-EMXKKVZRCB');
         `}
         </Script>

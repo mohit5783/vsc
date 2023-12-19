@@ -6,9 +6,8 @@
     display: flex;
     align-items: center;
 }
-Link{
-    text-decoration: none;
-    color: black;
+.e{
+    color: #FF6726;
 }
 
 

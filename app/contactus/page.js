@@ -11,7 +11,7 @@ import { MdHeadsetMic } from "react-icons/md";
 const Page = () => {
   return (
     <>
-      <div className="w-full flex justify-evenly flex-wrap items-center md:px-36 m-5">
+      <div className="w-full flex justify-evenly flex-wrap items-center md:px-36 p-5 bg-slate-950 text-white">
         <div className="w-full md:w-1/2">
           <div className="flex items-center text-[#66D898]">
           <MdHeadsetMic className="text-3xl me-3"/>
@@ -25,7 +25,7 @@ const Page = () => {
           className="w-full md:w-1/2"
           width={650}
           height={400}
-          src="/smiling.jpg"
+          src="/contactus.svg"
           alt="image"
         ></Image>
       </div>
@@ -62,7 +62,7 @@ const Page = () => {
                   <div>
                     <MdEmail className="text-2xl me-3" />
                   </div>
-                  <p className="text-xl underline">vsc@gmail.com</p>
+                  <p className="text-xl underline">vscsocialhandle@gmail.com</p>
                 </div>
               </div>
               <div className="text-center flex flex-col justify-start items-start my-10">

@@ -3,14 +3,12 @@ import Image from "next/image";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Page = () => {
-  const alertData = () => {
-    alert("hi to you");
-  };
+
   return (
     <div className="bg-slate-950 text-white">
       <div className="">
         <div className="relative">
-          <div className="absolute md:bottom-20 -bottom-0 z-20 right-[25%] w-1/2 mx-auto text-center">
+          <div className="absolute md:bottom-20 -bottom-0 z-10 right-[25%] w-1/2 mx-auto text-center">
             <h1 className="text-3xl">
               <span className="md:text-5xl text-2xl font-bold">
                 JourneyCrafter
@@ -64,8 +62,8 @@ const Page = () => {
             <h2 className="text-2xl underline"> ⁠Source Location:</h2>
             <ul>
               <li>
-                Gather information about the user&apos;s starting location for trip
-                planning.
+                Gather information about the user&apos;s starting location for
+                trip planning.
               </li>
             </ul>
           </div>
@@ -87,8 +85,8 @@ const Page = () => {
             <h2 className="text-2xl underline"> ⁠Source Location:</h2>
             <ul>
               <li>
-                Gather information about the user&apos;s starting location for trip
-                planning.
+                Gather information about the user&apos;s starting location for
+                trip planning.
               </li>
             </ul>
           </div>
@@ -114,14 +112,14 @@ const Page = () => {
           We have completed thousands of projects, some of them showing
           important projects here.
         </p>
-        <div  className="flex justify-evenly p-5  md:p-20 md:px-32 flex-wrap">
+        <div className="flex justify-evenly p-5  md:p-20 md:px-32 flex-wrap">
           <div ata-aos="zoom-in-right" className=" md:w-1/2 w-full ">
             <h1 className="text-2xl text-[#9648F6]">iOS, Android, Swift</h1>
             <h1 className="text-4xl my-5 font-bold">
               Furniture ios app kit developed in swift framework
             </h1>
             <p className="my-5 flex  items-center">
-              Vist <FaLongArrowAltRight/>
+              Vist <FaLongArrowAltRight />
             </p>
 
             <Image
@@ -134,7 +132,10 @@ const Page = () => {
             />
             <p className="text-3xl font-bold">ACB Ltd Pvt </p>
           </div>
-          <div ata-aos="zoom-in-right" className="md:w-1/2 w-full  overflow-hidden hover:scale-95  rounded-3xl transition-all">
+          <div
+            ata-aos="zoom-in-right"
+            className="md:w-1/2 w-full  overflow-hidden hover:scale-95  rounded-3xl transition-all"
+          >
             <Image
               unoptimized
               className="hover:scale-110 transition"
@@ -248,7 +249,6 @@ const Page = () => {
             <p className="text-xl font-bold">ACB Ltd Pvt </p>
           </div>
         </div>
-       
       </div>
     </div>
   );

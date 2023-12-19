@@ -10,8 +10,8 @@ const Page = () => {
       <div className="flex justify-evenly items-center md:p-28 p-5 flex-wrap ">
         <div className="md:w-1/2 w-full">
           <div className="flex items-center  ">
-            <FaBuilding className="text-[#9648F6]" />
-            <h4 className="ms-5 text-xl text-[#9648F6]">WHO WE ARE</h4>
+            <FaBuilding className="text-[#9648F6] text-2xl" />
+            <h4 className="ms-5 text-2xl text-[#9648F6]">WHO WE ARE</h4>
           </div>
           <h1 className="text-5xl font-bold my-5">
             We are a creative digital agency based in India.
@@ -44,11 +44,11 @@ const Page = () => {
 
       <AboutUs />
       <div className="text-center py-20 p-5">
-        <h1 className="text-3xl font-extrabold">
+        <h1 className="text-5xl font-extrabold">
           Transparency and Ethics
         </h1>
         <div className="md:mx-28 md:mt-24 flex justify-between items-center  flex-wrap mt-16">
-          <div className="md:w-[30%] w-full text-left md:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
+          <div className="md:w-[30%] w-full text-left md:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">
               Client-centric Approach
             </h3>
@@ -69,7 +69,7 @@ const Page = () => {
               ></Image>
             </div>
           </div>
-          <div className="md:w-[30%] w-full text-left md:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
+          <div className="md:w-[30%] w-full text-left md:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">
               Service Delivered in Time
             </h3>
@@ -91,7 +91,7 @@ const Page = () => {
               ></Image>
             </div>
           </div>
-          <div className="md:w-[30%] w-full text-left md:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
+          <div className="md:w-[30%] w-full text-left md:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">
               Effective Collaboration
             </h3>
@@ -113,7 +113,7 @@ const Page = () => {
               ></Image>
             </div>
           </div>
-          <div className="md:w-[30%] w-full text-left md:h-96 h-96  px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
+          <div className="md:w-[30%] w-full text-left md:h-96 h-96  px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">Employee Benefits</h3>
             <p className="my-5 text-zinc-500">
             We invest in our team's success and happiness. Our commitment to employee satisfaction extends beyond the workplace, promoting a healthy work-life balance and fostering a culture that values the overall growth and fulfillment of each team member.
@@ -133,7 +133,7 @@ const Page = () => {
               ></Image>
             </div>
           </div>
-          <div className="md:w-[30%] w-full text-left md:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
+          <div className="md:w-[30%] w-full text-left md:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">Team Work</h3>
             <p className="my-5 text-zinc-500">
             Embracing the strengths of each team member, we foster a collaborative culture that not only drives project success but also cultivates a dynamic and cohesive work environment, propelling us to new heights in the ever-evolving tech landscape.
@@ -153,7 +153,7 @@ const Page = () => {
               ></Image>
             </div>
           </div>
-          <div className="md:w-[30%] w-full text-left md:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-zinc-100 shadow-xl mb-20">
+          <div className="md:w-[30%] w-full text-left md:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">
               Quality of Service
             </h3>
@@ -186,7 +186,7 @@ const Page = () => {
             </h1>
             <Link href="/contactus">
               <button
-                class="group inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
+                class="group inline-block rounded-full bg-gradient-to-r from-[#9648F6] to-[#14B4FF]  p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
                 
               >
                 <span class="flex justify-evenly items-center rounded-full bg-white px-8 py-3 text-sm font-medium group-hover:bg-transparent">
@@ -201,7 +201,7 @@ const Page = () => {
             className="md:w-1/2 w-full"
             width={400}
             height={400}
-            src="https://separateweb.com/demo-reevan/images/cta/teamwork.svg"
+            src="/teamwork.svg"
             alt="image"
           ></Image>
         </div>
