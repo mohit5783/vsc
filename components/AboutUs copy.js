@@ -6,16 +6,17 @@ import { FaHandPeace } from "react-icons/fa";
 import { useState } from "react";
 
 const AboutUs = () => {
-  const [screen, setscreen] = useState(1);
+  const [screen, setscreen] = useState(2);
   return (
     <>
+    {JSON.stringify(screen)}
       <div className="flex  justify-evenly  md:p-28 p-5 bg-[#cfe8fe] text-black flex-wrap">
         <div className="md:w-1/4 w-full md:block flex flex-wrap">
           <div
             onClick={() => setscreen(1)}
             className={`flex ${
               screen === 1 ? "bg-[#b1d9fc]" : "bg-[#dfeffc]"
-            } justify-evenly items-center shadow p-6 rounded-3xl bg-[#b1d9fc]  `}
+            } justify-evenly items-center shadow p-6 rounded-3xl bg-[#b1d9fc] cursor-pointer `}
           >
             <BsRocketTakeoffFill
               className={`text-2xl mx-5 ${
@@ -34,7 +35,7 @@ const AboutUs = () => {
             onClick={() => setscreen(2)}
             className={`flex ${
               screen === 2 ? "bg-[#b1d9fc]" : "bg-[#dfeffc]"
-            } justify-evenly items-center shadow p-6 rounded-3xl bg-[#b1d9fc] my-3 `}
+            } justify-evenly items-center shadow p-6 rounded-3xl bg-[#b1d9fc] my-3 cursor-pointer `}
           >
             <MdRemoveRedEye
               className={`text-3xl mx-5 ${

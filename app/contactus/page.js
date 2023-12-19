@@ -14,11 +14,12 @@ const Page = () => {
       <div className="w-full flex justify-evenly flex-wrap items-center md:px-36 p-5 bg-slate-950 text-white">
         <div className="w-full md:w-1/2">
           <div className="flex items-center text-[#66D898]">
-          <MdHeadsetMic className="text-3xl me-3"/>
-          <h4 className="text-2xl">CONTACT US</h4>
+            <MdHeadsetMic className="text-3xl me-3" />
+            <h4 className="text-2xl">CONTACT US</h4>
           </div>
           <h1 className="text-5xl font-bold my-8">
-            We are a creative digital agency based in India.
+            Get in Touch with Tech Excellence: Reach Out to Our IT Experts
+            Today!
           </h1>
         </div>
         <Image
@@ -31,14 +32,15 @@ const Page = () => {
       </div>
       <div className="bg-slate-950 text-white p-5">
         <div>
-          <div className="md:w-4/5 mx-auto flex flex-wrap justify-evenly py-20">
+          <div className="md:w-4/5 mx-auto flex flex-wrap justify-evenly ">
             <div className="w-full md:w-1/2">
               <h4 className="text-[#66D898] text-2xl">LET&apos;S TALK</h4>
               <h1 className="text-5xl font-bold my-8">
                 Good talks make good projects
               </h1>
               <p>
-                We would be happy to hear from you, Please Call us or mail us your requirements.
+                We would be happy to hear from you, Please Call us or mail us
+                your requirements.
               </p>
 
               <Image src="/brain.webp" width={600} height={400} alt="image" />
@@ -50,31 +52,31 @@ const Page = () => {
                   <div>
                     <FaPhoneAlt className="text-xl me-3" />
                   </div>
-                  <p className="text-xl underline">+91 123 456 7890</p>
+                  <p className="text-xl underline">+91 9826057445</p>
                 </div>
                 <div className=" flex items-center mt-3">
                   <div>
                     <FaWhatsapp className="text-2xl me-3" />
                   </div>
-                  <p className="text-xl underline">+91 123 456 7890</p>
+                  <p className="text-xl underline">+91 9826065894</p>
                 </div>
                 <div className=" flex items-center mt-3">
                   <div>
                     <MdEmail className="text-2xl me-3" />
                   </div>
-                  <p className="text-xl underline">vscsocialhandle@gmail.com</p>
+                  <p className="text-xl underline">
+                    virtualifyme2023@gmail.com
+                  </p>
                 </div>
               </div>
               <div className="text-center flex flex-col justify-start items-start my-10">
                 <h1 className="text-4xl font-bold">Come meet us</h1>
-                <div className=" flex items-center mt-3">
+                <div className=" flex mt-3">
                   <div>
                     <FaLocationDot className="text-2xl" />
                   </div>
                   <p className="text-xl underline">
-                    {" "}
-                    Tom Extension, 1st Block 2nd Cross, Yello round circle,
-                    Jaipur, Rajasthan 123456
+                    103, Maharana Pratap Colony, Harda MP 461 331
                   </p>
                 </div>
                 <div className=" flex justify-start items-center my-3 text-center">
@@ -217,7 +219,8 @@ const Page = () => {
             We&apos; re Here to Help{" "}
           </h1>
           <p className="text-center mt-5">
-          At Virtualify, we're more than technology – we&apos;re here to help you navigate the future with confidence.
+            At Virtualify, we're more than technology – we&apos;re here to help
+            you navigate the future with confidence.
           </p>
           <div className="flex justify-evenly items-center flex-wrap my-10">
             <div className="w-96 md:h-96 h-[450px] border rounded-2xl p-6 my-5">
@@ -233,7 +236,12 @@ const Page = () => {
                 Communicate Your Requirements
               </h4>
               <p className="text-justify">
-              We value your unique needs. Communicate your requirements, and we'll transform your vision into tailored IT solutions. Our team is ready to listen, understand, and collaborate, ensuring that your specific goals drive the design and delivery of technology solutions that exceed expectations. Let's turn your requirements into reality.
+                We value your unique needs. Communicate your requirements, and
+                we'll transform your vision into tailored IT solutions. Our team
+                is ready to listen, understand, and collaborate, ensuring that
+                your specific goals drive the design and delivery of technology
+                solutions that exceed expectations. Let's turn your requirements
+                into reality.
               </p>
             </div>
             <div className="w-96 md:h-96 h-[450px] border rounded-2xl p-6 my-5">
@@ -246,10 +254,15 @@ const Page = () => {
                 alt="image"
               ></Image>
               <h4 className="text-2xl font-bold text-[#66D898]">
-              Understanding the Requirement 
+                Understanding the Requirement
               </h4>
               <p className="text-justify">
-              we recognize the paramount importance of understanding your requirements. Our process begins with in-depth consultations to grasp the nuances of your goals, challenges, and aspirations. Through active listening and collaboration, we ensure paving the way for customized IT solutions that precisely align with your needs.
+                we recognize the paramount importance of understanding your
+                requirements. Our process begins with in-depth consultations to
+                grasp the nuances of your goals, challenges, and aspirations.
+                Through active listening and collaboration, we ensure paving the
+                way for customized IT solutions that precisely align with your
+                needs.
               </p>
             </div>
             <div className="w-96 md:h-96 h-[450px] border rounded-2xl p-6  my-5">
@@ -262,11 +275,14 @@ const Page = () => {
                 alt="image"
               ></Image>
               <h4 className="text-2xl font-bold text-[#66D898]">
-
-              Respecting the Client Needs
+                Respecting the Client Needs
               </h4>
               <p className="text-justify">
-              We uphold a fundamental principle: respecting our clients' needs. We recognize that every client is unique, and we approach each project with a deep understanding .Our commitment to respect goes beyond delivering solutions; it's about fostering a partnership where client needs are not just met but prioritized.
+                We uphold a fundamental principle: respecting our clients'
+                needs. We recognize that every client is unique, and we approach
+                each project with a deep understanding .Our commitment to
+                respect goes beyond delivering solutions; it's about fostering a
+                partnership where client needs are not just met but prioritized.
               </p>
             </div>
           </div>

@@ -7,36 +7,37 @@ const Page = () => {
   return (
     <div className="bg-slate-950 text-white">
       <div className="">
-        <div className="relative">
-          <div className="absolute md:bottom-20 -bottom-0 z-10 right-[25%] w-1/2 mx-auto text-center">
-            <h1 className="text-3xl">
+        <div className="bg-black">
+          
+          <Image
+            className="w-full"
+            width={1200}
+            height={200}
+            src="/coming.webp"
+            alt="image"
+          />
+          <div className="mdw-1/2 w-full mx-auto text-center ">
+            <h1 className="">
               <span className="md:text-5xl text-2xl font-bold">
                 JourneyCrafter
               </span>{" "}
               <br />
-              <span className="italic md:text-5xl text-xl">
+              <span className="italic md:text-4xl text-xl">
                 {" "}
                 - Crafting travel experiences.
               </span>
             </h1>
-            <p className="my-12 md:block hidden">
+            <p className="py-12 md:px-48">
               Get ready to experience a new dimension of digital engagement. Our
               upcoming product will combine the magic of NFTs, the power of
               blockchain, and the excitement of immersive 3D experiences. Stay
               tuned for an innovation that will redefine your digital journey.
             </p>
           </div>
-          <Image
-            className="w-full relative"
-            width={1200}
-            height={200}
-            src="/coming.webp"
-            alt="image"
-          />
         </div>
-        <div className="md:px-56 p-5 border-b bg-black">
-          <h1 className="text-center text-4xl my-5">A Glimpse into Tomorrow</h1>
-          <div className=" ">
+        <div className="md:px-64 p-5 border-b bg-black">
+          <h1 className="text-center text-5xl my-5">A Glimpse into Tomorrow</h1>
+          <div className="w-3/4 ">
             <h2 className="text-2xl underline">⁠User Input:</h2>
             <ul>
               <li>
@@ -46,7 +47,7 @@ const Page = () => {
               <li>Obtain the number of travelers in the group.</li>
             </ul>
           </div>
-          <div className="text-end  my-5 ">
+          <div className="text-end w-3/4 my-10 ms-auto">
             <h2 className="text-2xl underline">
               ⁠Traveler Group Classification:
             </h2>
@@ -58,7 +59,7 @@ const Page = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="w-3/4 ">
             <h2 className="text-2xl underline"> ⁠Source Location:</h2>
             <ul>
               <li>
@@ -67,7 +68,7 @@ const Page = () => {
               </li>
             </ul>
           </div>
-          <div className="text-end  my-5">
+          <div className="text-end w-3/4 my-5 ms-auto">
             <h2 className="text-2xl underline">Accommodations:</h2>
             <ul className="">
               <li>
@@ -81,7 +82,7 @@ const Page = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="w-3/4 ">
             <h2 className="text-2xl underline"> ⁠Source Location:</h2>
             <ul>
               <li>
@@ -90,7 +91,7 @@ const Page = () => {
               </li>
             </ul>
           </div>
-          <div className="text-end  my-5">
+          <div className="text-end w-3/4  my-5 ms-auto">
             <h2 className="text-2xl underline">Accommodations:</h2>
             <ul className="">
               <li>

@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
+
 export const viewport = {
   width: "device-width",
   initialScale: 1,

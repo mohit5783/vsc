@@ -63,8 +63,8 @@ const Page = () => {
               <Image
                 width={60}
                 height={40}
-                unoptimized
-                src="https://separateweb.com/demo-reevan/images/icons/target.svg"
+               
+                src="/target.svg"
                 alt="image"
               ></Image>
             </div>
@@ -85,7 +85,7 @@ const Page = () => {
                 width={60}
                 height={60}
                 src={
-                  "https://separateweb.com/demo-reevan/images/icons/fast-time.svg"
+                  "/time.svg"
                 }
                 alt="image"
               ></Image>
@@ -107,7 +107,7 @@ const Page = () => {
                 width={60}
                 height={60}
                 src={
-                  "https://separateweb.com/demo-reevan/images/icons/united.svg"
+                  "/united.svg"
                 }
                 alt="image"
               ></Image>
@@ -127,7 +127,7 @@ const Page = () => {
                 width={60}
                 height={60}
                 src={
-                  "https://separateweb.com/demo-reevan/images/icons/team.svg"
+                  "/team.svg"
                 }
                 alt="image"
               ></Image>
@@ -147,7 +147,7 @@ const Page = () => {
                 width={60}
                 height={60}
                 src={
-                  "https://separateweb.com/demo-reevan/images/icons/partnership.svg"
+                  "/partnership.svg"
                 }
                 alt="image"
               ></Image>
@@ -168,9 +168,8 @@ const Page = () => {
               <Image
                 width={60}
                 height={60}
-                src={
-                  "https://separateweb.com/demo-reevan/images/icons/qualitys.svg"
-                }
+                src="/qualitys.svg"
+              
                 alt="image"
               ></Image>
             </div>
@@ -178,7 +177,7 @@ const Page = () => {
         </div>
       </div>
       <div className="md:p-28 p-5 bg-[#BDE0FF] text-black">
-        <h1 className="text-2xl text-[#9648F6]">CAREER</h1>
+        <h1 className="text-2xl text-[#9648F6] cursor-pointer">CAREER</h1>
         <div className="flex justify-evenly  flex-wrap ">
           <div className="md:w-1/2 w-full">
             <h1 className="text-4xl font-bold  pe-10 my-5">
@@ -186,10 +185,10 @@ const Page = () => {
             </h1>
             <Link href="/contactus">
               <button
-                class="group inline-block rounded-full bg-gradient-to-r from-[#9648F6] to-[#14B4FF]  p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
+                className="group inline-block rounded-full bg-gradient-to-r from-[#9648F6] to-[#14B4FF]  p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
                 
               >
-                <span class="flex justify-evenly items-center rounded-full bg-white px-8 py-3 text-sm font-medium group-hover:bg-transparent">
+                <span className="flex justify-evenly items-center rounded-full bg-white px-8 py-3 text-sm font-medium group-hover:bg-transparent">
                   Join Our Team
                   <FaArrowRight className="ms-3" />
                 </span>
@@ -197,7 +196,6 @@ const Page = () => {
             </Link>
           </div>
           <Image
-            unoptimized
             className="md:w-1/2 w-full"
             width={400}
             height={400}
