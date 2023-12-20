@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Carousel from "../components/Carousel";
-import { MdEngineering,MdCelebration } from "react-icons/md";
+import { MdEngineering, MdCelebration } from "react-icons/md";
 import { ImMobile } from "react-icons/im";
 import { SiSnapcraft } from "react-icons/si";
 import { FaHandshake } from "react-icons/fa";
 import { TbNeedleThread } from "react-icons/tb";
-import { MdCelebration } from "react-icons/md";
+
 import HeroHome from "@/components/HeroHome";
 
 export default function Home() {
@@ -114,45 +114,93 @@ export default function Home() {
             </span>
             <div className="flex justify-center flex-wrap items-center mt-6">
               <div className="lg:w-48 lg:h-36 w-full lg:mx-2  h-32 my-3  flex justify-center items-center">
-                <Image width={100} height={100} className="w-20" src="/android.svg" alt="Android" />
+                <Image
+                  width={100}
+                  height={100}
+                  className="w-20"
+                  src="/android.svg"
+                  alt="Android"
+                />
                 <span className="text-3xl font-bold text-black mx-2">
                   Android
                 </span>
               </div>
               <div className="lg:w-48 lg:h-36  lg:mx-2 w-full h-32 my-3 flex justify-center items-center ">
-                <Image width={100} height={100} className="w-20" src="/flutter.svg" alt="flutter" />
+                <Image
+                  width={100}
+                  height={100}
+                  className="w-20"
+                  src="/flutter.svg"
+                  alt="flutter"
+                />
                 <span className="text-3xl font-bold text-black mx-2">
                   flutter
                 </span>
               </div>
               <div className="lg:w-48 lg:h-36  lg:mx-2 w-full h-32 flex justify-center items-center ">
-                <Image width={100} height={100} className="w-20" src="/apple.svg" alt="ios" />
+                <Image
+                  width={100}
+                  height={100}
+                  className="w-20"
+                  src="/apple.svg"
+                  alt="ios"
+                />
                 <span className="text-3xl font-bold text-black mx-2">ios</span>
               </div>
               <div className="lg:w-48 lg:h-36  lg:mx-2 w-full my-3 h-32 flex justify-center items-center ">
-                <Image width={100} height={100} className="w-20" src="/java.svg" alt="JAVA" />
+                <Image
+                  width={100}
+                  height={100}
+                  className="w-20"
+                  src="/java.svg"
+                  alt="JAVA"
+                />
                 <span className="text-3xl font-bold text-black mx-2">JAVA</span>
               </div>
               <div className="lg:w-48 lg:h-36  lg:mx-2 w-full my-3 h-32 flex justify-center items-center ">
-                <Image width={100} height={100} className="w-20" src="/python.svg" alt="Python" />
+                <Image
+                  width={100}
+                  height={100}
+                  className="w-20"
+                  src="/python.svg"
+                  alt="Python"
+                />
                 <span className="text-3xl font-bold text-black mx-2">
                   Python
                 </span>
               </div>
               <div className="lg:w-48 lg:h-36  lg:mx-2 w-full my-3 h-32 flex justify-center items-center ">
-                <Image width={100} height={100} className="w-20" src="/react.svg" alt="React Native" />
+                <Image
+                  width={100}
+                  height={100}
+                  className="w-20"
+                  src="/react.svg"
+                  alt="React Native"
+                />
                 <span className="text-3xl font-bold text-black mx-2">
                   React Native
                 </span>
               </div>
               <div className="lg:w-48 lg:h-36  lg:mx-2 w-full my-3 h-32 flex justify-center items-center ">
-                <Image width={100} height={100} className="w-20" src="/swift.svg" alt="swift" />
+                <Image
+                  width={100}
+                  height={100}
+                  className="w-20"
+                  src="/swift.svg"
+                  alt="swift"
+                />
                 <span className="text-3xl font-bold text-black mx-2">
                   Swift
                 </span>
               </div>
               <div className="lg:w-48 lg:h-36  lg:mx-2 w-full my-3 h-32 flex justify-center items-center ">
-                <Image width={100} height={100} className="w-20" src="/pwa.svg" alt="PWA" />
+                <Image
+                  width={100}
+                  height={100}
+                  className="w-20"
+                  src="/pwa.svg"
+                  alt="PWA"
+                />
                 <span className="text-3xl font-bold text-black mx-2">PWA</span>
               </div>
             </div>
