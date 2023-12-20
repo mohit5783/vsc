@@ -1,11 +1,10 @@
 import Image from "next/image";
 import Carousel from "../components/Carousel";
-import { MdEngineering } from "react-icons/md";
+import { MdEngineering,MdCelebration } from "react-icons/md";
 import { ImMobile } from "react-icons/im";
 import { SiSnapcraft } from "react-icons/si";
 import { FaHandshake } from "react-icons/fa";
 import { TbNeedleThread } from "react-icons/tb";
-import { MdCelebration } from "react-icons/md";
 
 
 export default function Home() {
