@@ -1,13 +1,5 @@
 import Image from "next/image";
 import Carousel from "../components/Carousel";
-import flutter from "../public/images/flutter.svg";
-import android from "../public/images/android.svg";
-import apple from "../public/images/apple.svg";
-import java from "../public/images/java.svg";
-import python from "../public/images/python.svg";
-import react from "../public/images/react.svg";
-import swift from "../public/images/swift.svg";
-import pwa from "../public/images/pwa.svg";
 import { MdEngineering } from "react-icons/md";
 import { ImMobile } from "react-icons/im";
 import { SiSnapcraft } from "react-icons/si";
@@ -20,13 +12,13 @@ export default function Home() {
   return (
     <>
       <div>
-        <div className="md:px-28 px-5 md:pb-20 md:pt-12 flex flex-wrap justify-between items-center bg-slate-950 text-white">
-          <div className="w-full text-center md:px-24">
-            <h1 className="md:text-6xl text-4xl font-bold my-10">
+        <div className="lg:px-28 px-5 lg:pb-20 lg:pt-12 flex flex-wrap justify-between items-center bg-slate-950 text-white">
+          <div className="w-full text-center lg:px-24">
+            <h1 className="lg:text-6xl text-4xl font-bold my-10">
               Top Mobile App Development Company in India
             </h1>
 
-            <p className="md:text-2xl text-md text-[#00E2C2] font-thin ">
+            <p className="lg:text-2xl text-md text-[#00E2C2] font-thin ">
               Welcome to our Vitualify&apos;s digital playground, where
               innovation meets expertise! We&apos;re a passionate team of web
               wizards dedicated to optimize your ideas into stunning realities.
@@ -37,8 +29,8 @@ export default function Home() {
               transformative journey as we build, optimize, and elevate your web
               experience, one pixel at a time.
             </p>
-            <div className="flex items-center md:justify-between justify-center mb-9 md:flex-nowrap flex-wrap my-4">
-              <div className="border border-[#00E2C2] p-2 flex items-center justify-evenly rounded-full md:w-[30%] w-[90%] ">
+            <div className="flex items-center lg:justify-between justify-center mb-9 lg:flex-nowrap flex-wrap my-4">
+              <div className="border border-[#00E2C2] p-2 flex items-center justify-evenly rounded-full lg:w-[30%] ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -56,7 +48,7 @@ export default function Home() {
 
                 <p>100k User Engagement</p>
               </div>
-              <div className="border border-[#00E2C2] p-2 flex items-center justify-evenly  rounded-full  md:w-[30%] w-[90%] my-5">
+              <div className="border border-[#00E2C2] p-2 flex items-center justify-evenly  rounded-full  lg:w-[30%] w-[90%] my-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -74,7 +66,7 @@ export default function Home() {
 
                 <p>50+ Featured App</p>
               </div>
-              <div className="border border-[#00E2C2] p-2 flex items-center justify-evenly rounded-full md:w-[30%] w-[90%]">
+              <div className="border border-[#00E2C2] p-2 flex items-center justify-evenly rounded-full lg:w-[30%] w-[90%]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -94,7 +86,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full flex justify-center items-center md:-mt-36 -mt-16 ">
+          <div className="w-full flex justify-center items-center lg:-mt-36 -mt-16 ">
             <Image
               width={900}
               height={300}
@@ -106,12 +98,12 @@ export default function Home() {
         {/* ===========Award winning development=========== */}
         <div className="bg-slate-950  py-16 px-5">
           <div className="w-full text-white">
-            <div className="w-full md:w-3/4 text-center m-auto ">
-              <h1 className="md:text-5xl text-4xl font-bold">
+            <div className="w-full lg:w-3/4 text-center m-auto ">
+              <h1 className="lg:text-5xl text-4xl font-bold">
                 Building Strong Narrative
               </h1>
 
-              <p className="mt-6 md:text-xl text-md">
+              <p className="mt-6 lg:text-xl text-md">
                 Our dedicated team of experts is committed to understanding your
                 unique needs and objectives, working closely with you to develop
                 and execute strategies that propel your brand forward.
@@ -125,34 +117,34 @@ export default function Home() {
                 className="rounded-t-3xl"
                 alt="team image"
               ></Image>
-              <div className="md:w-[1300px] grid grid-cols-5 divide-x my-2">
+              <div className=" grid grid-cols-5 divide-x my-2">
                 <div className="vc items-center flex-col ">
-                  <p className="md:text-5xl text-md font-bold">20+</p>
-                  <p className="md:text-2xl text-xs text-center">
+                  <p className="lg:text-5xl text-md font-bold">20+</p>
+                  <p className="lg:text-2xl text-xs text-center">
                     Expert Members
                   </p>
                 </div>
                 <div className="vc items-center flex-col">
-                  <p className="md:text-5xl text-md font-bold">35+</p>
-                  <p className="md:text-2xl text-xs text-center">
+                  <p className="lg:text-5xl text-md font-bold">35+</p>
+                  <p className="lg:text-2xl text-xs text-center">
                     Marketing Tactics
                   </p>
                 </div>
                 <div className="vc items-center flex-col">
-                  <p className="md:text-5xl text-md font-bold">3yr+</p>
-                  <p className="md:text-2xl text-xs text-center">
+                  <p className="lg:text-5xl text-md font-bold">3yr+</p>
+                  <p className="lg:text-2xl text-xs text-center">
                     Industry Experience
                   </p>
                 </div>
                 <div className="vc items-center flex-col">
-                  <p className="md:text-5xl text-md font-bold">99%</p>
-                  <p className="md:text-2xl text-xs text-center">
+                  <p className="lg:text-5xl text-md font-bold">99%</p>
+                  <p className="lg:text-2xl text-xs text-center">
                     Client Satisfaction
                   </p>
                 </div>
                 <div className="vc items-center flex-col">
-                  <p className="md:text-5xl text-md font-bold">36+</p>
-                  <p className="md:text-2xl text-xs text-center">
+                  <p className="lg:text-5xl text-md font-bold">36+</p>
+                  <p className="lg:text-2xl text-xs text-center">
                     Global Companies
                   </p>
                 </div>
@@ -161,10 +153,9 @@ export default function Home() {
           </div>
         </div>
         {/* ================what we do====== */}
-
-        <div className="md:p-16 md:px-28 bg-[#230B46] px-5 py-10">
-          <h1 className="md:text-5xl text-4xl text-[#5179F5]">WHAT WE DO</h1>
-          <p className="md:text-xl text-md  text-justify md:my-10 my-5 text-white">
+        <div className="lg:p-16 lg:px-28 bg-[#230B46] px-5 py-10">
+          <h1 className="lg:text-5xl text-4xl text-[#5179F5]">WHAT WE DO</h1>
+          <p className="lg:text-xl text-md  text-justify lg:my-10 my-5 text-white">
             Virtualify is a forward-thinking IT company specializing in
             comprehensive technological solutions. From designing user-friendly
             interfaces to implementing robust network infrastructures, we cater
@@ -179,78 +170,75 @@ export default function Home() {
           <div className="flex items-center justify-between flex-wrap">
             <Image className="" width={600} height={350} src="/2.webp" alt="image" />
             <div>
-              <p className="md:text-6xl text-white">App Development</p>
-              <p className="md:text-7xl text-[#9648F6] my-3">Web Development</p>
-              <p className="md:text-6xl text-white">Cloud Services</p>
+              <p className="lg:text-6xl text-white">App Development</p>
+              <p className="lg:text-7xl text-[#9648F6] my-3">Web Development</p>
+              <p className="lg:text-6xl text-white">Cloud Services</p>
             </div>
           </div>
         </div>
-
         {/* =======Technology we work with======== */}
-        <div className="text-center  md:py-16 p-5 bg-slate-950  text-white">
+        <div className="text-center  lg:py-16 p-5 bg-slate-950  text-white">
           <h1 className="text-5xl font-bold mb-7">Skills</h1>
-          <p className="text-xl md:px-56">
+          <p className="text-xl lg:px-56">
             Each skill is a brushstroke contributing to the masterpiece of your
             online presence. Let us weave innovation, aesthetics, and leadership
             into the fabric of your digital journey.
           </p>
-          <div className="bg-[#D8F7F2] md:mx-40 md:py-20 py-5 md:rounded-[100px] rounded-3xl my-12">
-            <span className="bg-gradient-to-r from-[#9648F6] via-[#14B4FF] to-[#66D898] md:text-5xl text-3xl ms-2 bg-clip-text text-transparent font-bold">
+          <div className="bg-[#D8F7F2] lg:mx-40 lg:py-20 py-5 lg:rounded-[100px] rounded-3xl my-12">
+            <span className="bg-gradient-to-r from-[#9648F6] via-[#14B4FF] to-[#66D898] lg:text-5xl text-3xl ms-2 bg-clip-text text-transparent font-bold">
               TECHNOLOGIES WE WORK WITH
             </span>
             <div className="flex justify-center flex-wrap items-center mt-6">
-              <div className="md:w-48 md:h-36 w-full md:mx-2  h-32 my-3  flex justify-center items-center">
-                <Image className="w-20" src={android} alt="Android" />
+              <div className="lg:w-48 lg:h-36 w-full lg:mx-2  h-32 my-3  flex justify-center items-center">
+                <Image width={100} height={100} className="w-20" src="/android.svg" alt="Android" />
                 <span className="text-3xl font-bold text-black mx-2">
                   Android
                 </span>
               </div>
-              <div className="md:w-48 md:h-36  md:mx-2 w-full h-32 my-3 flex justify-center items-center ">
-                <Image className="w-20" src={flutter} alt="flutter" />
+              <div className="lg:w-48 lg:h-36  lg:mx-2 w-full h-32 my-3 flex justify-center items-center ">
+                <Image width={100} height={100} className="w-20" src="/flutter.svg" alt="flutter" />
                 <span className="text-3xl font-bold text-black mx-2">
                   flutter
                 </span>
               </div>
-              <div className="md:w-48 md:h-36  md:mx-2 w-full h-32 flex justify-center items-center ">
-                <Image className="w-20" src={apple} alt="ios" />
+              <div className="lg:w-48 lg:h-36  lg:mx-2 w-full h-32 flex justify-center items-center ">
+                <Image width={100} height={100} className="w-20" src="/apple.svg" alt="ios" />
                 <span className="text-3xl font-bold text-black mx-2">ios</span>
               </div>
-              <div className="md:w-48 md:h-36  md:mx-2 w-full my-3 h-32 flex justify-center items-center ">
-                <Image className="w-20" src={java} alt="JAVA" />
+              <div className="lg:w-48 lg:h-36  lg:mx-2 w-full my-3 h-32 flex justify-center items-center ">
+                <Image width={100} height={100} className="w-20" src="/java.svg" alt="JAVA" />
                 <span className="text-3xl font-bold text-black mx-2">JAVA</span>
               </div>
-              <div className="md:w-48 md:h-36  md:mx-2 w-full my-3 h-32 flex justify-center items-center ">
-                <Image className="w-20" src={python} alt="Python" />
+              <div className="lg:w-48 lg:h-36  lg:mx-2 w-full my-3 h-32 flex justify-center items-center ">
+                <Image width={100} height={100} className="w-20" src="/python.svg" alt="Python" />
                 <span className="text-3xl font-bold text-black mx-2">
                   Python
                 </span>
               </div>
-              <div className="md:w-48 md:h-36  md:mx-2 w-full my-3 h-32 flex justify-center items-center ">
-                <Image className="w-20" src={react} alt="React Native" />
+              <div className="lg:w-48 lg:h-36  lg:mx-2 w-full my-3 h-32 flex justify-center items-center ">
+                <Image width={100} height={100} className="w-20" src="/react.svg" alt="React Native" />
                 <span className="text-3xl font-bold text-black mx-2">
                   React Native
                 </span>
               </div>
-              <div className="md:w-48 md:h-36  md:mx-2 w-full my-3 h-32 flex justify-center items-center ">
-                <Image className="w-20" src={swift} alt="swift" />
+              <div className="lg:w-48 lg:h-36  lg:mx-2 w-full my-3 h-32 flex justify-center items-center ">
+                <Image width={100} height={100} className="w-20" src="/swift.svg" alt="swift" />
                 <span className="text-3xl font-bold text-black mx-2">
                   Swift
                 </span>
               </div>
-              <div className="md:w-48 md:h-36  md:mx-2 w-full my-3 h-32 flex justify-center items-center ">
-                <Image className="w-20" src={pwa} alt="PWA" />
+              <div className="lg:w-48 lg:h-36  lg:mx-2 w-full my-3 h-32 flex justify-center items-center ">
+                <Image width={100} height={100} className="w-20" src="/pwa.svg" alt="PWA" />
                 <span className="text-3xl font-bold text-black mx-2">PWA</span>
               </div>
             </div>
           </div>
         </div>
-
         {/* ====================why us==================== */}
-
-        <div className="md:px-20 py-10 bg-slate-950 text-white px-5">
+        <div className="lg:px-20 py-10 bg-slate-950 text-white px-5">
           <h1 className="text-5xl font-bold ">Why Choose Virtualify?</h1>
           <div className="flex justify-between items-center my-16 flex-wrap">
-            <div className="md:w-[29%] w-[90%] border rounded-3xl p-4 mb-12 mx-auto">
+            <div className="lg:w-[29%] w-[90%] border rounded-3xl p-4 mb-12 mx-auto">
               <div className="flex items-center mb-3">
                 <div className="text-2xl">
                   <MdEngineering
@@ -269,7 +257,7 @@ export default function Home() {
                 ideas into reality.
               </p>
             </div>
-            <div className="md:w-[29%] w-[90%] border rounded-3xl p-4 mb-12 mx-auto">
+            <div className="lg:w-[29%] w-[90%] border rounded-3xl p-4 mb-12 mx-auto">
               <div className="flex items-center mb-3">
                 <div className="text-2xl">
                   <ImMobile
@@ -288,7 +276,7 @@ export default function Home() {
                 but exceeds industry standards.
               </p>
             </div>
-            <div className="md:w-[29%] w-[90%] border rounded-3xl p-4 mb-12 mx-auto">
+            <div className="lg:w-[29%] w-[90%] border rounded-3xl p-4 mb-12 mx-auto">
               <div className="flex items-center mb-3">
                 <div className="text-2xl">
                   <SiSnapcraft
@@ -306,7 +294,7 @@ export default function Home() {
                 ensures that your project is not just current but future-proof.
               </p>
             </div>
-            <div className="md:w-[29%] w-[90%] border rounded-3xl p-4 mb-12 mx-auto">
+            <div className="lg:w-[29%] w-[90%] border rounded-3xl p-4 mb-12 mx-auto">
               <div className="flex items-center mb-3">
                 <div className="text-2xl">
                   <TbNeedleThread
@@ -325,7 +313,7 @@ export default function Home() {
                 your unique requirements.
               </p>
             </div>
-            <div className="md:w-[29%] w-[90%] border rounded-3xl p-4 mb-12 mx-auto">
+            <div className="lg:w-[29%] w-[90%] border rounded-3xl p-4 mb-12 mx-auto">
               <div className="flex items-center mb-3">
                 <div className="text-2xl">
                   <FaHandshake
@@ -342,7 +330,7 @@ export default function Home() {
                 project&apos;s success.
               </p>
             </div>
-            <div className="md:w-[29%] w-[90%] border rounded-3xl p-4 mb-12 mx-auto">
+            <div className="lg:w-[29%] w-[90%] border rounded-3xl p-4 mb-12 mx-auto">
               <div className="flex items-center mb-3">
                 <div className="text-2xl">
                   <MdCelebration
@@ -364,7 +352,7 @@ export default function Home() {
           </div>
         </div>
         {/* ==============Our clients praise========== */}
-        <div className="text-center  bg-slate-950 text-white md:py-16 p-5">
+        <div className="text-center  bg-slate-950 text-white lg:py-16 p-5">
           <h1 className="text-5xl font-bold ">
             Our clients praise us for our great results
           </h1>

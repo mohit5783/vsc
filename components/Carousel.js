@@ -38,7 +38,7 @@ const Carousel = () => {
   return (
     <div>
       <section className="py-14 ">
-        <div className="max-w-screen-xl mx-auto px-4 md:px-8">
+        <div className="max-w-screen-xl mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <ul>
               {testimonials.map((item, idx) =>

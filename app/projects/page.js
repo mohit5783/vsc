@@ -3,12 +3,10 @@ import Image from "next/image";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Page = () => {
-
   return (
     <div className="bg-slate-950 text-white">
       <div className="">
         <div className="bg-black">
-          
           <Image
             className="w-full"
             width={1200}
@@ -18,16 +16,16 @@ const Page = () => {
           />
           <div className="mdw-1/2 w-full mx-auto text-center ">
             <h1 className="">
-              <span className="md:text-5xl text-2xl font-bold">
+              <span className="lg:text-5xl text-2xl font-bold">
                 JourneyCrafter
               </span>{" "}
               <br />
-              <span className="italic md:text-4xl text-xl">
+              <span className="italic lg:text-4xl text-xl">
                 {" "}
                 - Crafting travel experiences.
               </span>
             </h1>
-            <p className="py-12 md:px-48">
+            <p className="py-12 lg:px-48">
               Get ready to experience a new dimension of digital engagement. Our
               upcoming product will combine the magic of NFTs, the power of
               blockchain, and the excitement of immersive 3D experiences. Stay
@@ -35,7 +33,7 @@ const Page = () => {
             </p>
           </div>
         </div>
-        <div className="md:px-64 p-5 border-b bg-black">
+        <div className="lg:px-64 p-5 border-b bg-black">
           <h1 className="text-center text-5xl my-5">A Glimpse into Tomorrow</h1>
           <div className="w-3/4 ">
             <h2 className="text-2xl underline">⁠User Input:</h2>
@@ -113,8 +111,8 @@ const Page = () => {
           We have completed thousands of projects, some of them showing
           important projects here.
         </p>
-        <div className="flex justify-evenly p-5  md:p-20 md:px-32 flex-wrap">
-          <div ata-aos="zoom-in-right" className=" md:w-1/2 w-full ">
+        <div className="flex justify-evenly p-5  lg:p-20 lg:px-32 flex-wrap">
+          <div ata-aos="zoom-in-right" className=" lg:w-1/2 w-full ">
             <h1 className="text-2xl text-[#9648F6]">iOS, Android, Swift</h1>
             <h1 className="text-4xl my-5 font-bold">
               Furniture ios app kit developed in swift framework
@@ -135,7 +133,7 @@ const Page = () => {
           </div>
           <div
             ata-aos="zoom-in-right"
-            className="md:w-1/2 w-full  overflow-hidden hover:scale-95  rounded-3xl transition-all"
+            className="lg:w-1/2 w-full  overflow-hidden hover:scale-95  rounded-3xl transition-all"
           >
             <Image
               unoptimized
@@ -149,8 +147,8 @@ const Page = () => {
             ></Image>
           </div>
         </div>
-        <div className="flex justify-evenly flex-wrap-reverse  p-5 md:p-20 md:px-32">
-          <div className=" md:w-1/2 w-full overflow-hidden hover:scale-95  rounded-3xl transition-all">
+        <div className="flex justify-evenly flex-wrap-reverse  p-5 lg:p-20 lg:px-32">
+          <div className=" lg:w-1/2 w-full overflow-hidden hover:scale-95  rounded-3xl transition-all">
             <Image
               unoptimized
               className="hover:scale-110 transition"
@@ -162,7 +160,7 @@ const Page = () => {
               alt="image"
             ></Image>
           </div>
-          <div className=" md:w-1/2 w-full text-end">
+          <div className=" lg:w-1/2 w-full text-end">
             <h1 className="text-2xl text-[#9648F6]">iOS, Android, Swift</h1>
             <h1 className="text-4xl my-5 font-bold">
               Furniture ios app kit developed in swift framework
@@ -183,8 +181,8 @@ const Page = () => {
             <p className="text-xl font-bold">ACB Ltd Pvt </p>
           </div>
         </div>
-        <div className="flex justify-evenly p-5  md:p-20 md:px-32 flex-wrap">
-          <div className=" md:w-1/2 w-full ">
+        <div className="flex justify-evenly p-5  lg:p-20 lg:px-32 flex-wrap">
+          <div className=" lg:w-1/2 w-full ">
             <h1 className="text-2xl text-[#9648F6]">iOS, Android, Swift</h1>
             <h1 className="text-4xl my-5 font-bold">
               Furniture ios app kit developed in swift framework
@@ -203,7 +201,7 @@ const Page = () => {
             />
             <p className="text-3xl font-bold">ACB Ltd Pvt </p>
           </div>
-          <div className="md:w-1/2 w-full  overflow-hidden hover:scale-95  rounded-3xl transition-all">
+          <div className="lg:w-1/2 w-full  overflow-hidden hover:scale-95  rounded-3xl transition-all">
             <Image
               unoptimized
               className="hover:scale-110 transition"
@@ -216,8 +214,8 @@ const Page = () => {
             ></Image>
           </div>
         </div>
-        <div className="flex justify-evenly flex-wrap-reverse  p-5 md:p-20 md:px-32">
-          <div className=" md:w-1/2 w-full overflow-hidden hover:scale-95  rounded-3xl transition-all">
+        <div className="flex justify-evenly flex-wrap-reverse  p-5 lg:p-20 lg:px-32">
+          <div className=" lg:w-1/2 w-full overflow-hidden hover:scale-95  rounded-3xl transition-all">
             <Image
               unoptimized
               className="hover:scale-110 transition"
@@ -229,7 +227,7 @@ const Page = () => {
               alt="image"
             ></Image>
           </div>
-          <div className=" md:w-1/2 w-full text-end">
+          <div className=" lg:w-1/2 w-full text-end">
             <h1 className="text-2xl text-[#9648F6]">iOS, Android, Swift</h1>
             <h1 className="text-4xl my-5 font-bold">
               Furniture ios app kit developed in swift framework

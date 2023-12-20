@@ -9,8 +9,8 @@ const AboutUs = () => {
   const [screen, setscreen] = useState(1);
   return (
     <>
-      <div className="flex  justify-evenly  md:p-28 p-5 bg-[#cfe8fe] text-black flex-wrap">
-        <div className="md:w-1/4 w-full md:block flex flex-wrap">
+      <div className="flex  justify-evenly  lg:p-28 p-5 bg-[#cfe8fe] text-black flex-wrap">
+        <div className="lg:w-1/4 w-full lg:block flex flex-wrap">
           <div
             onClick={() => setscreen(1)}
             className={`flex ${
@@ -23,7 +23,7 @@ const AboutUs = () => {
               } `}
             />
             <div
-              className={`text-2xl md:w-60 w-56 ${
+              className={`text-2xl lg:w-60 w-56 ${
                 screen === 1 ? "text-[#9648F6]" : "text-black"
               }`}
             >
@@ -42,7 +42,7 @@ const AboutUs = () => {
               } `}
             />
             <div
-              className={`text-2xl md:w-60 w-56 ${
+              className={`text-2xl lg:w-60 w-56 ${
                 screen === 2 ? "text-[#9648F6]" : "text-black"
               }`}
             >
@@ -61,7 +61,7 @@ const AboutUs = () => {
               } `}
             />
             <div
-              className={`text-2xl md:w-60 w-56  ${
+              className={`text-2xl lg:w-60 w-56  ${
                 screen === 3 ? "text-[#9648F6]" : "text-black"
               }`}
             >
@@ -80,7 +80,7 @@ const AboutUs = () => {
               } `}
             />
             <div
-              className={`text-2xl md:w-60 w-56 ${
+              className={`text-2xl lg:w-60 w-56 ${
                 screen === 4 ? "text-[#9648F6]" : "text-black"
               }`}
             >
@@ -89,9 +89,9 @@ const AboutUs = () => {
           </div>
         </div>
         {screen === 1 ? (
-          <div className="md:w-3/4 md:full  md:px-24 my-8 md:my-0">
+          <div className="lg:w-3/4 lg:full  lg:px-24 my-8 lg:my-0">
             <h1 className="text-4xl font-bold mb-5"> Our Mission</h1>
-            <p className="text-xl text-justify md:text-left">
+            <p className="text-xl text-justify lg:text-left">
               Virtualify is dedicated to revolutionizing the digital landscape
               by providing innovative and cutting-edge IT solutions. Our mission
               is to empower businesses and individuals with transformative
@@ -102,9 +102,9 @@ const AboutUs = () => {
           </div>
         ) : null}
         {screen === 2 ? (
-          <div className="md:w-3/4 md:full  md:px-24 my-8 md:my-0">
+          <div className="lg:w-3/4 lg:full  lg:px-24 my-8 lg:my-0">
             <h1 className="text-4xl font-bold mb-5"> Our Vision</h1>
-            <p className="text-xl text-justify md:text-left">
+            <p className="text-xl text-justify lg:text-left">
               At Virtualify, we envision a future where the virtual realm
               seamlessly integrates with everyday life, creating limitless
               possibilities for collaboration, communication, and growth. Our
@@ -115,9 +115,9 @@ const AboutUs = () => {
           </div>
         ) : null}
         {screen === 3 ? (
-          <div className="md:w-3/4 md:full  md:px-24 my-8 md:my-0">
+          <div className="lg:w-3/4 lg:full  lg:px-24 my-8 lg:my-0">
             <h1 className="text-4xl font-bold mb-5"> Our Commitment</h1>
-            <p className="text-xl text-justify md:text-left">
+            <p className="text-xl text-justify lg:text-left">
               Our commitment is rooted in delivering unparalleled value to our
               clients, partners, and stakeholders. Virtualify is dedicated to
               maintaining the highest standards of quality, reliability, and
@@ -129,9 +129,9 @@ const AboutUs = () => {
         ) : null}
 
         {screen === 4 ? (
-          <div className="md:w-3/4 md:full  md:px-24 my-8 md:my-0">
+          <div className="lg:w-3/4 lg:full  lg:px-24 my-8 lg:my-0">
             <h1 className="text-4xl font-bold mb-5"> Our Values</h1>
-            <ul className="list-disc text-xl text-justify md:text-left">
+            <ul className="list-disc text-xl text-justify lg:text-left">
               <li>
                 <span className="font-bold">Innovation:</span> We embrace
                 creativity and encourage a culture of constant innovation,

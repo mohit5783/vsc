@@ -11,8 +11,8 @@ import { MdHeadsetMic } from "react-icons/md";
 const Page = () => {
   return (
     <>
-      <div className="w-full flex justify-evenly flex-wrap items-center md:px-36 p-5 bg-slate-950 text-white">
-        <div className="w-full md:w-1/2">
+      <div className="w-full flex justify-evenly flex-wrap items-center lg:px-36 p-5 bg-slate-950 text-white">
+        <div className="w-full lg:w-1/2">
           <div className="flex items-center text-[#66D898]">
             <MdHeadsetMic className="text-3xl me-3" />
             <h4 className="text-2xl">CONTACT US</h4>
@@ -23,7 +23,7 @@ const Page = () => {
           </h1>
         </div>
         <Image
-          className="w-full md:w-1/2"
+          className="w-full lg:w-1/2"
           width={650}
           height={400}
           src="/contactus.svg"
@@ -32,8 +32,8 @@ const Page = () => {
       </div>
       <div className="bg-slate-950 text-white p-5">
         <div>
-          <div className="md:w-4/5 mx-auto flex flex-wrap justify-evenly ">
-            <div className="w-full md:w-1/2">
+          <div className="lg:w-4/5 mx-auto flex flex-wrap justify-evenly ">
+            <div className="w-full lg:w-1/2">
               <h4 className="text-[#66D898] text-2xl">LET&apos;S TALK</h4>
               <h1 className="text-5xl font-bold my-8">
                 Good talks make good projects
@@ -45,7 +45,7 @@ const Page = () => {
 
               <Image src="/brain.webp" width={600} height={400} alt="image" />
             </div>
-            <div className="w-full md:w-1/2    md:px-16">
+            <div className="w-full lg:w-1/2    lg:px-16">
               <div className="flex flex-col items-start">
                 <h1 className="text-4xl font-bold ">Get in touch</h1>
                 <div className=" flex items-center mt-3">
@@ -91,7 +91,7 @@ const Page = () => {
               <div>
                 <h1 className="text-4xl font-bold ">Follow us</h1>
                 <div className=" flex items-center mt-3">
-                  <ul className=" flex gap-6 justify-center md:justify-start">
+                  <ul className=" flex gap-6 justify-center lg:justify-start">
                     <li>
                       <Link
                         href="/"
@@ -213,7 +213,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className=" md:px-24 py-16">
+        <div className=" lg:px-24 py-16">
           <h1 className="text-5xl text-center font-bold">
             {" "}
             We&apos; re Here to Help{" "}
@@ -223,7 +223,7 @@ const Page = () => {
             you navigate the future with confidence.
           </p>
           <div className="flex justify-evenly items-center flex-wrap my-10">
-            <div className="w-96 md:h-96 h-[450px] border rounded-2xl p-6 my-5">
+            <div className="w-96 lg:h-96 h-[450px] border rounded-2xl p-6 my-5">
               <Image
                 width={100}
                 height={100}
@@ -244,7 +244,7 @@ const Page = () => {
                 into reality.
               </p>
             </div>
-            <div className="w-96 md:h-96 h-[450px] border rounded-2xl p-6 my-5">
+            <div className="w-96 lg:h-96 h-[450px] border rounded-2xl p-6 my-5">
               <Image
                 width={100}
                 height={100}
@@ -265,7 +265,7 @@ const Page = () => {
                 needs.
               </p>
             </div>
-            <div className="w-96 md:h-96 h-[450px] border rounded-2xl p-6  my-5">
+            <div className="w-96 lg:h-96 h-[450px] border rounded-2xl p-6  my-5">
               <Image
                 width={100}
                 height={100}
@@ -287,7 +287,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className="  flex justify-evenly items-center md:p-20 bg-[#d0f4de] text-black flex-wrap">
+        <div className="  flex justify-evenly items-center lg:p-20 bg-[#d0f4de] text-black flex-wrap">
           <div className="w-60 flex justify-center items-center flex-col my-5">
             <Image
               width={100}

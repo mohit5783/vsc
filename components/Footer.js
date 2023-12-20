@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div className="">
-              <div className=" vc justify-center md:justify-start">
+              <div className=" vc justify-center lg:justify-start">
                 <Image
                   width={100}
                   height={100}
@@ -21,12 +21,12 @@ const Footer = () => {
                 </span>
               </div>
 
-              <p className="mt-4 md:max-w-xs text-white text-justify">
+              <p className="mt-4 lg:max-w-xs text-white text-justify">
                 Elevate your business with Virtualify Software Consultancy.
                 Experience innovation as we craft tailored digital solutions.
               </p>
 
-              <ul className="mt-8 flex gap-6 justify-center md:justify-start">
+              <ul className="mt-8 flex gap-6 justify-center lg:justify-start">
                 <li>
                   <Link
                     href="/"
@@ -146,7 +146,7 @@ const Footer = () => {
             </div>
 
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
-              <div className="text-center md:text-start">
+              <div className="text-center lg:text-start">
                 <p className="font-medium text-[#66D898]">Services</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
@@ -163,7 +163,7 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div className="text-center md:text-start">
+              <div className="text-center lg:text-start">
                 <p className="font-medium text-[#66D898] ">Company</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
@@ -175,7 +175,7 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div className="text-center md:text-start">
+              <div className="text-center lg:text-start">
                 <p className="font-medium text-[#66D898]">Helpful Links</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
@@ -185,7 +185,7 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div className="text-center md:text-start">
+              <div className="text-center lg:text-start">
                 <p className="font-medium text-[#66D898]">Industries</p>
 
                 <ul className="mt-6 space-y-4 text-sm">

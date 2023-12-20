@@ -7,8 +7,8 @@ import { FaBuilding } from "react-icons/fa";
 const Page = () => {
   return (
     <div className="bg-slate-950 text-white">
-      <div className="flex justify-evenly items-center md:p-28 p-5 flex-wrap ">
-        <div className="md:w-1/2 w-full">
+      <div className="flex justify-evenly items-center lg:p-28 p-5 flex-wrap ">
+        <div className="lg:w-1/2 w-full">
           <div className="flex items-center  ">
             <FaBuilding className="text-[#9648F6] text-2xl" />
             <h4 className="ms-5 text-2xl text-[#9648F6]">WHO WE ARE</h4>
@@ -16,7 +16,7 @@ const Page = () => {
           <h1 className="text-5xl font-bold my-5">
             We are a creative digital agency based in India.
           </h1>
-          <p className="text-xl mt-10 text-justify md:text-left">
+          <p className="text-xl mt-10 text-justify lg:text-left">
             We are a team of top talent delivering enterprise solutions
             globally. We evolve with the advancement in technology because we
             believe in making our technology as your innovation. Our experts
@@ -28,7 +28,7 @@ const Page = () => {
             professionals in the industry.
           </p>
         </div>
-        <div className="md:w-1/2 w-full flex justify-center items-center my-5">
+        <div className="lg:w-1/2 w-full flex justify-center items-center my-5">
           <Image
             className="rounded-3xl"
             width={500}
@@ -47,8 +47,8 @@ const Page = () => {
         <h1 className="text-5xl font-extrabold">
           Transparency and Ethics
         </h1>
-        <div className="md:mx-28 md:mt-24 flex justify-between items-center  flex-wrap mt-16">
-          <div className="md:w-[30%] w-full text-left md:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
+        <div className="lg:mx-28 lg:mt-24 flex justify-between items-center  flex-wrap mt-16">
+          <div className="lg:w-[30%] w-full text-left lg:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">
               Client-centric Approach
             </h3>
@@ -69,7 +69,7 @@ const Page = () => {
               ></Image>
             </div>
           </div>
-          <div className="md:w-[30%] w-full text-left md:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
+          <div className="lg:w-[30%] w-full text-left lg:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">
               Service Delivered in Time
             </h3>
@@ -91,7 +91,7 @@ const Page = () => {
               ></Image>
             </div>
           </div>
-          <div className="md:w-[30%] w-full text-left md:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
+          <div className="lg:w-[30%] w-full text-left lg:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">
               Effective Collaboration
             </h3>
@@ -113,7 +113,7 @@ const Page = () => {
               ></Image>
             </div>
           </div>
-          <div className="md:w-[30%] w-full text-left md:h-96 h-96  px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
+          <div className="lg:w-[30%] w-full text-left lg:h-96 h-96  px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">Employee Benefits</h3>
             <p className="my-5 text-zinc-500">
             We invest in our team's success and happiness. Our commitment to employee satisfaction extends beyond the workplace, promoting a healthy work-life balance and fostering a culture that values the overall growth and fulfillment of each team member.
@@ -133,7 +133,7 @@ const Page = () => {
               ></Image>
             </div>
           </div>
-          <div className="md:w-[30%] w-full text-left md:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
+          <div className="lg:w-[30%] w-full text-left lg:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">Team Work</h3>
             <p className="my-5 text-zinc-500">
             Embracing the strengths of each team member, we foster a collaborative culture that not only drives project success but also cultivates a dynamic and cohesive work environment, propelling us to new heights in the ever-evolving tech landscape.
@@ -153,7 +153,7 @@ const Page = () => {
               ></Image>
             </div>
           </div>
-          <div className="md:w-[30%] w-full text-left md:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
+          <div className="lg:w-[30%] w-full text-left lg:h-96 h-96 px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">
               Quality of Service
             </h3>
@@ -176,10 +176,10 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="md:p-28 p-5 bg-[#BDE0FF] text-black">
+      <div className="lg:p-28 p-5 bg-[#BDE0FF] text-black">
         <h1 className="text-2xl text-[#9648F6] cursor-pointer">CAREER</h1>
         <div className="flex justify-evenly  flex-wrap ">
-          <div className="md:w-1/2 w-full">
+          <div className="lg:w-1/2 w-full">
             <h1 className="text-4xl font-bold  pe-10 my-5">
               Teamwork is the ability to work together toward a common vision.
             </h1>
@@ -196,7 +196,7 @@ const Page = () => {
             </Link>
           </div>
           <Image
-            className="md:w-1/2 w-full"
+            className="lg:w-1/2 w-full"
             width={400}
             height={400}
             src="/teamwork.svg"
