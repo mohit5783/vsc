@@ -35,7 +35,7 @@ const NavLinks = [
 
 export default function Header() {
   return (
-    <header className="text-white bg-slate-950 p-5">
+    <header className="p-5">
       <nav
         className="flex items-center justify-between"
         aria-label="Global Header Navigation"

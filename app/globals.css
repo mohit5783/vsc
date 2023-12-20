@@ -2,11 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-.vc{
-    display: flex;
-    align-items: center;
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 18, 18, 18;
+  --background-end-rgb: 18, 18, 18;
+  --yellow-rgb: 245, 245, 67;
+  --green-rgb: 158, 245, 67;
+  --pink-rgb: 245, 67, 245;
+  --purple-rgb: 156, 67, 245;
+  --blue-rgb: 67, 67, 245;
+}
+/* 
+  --yellow-rgb: 245, 245, 67; //f5f543
+  --green-rgb: 158, 245, 67; //9ef543
+  --pink-rgb: 245, 67, 245; //f543f5
+  --purple-rgb: 156, 67, 245; //9c43f5
+  --blue-rgb: 67, 67, 245; //4343f5
+  */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 18, 18, 18;
+    --background-end-rgb: 18, 18, 18;
+    --yellow-rgb: 245, 245, 67;
+    --green-rgb: 158, 245, 67;
+    --pink-rgb: 245, 67, 245;
+    --purple-rgb: 156, 67, 245;
+    --blue-rgb: 67, 67, 245;
+    --logo-gradient: linear-gradient(
+      to 45deg,
+      rgb(var(--yellow-rgb)),
+      rgb(var(--green-rgb)),
+      rgb(var(--pink-rgb)),
+      rgb(var(--purple-rgb)),
+      rgb(var(--blue-rgb))
+    );
+  }
 }
 .body{
     background-color: red;
 }
 
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+.vc {
+  display: flex;
+  align-items: center;
+}

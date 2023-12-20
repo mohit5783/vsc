@@ -1,10 +1,30 @@
-import { Inter } from "next/font/google";
+import { Inter, Handlee, ZCOOL_KuaiLe, Raleway } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+
+const handlee = Handlee({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-handlee",
+  display: "swap",
+});
+
+const raleway = Raleway({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-raleway",
+  display: "swap",
+});
+const zcool = ZCOOL_KuaiLe({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-zcool",
+  display: "swap",
+});
 
 export const viewport = {
   width: "device-width",
@@ -73,7 +93,9 @@ const jsonLd = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${inter.variable} ${handlee.variable} ${zcool.variable} ${raleway.variable}`}
+      >
         <div className="sticky top-0 z-50">
           <Header />
         </div>
