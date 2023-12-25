@@ -30,10 +30,10 @@ const Page = () => {
           alt="image"
         ></Image>
       </div>
-      <div className=" text-white p-5">
+      <div className=" text-white p-5  ">
         <div>
-          <div className="lg:w-4/5 mx-auto flex flex-wrap justify-evenly ">
-            <div className="w-full lg:w-1/2">
+          <div className="lg:w-4/5 mx-auto flex flex-wrap justify-evenly  ">
+            <div className="w-full lg:w-1/2 flex flex-col lg:items-start items-center">
               <h4 className="text-[#66D898] text-2xl">LET&apos;S TALK</h4>
               <h1 className="text-5xl font-bold my-8">
                 Good talks make good projects
@@ -45,8 +45,8 @@ const Page = () => {
 
               <Image src="/brain.webp" width={600} height={400} alt="image" />
             </div>
-            <div className="w-full lg:w-1/2    lg:px-16">
-              <div className="flex flex-col items-start">
+            <div className="w-full lg:w-1/2 flex justify-center item-center flex-col   lg:px-16">
+              <div className="flex flex-col lg:items-start items-center">
                 <h1 className="text-4xl font-bold ">Get in touch</h1>
                 <div className=" flex items-center mt-3">
                   <div>
@@ -69,7 +69,7 @@ const Page = () => {
                   </p>
                 </div>
               </div>
-              <div className="text-center flex flex-col justify-start items-start my-10">
+              <div className="text-center flex flex-col lg:items-start  items-center my-10">
                 <h1 className="text-4xl font-bold">Come meet us</h1>
                 <div className=" flex mt-3">
                   <div>
@@ -88,7 +88,7 @@ const Page = () => {
                   </p>
                 </div>
               </div>
-              <div>
+              <div className=" flex flex-col lg:items-start  items-center my-10">
                 <h1 className="text-4xl font-bold ">Follow us</h1>
                 <div className=" flex items-center mt-3">
                   <ul className=" flex gap-6 justify-center lg:justify-start">
@@ -209,7 +209,7 @@ const Page = () => {
             you navigate the future with confidence.
           </p>
           <div className="flex justify-evenly items-center flex-wrap my-10">
-            <div className="w-96 lg:h-96 h-[450px] border rounded-2xl p-6 my-5">
+            <div className="lg:w-96 lg:h-96 w-full h-auto  border rounded-2xl p-6 my-5">
               <Image
                 width={100}
                 height={100}
@@ -230,7 +230,7 @@ const Page = () => {
                 into reality.
               </p>
             </div>
-            <div className="w-96 lg:h-96 h-[450px] border rounded-2xl p-6 my-5">
+            <div className="lg:w-96 lg:h-96 w-full h-auto border rounded-2xl p-6 my-5">
               <Image
                 width={100}
                 height={100}
@@ -251,7 +251,7 @@ const Page = () => {
                 needs.
               </p>
             </div>
-            <div className="w-96 lg:h-96 h-[450px] border rounded-2xl p-6  my-5">
+            <div className="lg:w-96 lg:h-96 w-full h-auto border rounded-2xl p-6  my-5">
               <Image
                 width={100}
                 height={100}

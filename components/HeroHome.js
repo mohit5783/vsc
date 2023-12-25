@@ -19,7 +19,7 @@ const HeroHome = () => {
           We don't just develop apps; we craft digital experiences that
           transcend boundaries and redefine possibilities.{" "}
         </p>
-        <div className="flex justify-center mt-8">
+        <div className="flex flex-wrap justify-center mt-8">
           <div className="flex bg-purple-200 text-black font-inter font-bold text-md px-4 py-2 rounded-md mt-8 hover:bg-[#14B4FF] gap-2 justify-center items-center">
             <GiDiamondTrophy className="text-4xl" />
             11+ Happy Clients

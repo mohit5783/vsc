@@ -81,7 +81,7 @@ const Carousel = () => {
                   height={50}
                     src={item?.avatar}
                     className="w-16 h-16 mx-auto rounded-xl"
-                    alt="client image"
+                    alt="client's image"
 
                   />
                 </li>
