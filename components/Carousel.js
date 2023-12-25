@@ -48,7 +48,7 @@ const Carousel = () => {
                     <figure>
                       <blockquote>
                         <p className=" text-white text-xl font-semibold sm:text-xl">
-                          <span className="text-red-500">“</span>{item.quote} <span className="text-red-500">“</span>
+                          <span className="text-red-500">"</span>{item.quote} <span className="text-red-500">"</span>
                         </p>
                         <div className="mt-3">
                           <span className="block  font-semibold text-[#5179F5]">

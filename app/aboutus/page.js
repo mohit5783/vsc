@@ -7,7 +7,7 @@ import { FaBuilding } from "react-icons/fa";
 const Page = () => {
   return (
     <div className=" text-white">
-      <div className="flex justify-evenly items-center lg:p-28 p-5 flex-wrap ">
+      <div className="flex justify-evenly items-center xl:p-28 p-5 flex-wrap ">
         <div className="lg:w-1/2 w-full">
           <div className="flex items-center  ">
             <FaBuilding className="text-[#9648F6] text-2xl" />
@@ -44,8 +44,8 @@ const Page = () => {
         <h1 className="text-5xl font-extrabold">
           Transparency and Ethics
         </h1>
-        <div className="lg:mx-28 lg:mt-24 flex justify-between items-center  flex-wrap mt-16">
-          <div className="lg:w-[30%] w-full text-left lg:h-80 h-auto px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
+        <div className="xl:mx-28 lg:mt-24 flex justify-between items-center  flex-wrap mt-16">
+          <div className="lg:w-[30%] w-full text-left xl:h-80 h-auto px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">
               Client-centric Approach
             </h3>
@@ -66,7 +66,7 @@ const Page = () => {
               ></Image>
             </div>
           </div>
-          <div className="lg:w-[30%] w-full text-left lg:h-80 h-auto px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
+          <div className="lg:w-[30%] w-full text-left xl:h-80 h-auto px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">
               Service Delivered in Time
             </h3>
@@ -88,7 +88,7 @@ const Page = () => {
               ></Image>
             </div>
           </div>
-          <div className="lg:w-[30%] w-full text-left lg:h-80 h-auto px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
+          <div className="lg:w-[30%] w-full text-left xl:h-80 h-auto px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">
               Effective Collaboration
             </h3>
@@ -110,7 +110,7 @@ const Page = () => {
               ></Image>
             </div>
           </div>
-          <div className="lg:w-[30%] w-full text-left lg:h-80 h-auto  px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
+          <div className="lg:w-[30%] w-full text-left xl:h-80 h-auto  px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">Employee Benefits</h3>
             <p className="my-5 text-zinc-500 text-justify">
             We invest in our team's success and happiness. Our commitment to employee satisfaction extends beyond the workplace, promoting a healthy work-life balance and fostering a culture that values the overall growth and fulfillment of each team member.
@@ -130,7 +130,7 @@ const Page = () => {
               ></Image>
             </div>
           </div>
-          <div className="lg:w-[30%] w-full text-left lg:h-80 h-auto px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
+          <div className="lg:w-[30%] w-full text-left xl:h-80 h-auto px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">Team Work</h3>
             <p className="my-5 text-zinc-500 text-justify">
             Embracing the strengths of each team member, we foster a collaborative culture that not only drives project success but also cultivates a dynamic and cohesive work environment, propelling us to new heights in the ever-evolving tech landscape.
@@ -150,7 +150,7 @@ const Page = () => {
               ></Image>
             </div>
           </div>
-          <div className="lg:w-[30%] w-full text-left lg:h-80 h-auto px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
+          <div className="lg:w-[30%] w-full text-left xl:h-80 h-auto px-7 pt-16 pb-8 rounded-2xl relative bg-white shadow-xl mb-20">
             <h3 className="text-2xl font-bold text-black">
               Quality of Service
             </h3>

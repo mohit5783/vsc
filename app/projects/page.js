@@ -33,7 +33,7 @@ const Page = () => {
             </p>
           </div>
         </div>
-        <div className="lg:px-64 p-5 border-b bg-black">
+        <div className="xl:px-64 lg:px-36 p-5 border-b bg-black">
           <h1 className="text-center text-5xl my-5">A Glimpse into Tomorrow</h1>
           <div className="w-3/4 ">
             <h2 className="text-2xl underline">⁠User Input:</h2>

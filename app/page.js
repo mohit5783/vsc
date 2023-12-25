@@ -17,13 +17,13 @@ export default function Home() {
     <>
       <div>
         <HeroHome />
-        <div className="lg:px-28 px-5 lg:pb-20 lg:pt-12 flex flex-wrap justify-between items-center  text-white">
+        <div className="xl:px-28 px-5 lg:pb-20 lg:pt-12 flex flex-wrap justify-between items-center  text-white">
           <div className="w-full text-center lg:px-24">
             <h1 className="lg:text-6xl text-4xl font-bold my-10">
               Top Mobile App Development Company in India
             </h1>
 
-            <p className="lg:text-2xl text-md text-[#00E2C2] font-thin ">
+            <p className="lg:text-2xl text-md text-[#00E2C2] font-thin text-justify xl:text-center">
               Welcome to our Vitualify&apos;s digital playground, where
               innovation meets expertise! We&apos;re a passionate team of web
               wizards dedicated to optimize your ideas into stunning realities.

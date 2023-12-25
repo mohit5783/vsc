@@ -7,8 +7,8 @@ import { TbNeedleThread } from "react-icons/tb";
 const WhyChooseUs = () => {
   return <div>
      <div className="lg:px-20 py-10  text-white px-5">
-            <h1 className="text-5xl font-bold ">Why Choose Virtualify?</h1>
-            <div className="flex justify-between items-center my-16 flex-wrap">
+            <h1 className="text-5xl font-bold text-center xl:text-start">Why Choose Virtualify?</h1>
+            <div className="flex justify-between items-center xl:my-16 my-8 flex-wrap">
               <div className="lg:w-[29%] w-[90%] border rounded-3xl p-4 mb-12 mx-auto">
                 <div className="flex items-center mb-3">
                   <div className="text-2xl">

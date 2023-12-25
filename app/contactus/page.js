@@ -11,11 +11,11 @@ import { MdHeadsetMic } from "react-icons/md";
 const Page = () => {
   return (
     <>
-      <div className="w-full flex justify-evenly flex-wrap items-center lg:px-36 p-5  text-white">
+      <div className="w-full flex justify-evenly flex-wrap items-center xl:px-36 p-5  text-white">
         <div className="w-full lg:w-1/2">
-          <div className="flex items-center text-[#66D898]">
+          <div className="flex items-center justify-center lg:justify-start text-[#66D898]">
             <MdHeadsetMic className="text-3xl me-3" />
-            <h4 className="text-2xl">CONTACT US</h4>
+            <h4 className="text-2xl ">CONTACT US</h4>
           </div>
           <h1 className="text-5xl font-bold my-8">
             Get in Touch with Tech Excellence: Reach Out to Our IT Experts
@@ -31,11 +31,11 @@ const Page = () => {
         ></Image>
       </div>
       <div className=" text-white p-5  ">
-        <div>
-          <div className="lg:w-4/5 mx-auto flex flex-wrap justify-evenly  ">
+       
+          <div className=" mx-auto flex flex-wrap justify-evenly  xl:px-36">
             <div className="w-full lg:w-1/2 flex flex-col lg:items-start items-center">
               <h4 className="text-[#66D898] text-2xl">LET&apos;S TALK</h4>
-              <h1 className="text-5xl font-bold my-8">
+              <h1 className="text-5xl font-bold my-8 text-center lg:text-start">
                 Good talks make good projects
               </h1>
               <p>
@@ -45,7 +45,7 @@ const Page = () => {
 
               <Image src="/brain.webp" width={600} height={400} alt="image" />
             </div>
-            <div className="w-full lg:w-1/2 flex justify-center item-center flex-col   lg:px-16">
+            <div className="w-full lg:w-1/2 flex justify-center item-center flex-col  lg:ps-20 ">
               <div className="flex flex-col lg:items-start items-center">
                 <h1 className="text-4xl font-bold ">Get in touch</h1>
                 <div className=" flex items-center mt-3">
@@ -88,7 +88,7 @@ const Page = () => {
                   </p>
                 </div>
               </div>
-              <div className=" flex flex-col lg:items-start  items-center my-10">
+              <div className=" flex flex-col lg:items-start  items-center">
                 <h1 className="text-4xl font-bold ">Follow us</h1>
                 <div className=" flex items-center mt-3">
                   <ul className=" flex gap-6 justify-center lg:justify-start">
@@ -198,8 +198,8 @@ const Page = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className=" lg:px-24 py-16">
+      
+        <div className=" xl:px-24 py-16">
           <h1 className="text-5xl text-center font-bold">
             {" "}
             We&apos; re Here to Help{" "}
