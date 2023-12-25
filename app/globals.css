@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 18, 18, 18;
@@ -41,12 +40,6 @@
     );
   }
 }
-.body{
-    background-color: red;
-}
-=======
-
->>>>>>> fe1b8d4 (contact page updated with links)
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -56,8 +49,15 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    font-family: font-ral;
 }
-.vc {
-  display: flex;
-  align-items: center;
+
+.bg{
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }

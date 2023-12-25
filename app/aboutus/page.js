@@ -6,7 +6,7 @@ import { FaBuilding } from "react-icons/fa";
 
 const Page = () => {
   return (
-    <div className="bg-slate-950 text-white">
+    <div className=" text-white">
       <div className="flex justify-evenly items-center lg:p-28 p-5 flex-wrap ">
         <div className="lg:w-1/2 w-full">
           <div className="flex items-center  ">

@@ -11,7 +11,7 @@ import { MdHeadsetMic } from "react-icons/md";
 const Page = () => {
   return (
     <>
-      <div className="w-full flex justify-evenly flex-wrap items-center lg:px-36 p-5 bg-slate-950 text-white">
+      <div className="w-full flex justify-evenly flex-wrap items-center lg:px-36 p-5  text-white">
         <div className="w-full lg:w-1/2">
           <div className="flex items-center text-[#66D898]">
             <MdHeadsetMic className="text-3xl me-3" />
@@ -30,7 +30,7 @@ const Page = () => {
           alt="image"
         ></Image>
       </div>
-      <div className="bg-slate-950 text-white p-5">
+      <div className=" text-white p-5">
         <div>
           <div className="lg:w-4/5 mx-auto flex flex-wrap justify-evenly ">
             <div className="w-full lg:w-1/2">

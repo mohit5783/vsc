@@ -4,7 +4,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Page = () => {
   return (
-    <div className="bg-slate-950 text-white">
+    <div className=" text-white">
       <div className="">
         <div className="bg-black">
           <Image
@@ -133,11 +133,11 @@ const Page = () => {
           </div>
           <div
             ata-aos="zoom-in-right"
-            className="lg:w-1/2 w-full  overflow-hidden hover:scale-95  rounded-3xl transition-all"
+            className="lg:w-1/2 w-full  overflow-hidden hover:scale-95 hover:duration-500 rounded-3xl transition-all"
           >
             <Image
               unoptimized
-              className="hover:scale-110 transition"
+              className="hover:scale-110 transition hover:duration-500"
               src={
                 "https://separateweb.com/demo-reevan/images/portfolio/portfolio-2.jpg"
               }
@@ -148,10 +148,10 @@ const Page = () => {
           </div>
         </div>
         <div className="flex justify-evenly flex-wrap-reverse  p-5 lg:p-20 lg:px-32">
-          <div className=" lg:w-1/2 w-full overflow-hidden hover:scale-95  rounded-3xl transition-all">
+          <div className=" lg:w-1/2 w-full overflow-hidden hover:scale-95 hover:duration-500 rounded-3xl transition-all">
             <Image
               unoptimized
-              className="hover:scale-110 transition"
+              className="hover:scale-110 transition hover:duration-500"
               src={
                 "https://separateweb.com/demo-reevan/images/portfolio/portfolio-1.jpg"
               }
@@ -201,10 +201,10 @@ const Page = () => {
             />
             <p className="text-3xl font-bold">ACB Ltd Pvt </p>
           </div>
-          <div className="lg:w-1/2 w-full  overflow-hidden hover:scale-95  rounded-3xl transition-all">
+          <div className="lg:w-1/2 w-full  overflow-hidden hover:scale-95 hover:duration-500 rounded-3xl transition-all">
             <Image
               unoptimized
-              className="hover:scale-110 transition"
+              className="hover:scale-110 transition hover:duration-500"
               src={
                 "https://separateweb.com/demo-reevan/images/portfolio/portfolio-4.jpg"
               }
@@ -215,10 +215,10 @@ const Page = () => {
           </div>
         </div>
         <div className="flex justify-evenly flex-wrap-reverse  p-5 lg:p-20 lg:px-32">
-          <div className=" lg:w-1/2 w-full overflow-hidden hover:scale-95  rounded-3xl transition-all">
+          <div className=" lg:w-1/2 w-full overflow-hidden hover:scale-95 hover:duration-500 rounded-3xl transition-all">
             <Image
               unoptimized
-              className="hover:scale-110 transition"
+              className="hover:scale-110 transition hover:duration-500"
               src={
                 "https://separateweb.com/demo-reevan/images/portfolio/portfolio-3.jpg"
               }
